@@ -1,0 +1,9 @@
+<configure xmlns="http://namespaces.zope.org/zope" xmlns:browser="http://namespaces.zope.org/browser" xmlns:five="http://namespaces.zope.org/five"
+	xmlns:genericsetup="http://namespaces.zope.org/genericsetup" i18n_domain="collective.js.jquery">
+	<five:registerPackage package="." />
+	<genericsetup:registerProfile name="default" title="jQuery UI" directory="profiles/default" description="jQuery UI"
+		provides="Products.GenericSetup.interfaces.EXTENSION" for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
+	<browser:resource name="jquery-ui-1.7.2.min.js" file="jquery-ui-1.7.2.min.js" />
+	<browser:resourceDirectory name="jquery.ui.images" directory="css/smoothness/images" />
+	<browser:resource name="jquery.ui.all.css" file="css/smoothness/jquery-ui-1.7.2.custom.css" />
+</configure>
