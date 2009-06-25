@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.7.2.1 (2009-06-10)
+1.7.2.2 (2009-06-25)
 --------------------
 * fixed images not being able to be loaded from css problem.
 
