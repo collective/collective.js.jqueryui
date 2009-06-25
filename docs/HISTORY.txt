@@ -3,5 +3,9 @@ Changelog
 
 1.7.2.1 (2009-06-10)
 --------------------
+* fixed images not being able to be loaded from css problem.
+
+1.7.2.1 (2009-06-10)
+--------------------
 
 * Initial release with jquery-ui 1.7.2 (need jquery 1.3.x)
