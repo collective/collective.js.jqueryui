@@ -13,5 +13,5 @@ It is different from collective.jqueryui in many ways:
 Notes
 =====
 
-Plone3.3 include the last JQuery (1.3.2). So please update your products to use the JQuery included in Plone, or you will include it twice.
+Plone 3.3 include the last JQuery (1.3.2). But collective.js.jquery doesn't add it, it replace it.
 
