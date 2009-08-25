@@ -1,5 +1,11 @@
 Changelog
 =========
+
+1.7.2.5 (unreleased)
+--------------------
+
+* Include collective.js.jquery configure.zcml
+
 1.7.2.4 (2009-08-25)
 --------------------
 
@@ -8,13 +14,13 @@ Changelog
 1.7.2.3 (2009-08-17)
 --------------------
 
-* update documentation: add note for developer about Plone3.3
-* remove all .* files include in the last release (MacOSX feature)
+* Update documentation: add note for developer about Plone3.3
+* Remove all .* files include in the last release (MacOSX feature)
 
 1.7.2.2 (2009-06-25)
 --------------------
 
-* fixed images not being able to be loaded from css problem.
+* Fixed images not being able to be loaded from css problem.
 
 1.7.2.1 (2009-06-10)
 --------------------
