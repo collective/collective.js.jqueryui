@@ -1,6 +1,16 @@
 Changelog
 =========
 
+1.7.2.6 (2010-02-02)
+--------------------
+
+* Add profile ``withjqtools``, a profile registering the jquery UI bundle
+  without the ``tabs`` plugin. This plugin conflicts with the same plugin
+  from jquery tools. Note that ``plone.app.jquerytools`` must be availabe in
+  your system, since it's profile is applied as dependency. It's not added
+  to the setup dependencies of this package. [rnix]
+* Add jquery-ui-1.7.2.jq-tools-compat.js [rnix]
+
 1.7.2.5 (2009-08-26)
 --------------------
 
