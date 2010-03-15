@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.7.2.7 (unreleased)
+--------------------
+
+* Add ``withjqtoolsplone4`` profile which is the same as ``withjqtools`` but
+  doesn't install the collective.js.jquery profile so the jQuery library
+  from Plone 4 is not replaced by an old version.
+  [vincentfretin]
+
 1.7.2.6 (2010-02-02)
 --------------------
 

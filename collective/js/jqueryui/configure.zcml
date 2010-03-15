@@ -1,8 +1,8 @@
-<configure 
-    xmlns="http://namespaces.zope.org/zope"     
+<configure
+    xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser" 
     xmlns:five="http://namespaces.zope.org/five"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup" 
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.js.jquery">
 
   <include package="collective.js.jquery" />
@@ -13,22 +13,30 @@
       name="default" 
       title="jQuery UI" 
       directory="profiles/default" 
-      description="jQuery UI"
+      description="jQuery UI for Plone 3"
       provides="Products.GenericSetup.interfaces.EXTENSION" 
       for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
-  
-  <genericsetup:registerProfile 
-      name="withjqtools" 
-      title="jQuery UI compatible to plone.app.jquerytools" 
-      directory="profiles/withjqtools" 
+
+  <genericsetup:registerProfile
+      name="withjqtools"
+      title="jQuery UI compatible with plone.app.jquerytools for Plone 3"
+      directory="profiles/withjqtools"
+      description="jQuery UI compatible with plone.app.jquerytools"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
+
+  <genericsetup:registerProfile
+      name="withjqtoolsplone4"
+      title="jQuery UI compatible with plone.app.jquerytools for Plone 4"
+      directory="profiles/withjqtoolsplone4"
       description="jQuery UI compatible to plone.app.jquerytools"
-      provides="Products.GenericSetup.interfaces.EXTENSION" 
+      provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
 
   <browser:resource
       name="jquery-ui-1.7.2.min.js"
       file="jquery-ui-1.7.2.min.js" />
-  
+
   <browser:resource
       name="jquery-ui-1.7.2.jq-tools-compat.js"
       file="jquery-ui-1.7.2.jq-tools-compat.js" />
