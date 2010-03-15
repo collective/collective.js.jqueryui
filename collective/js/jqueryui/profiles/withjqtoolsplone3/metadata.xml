@@ -2,6 +2,7 @@
 <metadata>
   <version>1.7.2.6</version>
   <dependencies>
+    <dependency>profile-collective.js.jquery:default</dependency>
     <dependency>profile-plone.app.jquerytools:default</dependency>
   </dependencies>
 </metadata>

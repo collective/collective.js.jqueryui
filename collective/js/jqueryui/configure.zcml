@@ -13,21 +13,21 @@
       name="default" 
       title="jQuery UI" 
       directory="profiles/default" 
-      description="jQuery UI for Plone 3"
+      description="jQuery UI for Plone 3.2/3.3"
       provides="Products.GenericSetup.interfaces.EXTENSION" 
       for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
 
   <genericsetup:registerProfile
-      name="withjqtools"
-      title="jQuery UI compatible with plone.app.jquerytools for Plone 3"
+      name="withjqtoolsplone3"
+      title="jQuery UI compatible with plone.app.jquerytools for Plone 3.2"
       directory="profiles/withjqtools"
       description="jQuery UI compatible with plone.app.jquerytools"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
 
   <genericsetup:registerProfile
-      name="withjqtoolsplone4"
-      title="jQuery UI compatible with plone.app.jquerytools for Plone 4"
+      name="withjqtools"
+      title="jQuery UI compatible with plone.app.jquerytools for Plone 3.3/4"
       directory="profiles/withjqtoolsplone4"
       description="jQuery UI compatible to plone.app.jquerytools"
       provides="Products.GenericSetup.interfaces.EXTENSION"
