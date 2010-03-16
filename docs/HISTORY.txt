@@ -10,6 +10,7 @@ Changelog
   with plone.app.jquerytools.
   This version only works on Plone 4 because Plone 4 ships with JQuery 1.4+ and
   jQuery 1.8 requires jQuery 1.4+.
+  [vincentfretin]
 
 1.7.2.7 (2010-03-16)
 --------------------

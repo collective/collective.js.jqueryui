@@ -2,7 +2,7 @@ Introduction
 ============
 
 Integration of jqueryui in Plone 4.
-Use 1.7 versions if you want to use this package on Plone < 4.
+Use 1.7.2.7 versions if you want to use this package on Plone < 4.
 
 This version includes jqueryui 1.8rc3 without the tabs plugin. The Smoothless
 theme is used.
