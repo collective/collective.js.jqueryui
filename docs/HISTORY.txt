@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.7.2.7 (unreleased)
+1.7.2.7 (2010-03-16)
 --------------------
 
 * ``withjqtools`` profile doesn't apply the collective.js.jquery profile
