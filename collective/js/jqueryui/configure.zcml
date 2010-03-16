@@ -31,4 +31,13 @@
       name="jquery.ui.all.css"
       file="css/smoothness/jquery-ui-1.8rc3.custom.css" />
 
+  <browser:viewlet
+      name="l10n.datepicker"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+      class=".viewlet.L10nDatepicker"
+      permission="zope2.View"
+      />
+
+
 </configure>
