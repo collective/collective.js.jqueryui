@@ -4,6 +4,10 @@ Changelog
 1.8rc3 (unreleased)
 -------------------
 
+* Added jquery-ui-i18n.js which contains all translations for datepicker
+  plugin.
+  [vincentfretin]
+
 * Removed completly the ``withjqtoolsplone3`` and ``withjqtools`` profiles.
   We don't depend on collective.js.jquery anymore. So the jQuery of Plone 4 is kept.
   The defaut profile now install jqueryui 1.8 without the tabs plugin which conflicts

@@ -19,6 +19,10 @@
       name="jquery-ui-1.8.min.js"
       file="jquery-ui-1.8rc3.custom.min.js" />
 
+  <browser:resource
+      name="jquery-ui-i18n.js"
+      file="jquery-ui-i18n.js" />
+
   <browser:resourceDirectory
       name="jquery.ui.images"
       directory="css/smoothness/images" />
