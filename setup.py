@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.7.2.8dev'
+version = '1.8rc3'
 
 setup(name='collective.js.jqueryui',
       version=version,
       description="JQueryUI ready to be included in portal_javascript",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+      # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
@@ -24,7 +24,6 @@ setup(name='collective.js.jqueryui',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.js.jquery'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

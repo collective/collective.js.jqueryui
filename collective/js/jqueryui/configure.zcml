@@ -5,41 +5,19 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.js.jquery">
 
-  <include package="collective.js.jquery" />
-
   <five:registerPackage package="." />
 
   <genericsetup:registerProfile 
       name="default" 
       title="jQuery UI" 
       directory="profiles/default" 
-      description="jQuery UI for Plone 3.2/3.3"
+      description="jQuery UI for Plone 4"
       provides="Products.GenericSetup.interfaces.EXTENSION" 
       for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
 
-  <genericsetup:registerProfile
-      name="withjqtoolsplone3"
-      title="jQuery UI compatible with plone.app.jquerytools for Plone 3.2"
-      directory="profiles/withjqtoolsplone3"
-      description="jQuery UI compatible with plone.app.jquerytools for Plone 3.2"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
-
-  <genericsetup:registerProfile
-      name="withjqtools"
-      title="jQuery UI compatible with plone.app.jquerytools for Plone 3.3/4"
-      directory="profiles/withjqtools"
-      description="jQuery UI compatible with plone.app.jquerytools for Plone 3.3/4"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot" />
-
   <browser:resource
-      name="jquery-ui-1.7.2.min.js"
-      file="jquery-ui-1.7.2.min.js" />
-
-  <browser:resource
-      name="jquery-ui-1.7.2.jq-tools-compat.js"
-      file="jquery-ui-1.7.2.jq-tools-compat.js" />
+      name="jquery-ui-1.8.min.js"
+      file="jquery-ui-1.8rc3.custom.min.js" />
 
   <browser:resourceDirectory
       name="jquery.ui.images"
@@ -47,6 +25,6 @@
 
   <browser:resource
       name="jquery.ui.all.css"
-      file="css/smoothness/jquery-ui-1.7.2.custom.css" />
+      file="css/smoothness/jquery-ui-1.8rc3.custom.css" />
 
 </configure>

@@ -1,7 +1,11 @@
 Introduction
 ============
 
-Integration of jqueryui in Plone, like collective.js.jquery.
+Integration of jqueryui in Plone 4.
+Use 1.7 versions if you want to use this package on Plone < 4.
+
+This version includes jqueryui 1.8rc3 without the tabs plugin. The Smoothless
+theme is used.
 
 It is different from collective.jqueryui in many ways:
 
@@ -14,20 +18,11 @@ It is different from collective.jqueryui in many ways:
 Notes
 =====
 
-There are three profiles in this package:
+The package contains now only one profile. It doesn't replace
+the jQuery version like the previous versions did.
 
-- ``default``: use this one with Plone 3.2/3.3 if you don't use
-  plone.app.jquerytools. It will replace the jQuery version in Plone by
-  the one included in collective.js.jquery because Plone <= 3.3rc2 include
-  an old version of jQuery (1.2) and jqueryui 1.7 requires jQuery 1.3+.
+Upgrade notes
+=============
 
-- ``withjqtoolsplone3``: use this one if you include plone.app.jquerytools
-  yourself in a Plone 3.2, this profile installs a jqueryui library
-  without the tabs plugin which conflicts with plone.app.jquerytools.
-  It will replace the jQuery version in Plone by the one included in
-  collective.js.jquery.
-
-- ``withjqtools``: use this one if you use Plone 3.3/4. It will keep the
-  jQuery version included in Plone and is compatible with
-  plone.app.jquerytools. You need to include plone.app.jquerytools yourself
-  on Plone 3.3.
+If you used the ``withjqtools`` or ``withjqtoolsplone3`` profile in older
+version, please use now the ``default`` profile.
