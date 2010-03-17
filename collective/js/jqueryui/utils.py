@@ -47,10 +47,18 @@ def get_python_date_format(request):
     return transform_to_percent(get_datepicker_date_format(request))
 
 
-def parse_date(datestr, request):
-    """Parse datestr and return a tuple (year, month, day)
-    request parameter is necessary to retrieve the date_format from
-    the language extracted from the request.
+def parse_date(datestr, date_format):
+    """Parse datestr given the date_format and return a tuple
+    (year, month, day)
+
+    >>> date = parse_date("17.03.2010", "%d.%m.%Y")
+    >>> date
+    (2010, 3, 17)
+
+    And you can after that create a datetime object like this:
+
+    >>> import datetime
+    >>> datetime.date(*date)
+    datetime.date(2010, 3, 17)
     """
-    date_format = get_python_date_format(request)
     return time.strptime(datestr, date_format)[:3]
