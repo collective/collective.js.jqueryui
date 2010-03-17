@@ -41,10 +41,14 @@ def transform_to_percent(date_format):
         "yy", "%Y")
 
 
-def parseDate(datestr, request):
+def get_python_date_format(request):
+    return transform_to_percent(get_datepicker_date_format(request))
+
+
+def parse_date(datestr, request):
     """Parse datestr and return a tuple (year, month, day)
     request parameter is necessary to retrieve the date_format from
     the language extracted from the request.
     """
-    date_format = transform_to_percent(get_datepicker_date_format(request))
+    date_format = get_python_date_format(request)
     return time.strptime(datestr, date_format)[:3]
