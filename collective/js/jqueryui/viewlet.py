@@ -1,5 +1,5 @@
 from plone.app.layout.viewlets.common import ViewletBase
-from zope.i18n import translate
+from collective.js.jqueryui.utils import get_datepicker_date_format
 
 # this list was generated from jqueryui 1.8rc3
 JQUERYUI_LANGUAGES = (
@@ -9,6 +9,7 @@ JQUERYUI_LANGUAGES = (
     'ru', 'sk', 'sl', 'sq', 'sr', 'sr-SR', 'sv', 'th', 'tr', 'uk', 'vi',
     'zh-CN', 'zh-HK', 'zh-TW',
 )
+
 
 class L10nDatepicker(ViewletBase):
 
@@ -32,13 +33,7 @@ class L10nDatepicker(ViewletBase):
         return ''
 
     def update(self):
-        date_format = translate(u"date_format_short_datepicker",
-                                domain="plonelocales",
-                                context=self.request)
-        if date_format == u"date_format_short_datepicker":
-            self.jq_date_format = 'mm/dd/yy'
-        else:
-            self.jq_date_format = date_format
+        self.jq_date_format = get_datepicker_date_format(self.request)
 
     def render(self):
         return u"""<script type="text/javascript">
