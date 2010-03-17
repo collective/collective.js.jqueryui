@@ -1,3 +1,5 @@
+__docformat__ = 'restructuredtext'
+
 from zope.i18n import translate
 import time
 
@@ -21,19 +23,19 @@ def transform_to_percent(date_format):
     understand. Replace "mm" by "%m", "dd" by "%d", and "yy" by "%Y".
 
     >>> transform_to_percent("mm/dd/yy")
-    "%m/%d/%Y"
+    '%m/%d/%Y'
     >>> transform_to_percent("dd/mm/yy")
-    "%d/%m/%Y"
+    '%d/%m/%Y'
     >>> transform_to_percent("yy/mm/dd")
-    "%Y/%m/%d"
+    '%Y/%m/%d'
     >>> transform_to_percent("yy-mm-dd")
-    "%Y/%m/%d"
+    '%Y-%m-%d'
     >>> transform_to_percent("dd.mm.yy")
-    "%d.%m.%Y"
+    '%d.%m.%Y'
     >>> transform_to_percent("dd.mm.yy.")
-    "%d.%m.%Y."
+    '%d.%m.%Y.'
     >>> transform_to_percent("yy.mm.dd.")
-    "%Y.%m.%d."
+    '%Y.%m.%d.'
     """
     return date_format.replace(
         "mm", "%m").replace(
