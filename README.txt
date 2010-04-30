@@ -15,6 +15,20 @@ It is different from collective.jqueryui in many ways:
 * just add all jqueryui to portal_js, and default css to portal_css (if you 
   apply the profile)
 
+
+Credits
+=======
+
+|makinacom|_
+
+* `Planet Makina Corpus <http://www.makina-corpus.org>`_
+* `Contact us <mailto:python@makina-corpus.org>`_
+* Contributions by Vincent Fretin (`Ecreall <http://www.ecreall.com>`_)
+
+.. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
+.. _makinacom:  http://www.makina-corpus.com
+
+
 Notes
 =====
 
