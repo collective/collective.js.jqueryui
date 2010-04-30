@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.8 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 1.8rc3 (2010-04-30)
 -------------------
 
