@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8rc3 (unreleased)
+1.8rc3 (2010-04-30)
 -------------------
 
 * Added jquery-ui-i18n.js which contains all translations for datepicker
