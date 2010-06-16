@@ -4,7 +4,9 @@ Changelog
 1.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Since jquery-ui-i18n.js contains symbols other than utf-8 it should
+  be compressed with safe-encode type.
+  [spliter]
 
 
 1.8rc3 (2010-04-30)
