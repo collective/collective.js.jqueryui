@@ -15,6 +15,8 @@ It is different from collective.jqueryui in many ways:
 * just add all jqueryui to portal_js, and default css to portal_css (if you 
   apply the profile)
 
+To have an example of the current integration you can check @@example.jqueryui
+page
 
 Credits
 =======

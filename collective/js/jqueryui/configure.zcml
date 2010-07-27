@@ -38,6 +38,15 @@
       class=".viewlet.L10nDatepicker"
       permission="zope2.View"
       />
-
+  <browser:page
+    name="example.jqueryui"
+    for="*"
+    class=".example.Example"
+    template="example.pt"
+    permission="zope2.View"
+    />
+  <browser:resource
+      name="jquery-ui-example.js"
+      file="example.js" />
 
 </configure>
