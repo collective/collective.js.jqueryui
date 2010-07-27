@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.8dev'
+version = '1.8.2.1'
 
 setup(name='collective.js.jqueryui',
       version=version,

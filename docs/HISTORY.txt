@@ -1,13 +1,15 @@
 Changelog
 =========
 
-1.8 (unreleased)
-----------------
+1.8.2 (unreleased)
+------------------
 
 - Since jquery-ui-i18n.js contains symbols other than utf-8 it should
   be compressed with safe-encode type.
   [spliter]
 
+- Update to jqueryui 1.8.2
+  [toutpt]
 
 1.8rc3 (2010-04-30)
 -------------------
