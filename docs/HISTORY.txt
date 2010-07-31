@@ -4,7 +4,10 @@ Changelog
 1.8.2.2 (unreleased)
 --------------------
 
-- Add @@example.jqueryui page.
+- Fixed the css to use images from the directory resources.
+  [vincentfretin]
+
+- Added @@example.jqueryui page.
   [toutpt]
 
 1.8.2.1 (2010-07-27)
