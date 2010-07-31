@@ -1,0 +1,22 @@
+How to upgrade this package
+===========================
+
+- Go to http://jqueryui.com and click on "Build custom download".
+- Select the Smoothness theme.
+- unselect the tabs plugins which conflict with jquerytools
+- download jquery-ui-1.8.2.custom.zip
+
+Commands to execute::
+
+    PKG="~/svn/collective.js.jqueryui/trunk/collective/js/jqueryui"
+    cd /tmp/
+    unzip ~/jquery-ui-1.8.2.custom.zip
+    cp css/smoothness/jquery-ui-1.8.2.custom.css $PKG/css/smoothness/jquery-ui-1.8.2.custom.css
+    rm $PKG/css/smoothness/images/*
+    cp css/smoothness/images/* $PKG/css/smoothness/images/
+    cp js/jquery-ui-1.8.2.custom.min.js $PKG/jquery-ui-1.8.2.custom.min.js
+    cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
+    sed -i 's@images/@++resource++jquery.ui.images/@' $PKG/css/smoothness/jquery-ui-1.8.2.custom.css
+
+- replace "font-size: 1.1em;" by "font-size: 0.9em;" for .ui-widget css rule.
+- update version in README.txt
