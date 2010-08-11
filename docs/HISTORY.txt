@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.4.1 (unreleased)
+1.8.4.1 (2010-08-11)
 --------------------
 
 - Update jqueryui to 1.8.4
