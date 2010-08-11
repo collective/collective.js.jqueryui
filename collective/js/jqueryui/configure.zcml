@@ -18,7 +18,7 @@
 
   <browser:resource
       name="jquery-ui-1.8.min.js"
-      file="jquery-ui-1.8.2.custom.min.js"
+      file="jquery-ui-1.8.4.custom.min.js"
       />
 
   <browser:resource
@@ -33,7 +33,7 @@
 
   <browser:resource
       name="jquery.ui.all.css"
-      file="css/smoothness/jquery-ui-1.8.2.custom.css"
+      file="css/smoothness/jquery-ui-1.8.4.custom.css"
       />
 
   <browser:viewlet
