@@ -14,7 +14,7 @@ JQUERYUI_LANGUAGES = (
 class L10nDatepicker(ViewletBase):
 
     def jq_language(self):
-        language = self.request.LANGUAGE
+        language = self.request.get('LANGUAGE', '')
         if '-' in language:
             # normalize combined language code
             parts = language.split('-')
