@@ -10,6 +10,10 @@ Changelog
 - Add icons to @@example.jqueryui view
   [toutpt]
 
+- Replaced original "smoothness" theme with a new "plone4" one more related
+  to "sunburst" that comes with Plone 4.
+  [marcosfromero]
+
 1.8.4.1 (2010-08-11)
 --------------------
 

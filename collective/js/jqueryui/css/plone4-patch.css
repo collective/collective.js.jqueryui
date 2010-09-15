@@ -1,0 +1,23 @@
+
+
+/* Due to usage of #content, dl.portlet and !important in public.css rules 
+we must re-gain priority here for all jQueryUI link styles 
+*/
+
+#content .ui-state-default a, #content .ui-state-default a:link, #content .ui-state-default a:visited, 
+dl.portlet .ui-state-default a, dl.portlet .ui-state-default a:link, dl.portlet .ui-state-default a:visited,
+a.ui-state-default,
+#content a.ui-state-default, #content .ui-state-default a, #content .ui-state-default a:link, #content .ui-state-default a:visited,
+dl.portlet a.ui-state-default, dl.portlet .ui-state-default a, dl.portlet .ui-state-default a:link, dl.portlet .ui-state-default a:visited,
+#content .ui-state-active a, #content .ui-state-active a:link, #content .ui-state-active a:visited,
+dl.portlet .ui-state-active a, dl.portlet .ui-state-active a:link, dl.portlet .ui-state-active a:visited  { color: #ffffff !important; }
+
+#content .ui-widget-header a,
+dl.portlet .ui-widget-header a,
+a.ui-state-hover,
+#content a.ui-state-hover, #content .ui-state-hover a, #content .ui-state-hover a:hover,
+dl.portlet a.ui-state-hover, dl.portlet .ui-state-hover a, dl.portlet .ui-state-hover a:hover { color: #444444 !important;}
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a,
+#content .ui-state-highlight a, #content .ui-widget-content .ui-state-highlight a, #content .ui-widget-header .ui-state-highlight a,
+dl.portlet .ui-state-highlight a, dl.portlet .ui-widget-content .ui-state-highlight a, dl.portlet .ui-widget-header .ui-state-highlight a { color: #000000 !important; }

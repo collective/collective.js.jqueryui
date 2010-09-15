@@ -28,12 +28,12 @@
 
   <browser:resourceDirectory
       name="jquery.ui.images"
-      directory="css/smoothness/images"
+      directory="css/plone4/images"
       />
 
   <browser:resource
       name="jquery.ui.all.css"
-      file="css/smoothness/jquery-ui-1.8.4.custom.css"
+      file="css/plone4/jquery-ui-1.8.4.custom.css"
       />
 
   <browser:viewlet
