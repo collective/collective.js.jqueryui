@@ -19,5 +19,5 @@ Commands to execute::
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
     sed -i 's@images/@++resource++jquery.ui.images/@' $PKG/css/plone4/jquery-ui-1.8.4.custom.css
 
-- replace "font-size: 1.1em;" by "font-size: 0.9em;" for .ui-widget css rule.
-- update version in README.txt
+- replace "font-size: 1.2em;" by "font-size: 0.9em;" for .ui-widget css rule.
+- update version in README.txt and configure.zcml

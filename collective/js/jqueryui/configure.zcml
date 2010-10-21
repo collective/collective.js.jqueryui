@@ -18,7 +18,7 @@
 
   <browser:resource
       name="jquery-ui-1.8.min.js"
-      file="jquery-ui-1.8.4.custom.min.js"
+      file="jquery-ui-1.8.5.custom.min.js"
       />
 
   <browser:resource
@@ -33,7 +33,7 @@
 
   <browser:resource
       name="jquery.ui.all.css"
-      file="css/plone4/jquery-ui-1.8.4.custom.css"
+      file="css/plone4/jquery-ui-1.8.5.custom.css"
       />
 
   <browser:viewlet

@@ -1,8 +1,11 @@
 Changelog
 =========
 
-1.8.4.2 (unreleased)
+1.8.5.1 (unreleased)
 --------------------
+
+- Updated to jqueryui 1.8.5.
+  [vincentfretin]
 
 - Fixed L10nDatepicker to work without a ``request.LANGUAGE`` attribute.
   [hannosch]

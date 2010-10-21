@@ -4,8 +4,7 @@ Introduction
 Integration of jqueryui in Plone 4.
 Use 1.7.2.7 versions if you want to use this package on Plone < 4.
 
-This version includes jqueryui 1.8.2 without the tabs plugin. The Smoothless
-theme is used.
+This version includes jqueryui 1.8.5 without the tabs plugin.
 
 It is different from collective.jqueryui in many ways:
 
@@ -29,7 +28,6 @@ Credits
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
-
 
 Notes
 =====
