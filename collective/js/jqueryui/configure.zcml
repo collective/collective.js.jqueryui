@@ -11,7 +11,7 @@
       name="default" 
       title="jQuery UI" 
       directory="profiles/default" 
-      description="jQuery UI for Plone 4"
+      description="jQuery UI for Plone"
       provides="Products.GenericSetup.interfaces.EXTENSION" 
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
