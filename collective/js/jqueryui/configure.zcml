@@ -16,24 +16,37 @@
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
 
+  <genericsetup:upgradeStep
+      source="*"
+      destination="2"
+      title="Install browser layer"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.install_browserlayer"
+      />
+
   <browser:resource
       name="jquery-ui-1.8.min.js"
       file="jquery-ui-1.8.5.custom.min.js"
+      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:resource
       name="jquery-ui-i18n.js"
       file="jquery-ui-i18n.js"
+      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:resourceDirectory
       name="jquery.ui.images"
       directory="css/plone4/images"
+      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:resource
       name="jquery.ui.all.css"
       file="css/plone4/jquery-ui-1.8.5.custom.css"
+      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:viewlet
@@ -41,6 +54,7 @@
       for="*"
       manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
       class=".viewlet.L10nDatepicker"
+      layer=".interfaces.IJqueryUILayer"
       permission="zope2.View"
       />
 
@@ -49,12 +63,14 @@
       for="*"
       class=".example.Example"
       template="example.pt"
+      layer=".interfaces.IJqueryUILayer"
       permission="zope2.View"
       />
 
   <browser:resource
       name="jquery-ui-example.js"
       file="example.js"
+      layer=".interfaces.IJqueryUILayer"
       />
 
 </configure>

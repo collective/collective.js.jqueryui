@@ -4,7 +4,11 @@ Changelog
 1.8.5.2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Register browser components for a package-specific browser layer, so they
+  don't leak to sites without this product installed. You will need to run
+  the upgrade step from the Add-ons control panel if upgrading this product
+  on a site where it is already installed.
+  [davisagli]
 
 
 1.8.5.1 (2010-10-21)
