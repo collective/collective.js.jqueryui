@@ -1,9 +1,11 @@
 Changelog
 =========
 
-1.8.5.3 (unreleased)
+1.8.6.1 (unreleased)
 --------------------
 
+- Updated to jqueryui 1.8.6
+  [toutpt]
 
 1.8.5.2 (2010-11-23)
 --------------------

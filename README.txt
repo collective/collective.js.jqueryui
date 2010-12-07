@@ -3,7 +3,7 @@ Introduction
 
 Integration of jqueryui in Plone 3.3 and 4.
 
-This version includes jqueryui 1.8.5 without the tabs plugin.
+This version includes jqueryui 1.8.6 without the tabs plugin.
 
 It is different from collective.jqueryui in many ways:
 
