@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.6.1 (unreleased)
+1.8.6.1 (2010-12-07)
 --------------------
 
 - Updated to jqueryui 1.8.6
