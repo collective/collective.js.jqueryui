@@ -1,49 +1,49 @@
-$(function(){
+jQuery(function(){
     // Accordion
-    $("#accordion").accordion({ header: "h3" });
+    jq("#accordion").accordion({ header: "h3" });
     // Autocomplete
-    $("#autocomplete").autocomplete({
+    jq("#autocomplete").autocomplete({
         source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl"]
     });
     // Button
-    $("#button").button();
-    $("#radioset").buttonset();
+    jq("#button").button();
+    jq("#radioset").buttonset();
     // Tabs
-    $('#tabs').tabs();
+    jq('#tabs').tabs();
     // Dialog           
-    $('#dialog').dialog({
+    jq('#dialog').dialog({
         autoOpen: false,
         width: 600,
         buttons: {
             "Ok": function() { 
-                $(this).dialog("close"); 
+                jq(this).dialog("close"); 
             }, 
             "Cancel": function() { 
-                $(this).dialog("close"); 
+                jq(this).dialog("close"); 
             } 
         }
     });
     // Dialog Link
-    $('#dialog_link').click(function(){
-        $('#dialog').dialog('open');
+    jq('#dialog_link').click(function(){
+        jq('#dialog').dialog('open');
         return false;
     });
     // Datepicker
-    $('#datepicker').datepicker({
+    jq('#datepicker').datepicker({
         inline: true
     });
     // Slider
-    $('#slider').slider({
+    jq('#slider').slider({
         range: true,
         values: [17, 67]
     });
     // Progressbar
-    $("#progressbar").progressbar({
+    jq("#progressbar").progressbar({
         value: 20 
     });
     //hover states on the static widgets
-    $('#dialog_link, ul#icons li').hover(
-        function() { $(this).addClass('ui-state-hover'); }, 
-        function() { $(this).removeClass('ui-state-hover'); }
+    jq('#dialog_link, ul#icons li').hover(
+        function() { jq(this).addClass('ui-state-hover'); }, 
+        function() { jq(this).removeClass('ui-state-hover'); }
     );
 });

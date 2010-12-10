@@ -27,7 +27,7 @@
 
   <browser:resource
       name="jquery-ui-1.8.min.js"
-      file="jquery-ui-1.8.6.custom.min.js"
+      file="jquery-ui-1.8.7.custom.min.js"
       layer=".interfaces.IJqueryUILayer"
       />
 
@@ -45,7 +45,7 @@
 
   <browser:resource
       name="jquery.ui.all.css"
-      file="css/plone4/jquery-ui-1.8.6.custom.css"
+      file="css/plone4/jquery-ui-1.8.7.custom.css"
       layer=".interfaces.IJqueryUILayer"
       />
 

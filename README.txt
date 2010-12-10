@@ -3,7 +3,7 @@ Introduction
 
 Integration of jqueryui in Plone 3.3 and 4.
 
-This version includes jqueryui 1.8.6 without the tabs plugin.
+This version includes jqueryui 1.8.7 without the tabs plugin.
 
 It is different from collective.jqueryui in many ways:
 
@@ -33,6 +33,14 @@ Notes
 
 The package contains now only one profile. It doesn't replace
 the jQuery version like the previous versions did.
+
+WARNINGS
+========
+
+JQueryUI > 1.8.6 is supposed to be compatible with jQuery 1.3.2.
+On example page every things are working except Dialog. So at the
+moment you would prefer use the 1.7.X version of jqueryui (same package
+exists for 1.7 branch.
 
 Upgrade notes
 =============
