@@ -4,8 +4,9 @@ Changelog
 1.8.6.2 (unreleased)
 --------------------
 
-- Nothing changed yet.
-
+- Disable compression of jquery-ui-i18n.js. Compression was broken, resulting 
+  in Chinese characters in the calendar popup.
+  [khink]
 
 1.8.6.1 (2010-12-07)
 --------------------

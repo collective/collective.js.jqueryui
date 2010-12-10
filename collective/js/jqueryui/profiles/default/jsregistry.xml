@@ -3,7 +3,7 @@
  <javascript cacheable="True" compression="safe"
      cookable="True" enabled="1" expression=""
      id="++resource++jquery-ui-1.8.min.js" />
- <javascript cacheable="True" compression="safe-encode"
+ <javascript cacheable="True" compression="none"
      cookable="True" enabled="1" expression=""
      id="++resource++jquery-ui-i18n.js" />
 </object>
