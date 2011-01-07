@@ -5,7 +5,11 @@ Changelog
 --------------------
 
 - Add jquery-ui.min.js as browser resource: ++resource++jquery-ui.min.js
+  This one do not need any install
+  [toutpt]
 
+- Update profile to use jquery-ui.min.js in portal_javascript and add migrations
+  [toutpt]
 
 1.8.7.1 (2010-12-10)
 --------------------

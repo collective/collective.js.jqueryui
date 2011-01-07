@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.jqueryui">
+
+  <genericsetup:registerProfile 
+      name="default" 
+      title="jQuery UI" 
+      directory="profiles/default" 
+      description="jQuery UI for Plone"
+      provides="Products.GenericSetup.interfaces.EXTENSION" 
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <genericsetup:upgradeStep
+      source="*"
+      destination="2"
+      title="Install browser layer"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.install_browserlayer"
+      />
+
+  <genericsetup:upgradeStep
+      source="2"
+      destination="1870"
+      title="Update portal_javascript"
+      description="Remove any previous javascript and replace with jquery-ui.min.js"
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.portal_javascripts"
+      />
+
+</configure>

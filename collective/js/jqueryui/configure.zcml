@@ -7,28 +7,11 @@
 
   <five:registerPackage package="." />
 
-  <genericsetup:registerProfile 
-      name="default" 
-      title="jQuery UI" 
-      directory="profiles/default" 
-      description="jQuery UI for Plone"
-      provides="Products.GenericSetup.interfaces.EXTENSION" 
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      />
-
-  <genericsetup:upgradeStep
-      source="*"
-      destination="2"
-      title="Install browser layer"
-      description=""
-      profile="collective.js.jqueryui:default"
-      handler=".upgrades.install_browserlayer"
-      />
+  <include file="profiles.zcml" />
 
   <browser:resource
       name="jquery-ui.min.js"
       file="jquery-ui-1.8.7.custom.min.js"
-      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:resource
