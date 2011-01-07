@@ -15,3 +15,8 @@ def portal_javascripts(context):
     jsregistry = getToolByName(context, 'portal_javascripts')
     for PREV in PREVIOUS:
         jsregistry.unregisterResource(PREV)
+
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'jsregistry', run_dependencies=False,
+                                   purge_old=False)
