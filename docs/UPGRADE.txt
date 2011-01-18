@@ -10,15 +10,14 @@ How to upgrade this package
 Commands to execute::
 
     PKG="~/svn/collective.js.jqueryui/trunk/collective/js/jqueryui"
-    VERSION="1.8.6"
-    PREV="1.8.5"
+    VERSION="1.7.3"
+    PREV="1.7.2"
     cd /tmp/
     unzip ~/jquery-ui-$VERSION.custom.zip
-    cat css/plone4/jquery-ui-$VERSION.custom.css $PKG/css/plone4-patch.css > $PKG/css/plone4/jquery-ui-$VERSION.custom.css
     rm $PKG/css/plone4/images/*
     rm $PKG/css/plone4/jquery-ui-$PREV.custom.css
     rm $PKG/jquery-ui-$PREV.custom.min.js
-    cp css/plone4/images/* $PKG/css/plone4/images/
+    cp css/plone4/images/* $PKG/css/smoothness/images/
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
     sed -i 's@images/@++resource++jquery.ui.images/@' $PKG/css/plone4/jquery-ui-$VERSION.custom.css

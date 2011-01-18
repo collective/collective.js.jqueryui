@@ -20,3 +20,11 @@ def portal_javascripts(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'jsregistry', run_dependencies=False,
                                    purge_old=False)
+
+def cook_resources(context):
+    """Refresh javascript and css"""
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    cssregistry = getToolByName(context, 'portal_css')
+
+    jsregistry.cookResources()
+    cssregistry.cookResources()

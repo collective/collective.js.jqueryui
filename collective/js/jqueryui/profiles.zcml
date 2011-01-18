@@ -30,4 +30,13 @@
       handler=".upgrades.portal_javascripts"
       />
 
+  <genericsetup:upgradeStep
+      source="1870"
+      destination="1880"
+      title="Cook resources"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.cook_resources"
+      />
+
 </configure>
