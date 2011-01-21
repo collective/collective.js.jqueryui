@@ -29,13 +29,11 @@
   <browser:resourceDirectory
       name="jquery.ui.images"
       directory="css/plone4/images"
-      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:resource
       name="jquery.ui.all.css"
       file="css/plone4/jquery-ui-1.8.8.custom.css"
-      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:viewlet
