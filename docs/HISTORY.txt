@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.9.1 (unreleased)
+1.8.9.1 (2011-01-21)
 --------------------
 
 - update to jqueryui 1.8.9. Include plone4-patch.css in default profile.
