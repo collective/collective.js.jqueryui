@@ -28,3 +28,19 @@ def cook_resources(context):
 
     jsregistry.cookResources()
     cssregistry.cookResources()
+
+def renaming_css_browserresource_188_189(context):
+    cssregistry = getToolByName(context, 'portal_css')
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    setup = getToolByName(context, 'portal_setup')
+
+    cssregistry.unregisterResource('++resource++jquery.ui.all.css')
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'jsregistry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'cssregistry', run_dependencies=False,
+                                   purge_old=False)
+
+    jsregistry.cookResources()
+    cssregistry.cookResources()

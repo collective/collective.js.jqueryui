@@ -1,6 +1,13 @@
 Changelog
 =========
 
+1.8.9.1 (unreleased)
+--------------------
+
+- update to jqueryui 1.8.9. Include plone4-patch.css in default profile.
+  Refactor css&theme browser resources to not have to update url in the css
+  [toutpt marcosfromero]
+
 1.8.8.2 (unreleased)
 --------------------
 

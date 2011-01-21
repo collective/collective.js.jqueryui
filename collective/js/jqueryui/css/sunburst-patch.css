@@ -1,5 +1,3 @@
-
-
 /* Due to usage of #content, dl.portlet and !important in public.css rules 
 we must re-gain priority here for all jQueryUI link styles 
 */
@@ -21,3 +19,5 @@ dl.portlet a.ui-state-hover, dl.portlet .ui-state-hover a, dl.portlet .ui-state-
 .ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a,
 #content .ui-state-highlight a, #content .ui-widget-content .ui-state-highlight a, #content .ui-widget-header .ui-state-highlight a,
 dl.portlet .ui-state-highlight a, dl.portlet .ui-widget-content .ui-state-highlight a, dl.portlet .ui-widget-header .ui-state-highlight a { color: #000000 !important; }
+
+.ui-widget {font-size: 0.9em;}

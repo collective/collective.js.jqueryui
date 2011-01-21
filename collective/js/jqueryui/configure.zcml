@@ -10,30 +10,28 @@
   <include file="profiles.zcml" />
 
   <browser:resource
+      name="jquery-ui.js"
+      file="jquery-ui-1.8.9.custom.js"
+      />
+
+  <browser:resource
       name="jquery-ui.min.js"
-      file="jquery-ui-1.8.8.custom.min.js"
+      file="jquery-ui-1.8.9.custom.min.js"
       />
 
   <browser:resource
       name="jquery-ui-1.8.min.js"
-      file="jquery-ui-1.8.8.custom.min.js"
-      layer=".interfaces.IJqueryUILayer"
+      file="jquery-ui-1.8.9.custom.min.js"
       />
 
   <browser:resource
       name="jquery-ui-i18n.js"
       file="jquery-ui-i18n.js"
-      layer=".interfaces.IJqueryUILayer"
       />
 
   <browser:resourceDirectory
-      name="jquery.ui.images"
-      directory="css/plone4/images"
-      />
-
-  <browser:resource
-      name="jquery.ui.all.css"
-      file="css/plone4/jquery-ui-1.8.8.custom.css"
+      name="jquery-ui-themes"
+      directory="css"
       />
 
   <browser:viewlet

@@ -39,4 +39,13 @@
       handler=".upgrades.cook_resources"
       />
 
+  <genericsetup:upgradeStep
+      source="1880"
+      destination="1890"
+      title="Update theme"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.renaming_css_browserresource_188_189"
+      />
+
 </configure>
