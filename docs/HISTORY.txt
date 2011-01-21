@@ -8,9 +8,6 @@ Changelog
   Refactor css&theme browser resources to not have to update url in the css
   [toutpt marcosfromero]
 
-1.8.8.2 (unreleased)
---------------------
-
 - remove browser layer on jquery-ui.min.js and jquery.ui.all.css.
   Let anyone want to use it has browser:resource if wanted
   [toutpt]
