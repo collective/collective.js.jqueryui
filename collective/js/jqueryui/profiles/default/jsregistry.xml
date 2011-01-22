@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
  <javascript cacheable="True" compression="none"
-     cookable="True" enabled="1" expression=""
+     cookable="True" enabled="1" expression="context/@@jqueryui-include-condition"
      id="++resource++jquery-ui.min.js" />
  <javascript cacheable="True" compression="none"
-     cookable="True" enabled="1" expression=""
+     cookable="True" enabled="1" expression="context/@@jqueryui-include-condition"
      id="++resource++jquery-ui-i18n.js" />
 </object>

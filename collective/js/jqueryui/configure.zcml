@@ -44,6 +44,13 @@
       />
 
   <browser:page
+      name="jqueryui-include-condition"
+      for="*"
+      class=".condition.IncludeJQueryUI"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="example.jqueryui"
       for="*"
       class=".example.Example"

@@ -4,8 +4,9 @@ Changelog
 1.8.9.2 (unreleased)
 --------------------
 
-- Nothing changed yet.
-
+- Add include condition to JQueryUI resources. Can be configured throw
+  portal_properties.
+  [toutpt]
 
 1.8.9.1 (2011-01-21)
 --------------------

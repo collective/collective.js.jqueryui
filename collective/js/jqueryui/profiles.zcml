@@ -47,5 +47,13 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.renaming_css_browserresource_188_189"
       />
+  <genericsetup:upgradeStep
+      source="1890"
+      destination="1891"
+      title="add include condition"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1890_1891"
+      />
 
 </configure>

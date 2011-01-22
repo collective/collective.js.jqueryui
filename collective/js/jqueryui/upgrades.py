@@ -44,3 +44,15 @@ def renaming_css_browserresource_188_189(context):
 
     jsregistry.cookResources()
     cssregistry.cookResources()
+
+def upgrade_1890_1891(context):
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'jsregistry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'cssregistry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'propertiestool', run_dependencies=False,
+                                   purge_old=False)
