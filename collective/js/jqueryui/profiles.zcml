@@ -55,5 +55,13 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1890_1891"
       />
+  <genericsetup:upgradeStep
+      source="1891"
+      destination="1892"
+      title="apply prefix on css"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1891_1892"
+      />
 
 </configure>

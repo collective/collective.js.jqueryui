@@ -56,3 +56,15 @@ def upgrade_1890_1891(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'propertiestool', run_dependencies=False,
                                    purge_old=False)
+
+def upgrade_1891_1892(context):
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'jsregistry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'cssregistry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'propertiestool', run_dependencies=False,
+                                   purge_old=False)

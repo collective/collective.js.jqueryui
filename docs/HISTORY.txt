@@ -8,6 +8,9 @@ Changelog
   portal_properties.
   [toutpt]
 
+- Add applyPrefix option to main css. Fix production mode issue with caching allowed.
+  [toutpt]
+
 1.8.9.1 (2011-01-21)
 --------------------
 
