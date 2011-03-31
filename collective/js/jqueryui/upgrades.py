@@ -11,7 +11,7 @@ PREVIOUS = ('++resource++jquery-ui-1.8.min.js',
             '++resource++jquery-ui-1.7.2.min.js')
 
 def portal_javascripts(context):
-    
+
     jsregistry = getToolByName(context, 'portal_javascripts')
     for PREV in PREVIOUS:
         jsregistry.unregisterResource(PREV)
@@ -68,3 +68,15 @@ def upgrade_1891_1892(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'propertiestool', run_dependencies=False,
                                    purge_old=False)
+
+def upgrade_1892_1893(context):
+
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    jsregistry.unregisterResource('++resource++jquery-ui-themes/sunburst/jquery-ui-1.8.9.custom.css')
+    jsregistry.unregisterResource('++resource++jquery-ui-themes/sunburst-patch.css')
+
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'cssregistry', run_dependencies=False,
+                                   purge_old=False)
+    jsregistry.cookResources()

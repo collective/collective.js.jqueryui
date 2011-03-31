@@ -3,12 +3,12 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.js.jqueryui">
 
-  <genericsetup:registerProfile 
-      name="default" 
-      title="jQuery UI" 
-      directory="profiles/default" 
+  <genericsetup:registerProfile
+      name="default"
+      title="jQuery UI"
+      directory="profiles/default"
       description="jQuery UI for Plone"
-      provides="Products.GenericSetup.interfaces.EXTENSION" 
+      provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
 
@@ -62,6 +62,15 @@
       description=""
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1891_1892"
+      />
+
+  <genericsetup:upgradeStep
+      source="1892"
+      destination="1893"
+      title="use pathes without subfolder in css registry"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1892_1893"
       />
 
 </configure>

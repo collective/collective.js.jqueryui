@@ -1,7 +1,14 @@
 Changelog
 =========
 
-1.8.9.2 (unreleased)
+1.8.9.3 (unreleased)
+--------------------
+
+- Use pathes without subfolder in css registry
+  to keep component Plone 3.x compatible.
+
+
+1.8.9.2 (2011-02-21)
 --------------------
 
 - Add include condition to JQueryUI resources. Can be configured throw
@@ -44,7 +51,7 @@ Changelog
 - Updated to jqueryui 1.8.7
   [toutpt]
 
-- Disable compression of jquery-ui-i18n.js. Compression was broken, resulting 
+- Disable compression of jquery-ui-i18n.js. Compression was broken, resulting
   in Chinese characters in the calendar popup.
   [khink]
 
