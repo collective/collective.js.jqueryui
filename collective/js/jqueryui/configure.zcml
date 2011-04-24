@@ -11,17 +11,17 @@
 
   <browser:resource
       name="jquery-ui.js"
-      file="jquery-ui-1.8.9.custom.js"
+      file="jquery-ui-1.8.12.custom.js"
       />
 
   <browser:resource
       name="jquery-ui.min.js"
-      file="jquery-ui-1.8.9.custom.min.js"
+      file="jquery-ui-1.8.12.custom.min.js"
       />
 
   <browser:resource
       name="jquery-ui-1.8.min.js"
-      file="jquery-ui-1.8.9.custom.min.js"
+      file="jquery-ui-1.8.12.custom.min.js"
       />
 
   <browser:resource

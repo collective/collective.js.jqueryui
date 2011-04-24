@@ -63,5 +63,13 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1891_1892"
       />
+  <genericsetup:upgradeStep
+      source="1892"
+      destination="1893"
+      title="update jqueryui to 1.8.12"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1892_1893"
+      />
 
 </configure>

@@ -1,16 +1,16 @@
 How to upgrade this package
 ===========================
 
-- Go to the URL specified in the collective/js/jqueryui/css/plone4/jquery-ui-1.8.4.custom.css file to pre-load current theme settings.
+- Go to the URL specified in the collective/js/jqueryui/css/sunburst/jquery-ui-1.8.12.custom.css file to pre-load current theme settings.
 - Click on "Download theme" in the left-side "Theme rollover".
 - Unselect the tabs plugins which conflict with jquerytools
-- Click on "Advanced Theme Settings" to expand options and type "plone4" in "Theme Folder Name" field.
-- Download jquery-ui-1.8.4.custom.zip
+- Click on "Advanced Theme Settings" to expand options and type "sunburst" in "Theme Folder Name" field.
+- Download jquery-ui-1.8.X.custom.zip
 
 Commands to execute::
 
-    PKG="~/workspace/collective.js.jqueryui/collective/js/jqueryui"
-    VERSION="1.8.8"
+    PKG="/home/toutpt/workspace/collective.js.jqueryui/collective/js/jqueryui"
+    VERSION="1.8.12"
     PREV="1.8.9"
     cd /tmp/
     unzip ~/jquery-ui-$VERSION.custom.zip
@@ -18,8 +18,9 @@ Commands to execute::
     rm $PKG/css/sunburst/jquery-ui-$PREV.custom.css
     rm $PKG/jquery-ui-$PREV.custom.min.js
     rm $PKG/jquery-ui-$PREV.custom.js
+    cp css/sunburst/jquery-ui-$VERSION.custom.css $PKG/css/sunburst/
     cp css/sunburst/images/* $PKG/css/sunburst/images/
-    cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
+    cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.js
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
 

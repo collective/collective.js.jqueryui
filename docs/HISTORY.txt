@@ -1,7 +1,13 @@
 Changelog
 =========
 
-1.8.9.2 (unreleased)
+1.8.12.1 (Unreleased)
+---------------------
+
+- Update JQueryUI to 1.8.12
+  [toutpt]
+
+1.8.9.2 (2011-02-21)
 --------------------
 
 - Add include condition to JQueryUI resources. Can be configured throw
