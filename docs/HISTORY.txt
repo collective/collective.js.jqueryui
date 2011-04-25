@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.12.2 (unreleased)
+1.8.12.2 (2011-04-25)
 ---------------------
 
 - Add jquery-ui-1.8.12.custom.js. fixed issue #1
