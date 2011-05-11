@@ -9,6 +9,10 @@ Changelog
 
 - make example.jqueryui view activable (unactivated by default)
   [toutpt]
+  
+- only include datepicker viewlet code if jqueryui is enabled for
+  the content item
+  [vangheem]
 
 1.8.12.2 (2011-04-25)
 ---------------------
