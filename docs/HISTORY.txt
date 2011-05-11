@@ -4,8 +4,8 @@ Changelog
 1.8.12.3 (unreleased)
 ---------------------
 
-- Nothing changed yet.
-
+- add a config file with VERSION and SUNBURST_CSS_ID.
+  [toutpt]
 
 1.8.12.2 (2011-04-25)
 ---------------------
