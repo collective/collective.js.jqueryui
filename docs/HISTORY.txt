@@ -7,6 +7,9 @@ Changelog
 - add a config file with VERSION and SUNBURST_CSS_ID.
   [toutpt]
 
+- make example.jqueryui view activable (unactivated by default)
+  [toutpt]
+
 1.8.12.2 (2011-04-25)
 ---------------------
 

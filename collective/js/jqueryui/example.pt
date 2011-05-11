@@ -23,7 +23,7 @@ position:relative;
     <tal:main-macro metal:define-macro="main">
 
       <div tal:replace="structure provider:plone.abovecontenttitle" />
-<script type="text/javascript" src="++resource++jquery-ui-example.js"></script>
+<script type="text/javascript" tal:content="structure string:${view/javascript}"></script>
 <div class="clearfix" id="compGroupA">
                     
             <!-- Accordion -->

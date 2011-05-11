@@ -71,5 +71,13 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1892_1893"
       />
+  <genericsetup:upgradeStep
+      source="1893"
+      destination="1894"
+      title="unactivate example view and make it activable"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1893_1894"
+      />
 
 </configure>

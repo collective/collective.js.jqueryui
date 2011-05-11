@@ -54,15 +54,8 @@
       name="example.jqueryui"
       for="*"
       class=".example.Example"
-      template="example.pt"
       layer=".interfaces.IJqueryUILayer"
       permission="zope2.View"
-      />
-
-  <browser:resource
-      name="jquery-ui-example.js"
-      file="example.js"
-      layer=".interfaces.IJqueryUILayer"
       />
 
 </configure>

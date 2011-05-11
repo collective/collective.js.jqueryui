@@ -3,6 +3,7 @@
  <object name="jqueryui_properties" meta_type="Plone Property Sheet">
   <property name="title">JQueryUI properties</property>
   <property name="global_include" type="boolean">True</property>
+  <property name="example_activated" type="boolean">False</property>
   <property name="views_and_templates" type="lines">
    <element value="example.jqueryui"/>
   </property>
