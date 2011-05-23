@@ -88,3 +88,15 @@ def upgrade_1893_1894(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'propertiestool', run_dependencies=False,
                                    purge_old=False)
+
+def upgrade_1894_1895(context):
+    setup = getToolByName(context, 'portal_setup')
+    cssregistry = getToolByName(context, 'portal_css')
+    removes = ('++resource++jquery-ui-themes/sunburst/jquery-ui-1.8.12.custom.css',
+               '++resource++jquery-ui-themes/sunburst-patch.css')
+    for remove in removes:
+        cssregistry.unregisterResource(remove)
+
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'cssregistry', run_dependencies=False,
+                                    purge_old=False)

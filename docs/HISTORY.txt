@@ -1,10 +1,19 @@
 Changelog
 =========
 
+1.8.13.1 (2011-05-23)
+---------------------
+
+- Update JQueryUI to 1.8.13.
+  Rename css from jquery-ui-1.8.12.custom.css to jqueryui.css to make it
+  compatible with collective.jqueryuithememanager
+  update sunburst theme to include font size = 0.9em
+  [toutpt]
+
 1.8.12.3 (unreleased)
 ---------------------
 
-- add a config file with VERSION and SUNBURST_CSS_ID.
+- add a config file with VERSION.
   [toutpt]
 
 - make example.jqueryui view activable (unactivated by default)

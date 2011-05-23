@@ -1,28 +1,34 @@
 How to upgrade this package
 ===========================
 
+- Go to http://jqueryui.com/download
+- Unselect the tabs plugins which conflict with jquerytools
+- Download jquery-ui-1.8.X.custom.zip
+
 - Go to the URL specified in the collective/js/jqueryui/css/sunburst/jquery-ui-1.8.12.custom.css file to pre-load current theme settings.
 - Click on "Download theme" in the left-side "Theme rollover".
-- Unselect the tabs plugins which conflict with jquerytools
 - Click on "Advanced Theme Settings" to expand options and type "sunburst" in "Theme Folder Name" field.
+- Create theme directory
 - Download jquery-ui-1.8.X.custom.zip
 
 Commands to execute::
 
     PKG="/home/toutpt/workspace/collective.js.jqueryui/collective/js/jqueryui"
-    VERSION="1.8.12"
-    PREV="1.8.9"
+    VERSION="1.8.13"
+    PREV="1.8.12"
     cd /tmp/
     unzip ~/jquery-ui-$VERSION.custom.zip
-    rm $PKG/css/sunburst/images/*
-    rm $PKG/css/sunburst/jquery-ui-$PREV.custom.css
     rm $PKG/jquery-ui-$PREV.custom.min.js
     rm $PKG/jquery-ui-$PREV.custom.js
-    cp css/sunburst/jquery-ui-$VERSION.custom.css $PKG/css/sunburst/
-    cp css/sunburst/images/* $PKG/css/sunburst/images/
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.js
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
 
-- replace "font-size: 1.2em;" by "font-size: 0.9em;" for .ui-widget css rule.
-- update version in README.txt and configure.zcml
+    cd themes
+    unzip ~/jquery-ui-$VERSION.custom.zip
+    rm $PKG/css/sunburst/images/*
+    rm $PKG/css/sunburst/jqueryui.css
+    cp css/sunburst/jquery-ui-$VERSION.custom.css $PKG/css/sunburst/jqueryui.css
+    cp css/sunburst/images/* $PKG/css/sunburst/images/
+
+- update version in README.txt and configure.zcml and config.py

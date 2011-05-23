@@ -1,9 +1,9 @@
 Introduction
 ============
 
-Integration of jqueryui in Plone 3.3 and 4.
+Integration of jqueryui in Plone 4.
 
-This version includes jqueryui 1.8.12 without the tabs plugin.
+This version includes jqueryui 1.8.13 without the tabs plugin.
 
 It is different from collective.jqueryui in many ways:
 
@@ -14,7 +14,7 @@ It is different from collective.jqueryui in many ways:
   apply the profile)
 
 To have an example of the current integration you can check @@example.jqueryui
-page
+page. You must activate example within portal_properties.
 
 include condition and optimizations
 ===================================

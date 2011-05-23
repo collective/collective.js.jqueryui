@@ -19,5 +19,3 @@ dl.portlet a.ui-state-hover, dl.portlet .ui-state-hover a, dl.portlet .ui-state-
 .ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a,
 #content .ui-state-highlight a, #content .ui-widget-content .ui-state-highlight a, #content .ui-widget-header .ui-state-highlight a,
 dl.portlet .ui-state-highlight a, dl.portlet .ui-widget-content .ui-state-highlight a, dl.portlet .ui-widget-header .ui-state-highlight a { color: #000000 !important; }
-
-.ui-widget {font-size: 0.9em;}

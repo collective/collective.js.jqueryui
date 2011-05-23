@@ -79,5 +79,13 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1893_1894"
       />
+  <genericsetup:upgradeStep
+      source="1894"
+      destination="1895"
+      title="Move css to be compatible"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1894_1895"
+      />
 
 </configure>
