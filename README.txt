@@ -26,6 +26,8 @@ It can be configured throw the portal_properties.
 If your website use jqueryui for only one view or template you can optimize it
 by turning off the global include and add your templates. For example:
 
+::
+
     <property name="global_include" type="boolean">False</property>
     <property name="views_and_templates" type="lines">
         <element value="mytemplate_view"/>
