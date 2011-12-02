@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.8.13.2 (unreleased)
+1.8.16.1 (unreleased)
 ---------------------
 
-- Nothing changed yet.
-
+- Upgrade JQueryUI to 1.8.16
+  [toutpt]
 
 1.8.13.1 (2011-05-23)
 ---------------------

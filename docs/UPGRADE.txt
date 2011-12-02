@@ -32,3 +32,16 @@ Commands to execute::
     cp css/sunburst/images/* $PKG/css/sunburst/images/
 
 - update version in README.txt and configure.zcml and config.py
+
+- increment the profile version in metadata.xml
+
+- add ugprade step::
+
+  <genericsetup:upgradeStep
+      source="1895"
+      destination="1896"
+      title="Upgrade jqueryui to 1.8.16"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.cook_resources"
+      />
