@@ -37,11 +37,11 @@ Commands to execute::
 
 - add ugprade step::
 
-  <genericsetup:upgradeStep
-      source="1895"
-      destination="1896"
-      title="Upgrade jqueryui to 1.8.16"
-      description=""
-      profile="collective.js.jqueryui:default"
-      handler=".upgrades.cook_resources"
-      />
+    <genericsetup:upgradeStep
+        source="1895"
+        destination="1896"
+        title="Upgrade jqueryui to 1.8.16"
+        description=""
+        profile="collective.js.jqueryui:default"
+        handler=".upgrades.cook_resources"
+    />
