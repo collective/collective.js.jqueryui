@@ -41,14 +41,21 @@ TODO:
 * add a plone control panel to swith to the best solution.
 * use plone.app.registry
 
-Credits
-=======
+Credits and contributions
+=========================
 
 |makinacom|_
 
 * `Planet Makina Corpus <http://www.makina-corpus.org>`_
 * `Contact us <mailto:python@makina-corpus.org>`_
-* Contributions by Vincent Fretin (`Ecreall <http://www.ecreall.com>`_)
+
+* Vincent Fretin [vincentfretin] (`Ecreall <http://www.ecreall.com>`_)
+* Hanno Schlichting [hanno]
+* Nathan Vangheem [vangheem]
+* Marcos F. Romero [marcosfromero]
+* Kees Hink [khink]
+* Robert Niederreiter [rnix]
+* JeanMichel FRANCOIS [toutpt]
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
