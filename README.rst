@@ -46,10 +46,13 @@ Credits and contributions
 
 |makinacom|_
 
-* `Planet Makina Corpus <http://www.makina-corpus.org>`_
-* `Contact us <mailto:python@makina-corpus.org>`_
+* `Planet Makina Corpus <http://www.makina-corpus.org>`_  `Contact us <mailto:python@makina-corpus.org>`_
+* `Ecreall <http://www.ecreall.com>`_
 
-* Vincent Fretin [vincentfretin] (`Ecreall <http://www.ecreall.com>`_)
+Contributors
+============
+
+* Vincent Fretin [vincentfretin] 
 * Hanno Schlichting [hanno]
 * Nathan Vangheem [vangheem]
 * Marcos F. Romero [marcosfromero]
