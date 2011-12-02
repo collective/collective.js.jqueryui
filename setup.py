@@ -16,7 +16,7 @@ setup(name='collective.js.jqueryui',
         ],
       keywords='',
       author='JeanMichel FRANCOIS aka toutpt',
-      author_email='toutpt@gmail.com'
+      author_email='toutpt@gmail.com',
       url='https://github.com/collective/collective.js.jqueryui',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
