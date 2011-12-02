@@ -7,6 +7,7 @@ setup(name='collective.js.jqueryui',
       version=version,
       description="JQueryUI ready to be included in portal_javascript for Plone 4 by Makina Corpus",
       long_description=open("README.rst").read() + "\n" +
+                       open(os.path.join("docs", "UPGRADE.txt")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
