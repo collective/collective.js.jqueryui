@@ -28,7 +28,10 @@
       name="jquery-ui-i18n.js"
       file="jquery-ui-i18n.js"
       />
-
+  <browser:resource
+    name="jqueryui_icon.jpg"
+    file="jqueryui_icon.jpg"
+    />
   <browser:resourceDirectory
       name="jquery-ui-themes"
       directory="css"
@@ -65,8 +68,17 @@
   <browser:page
       name="jqueryui-controlpanel"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      class=".controlpanel.ControlPanelView"
+      class=".controlpanel.MainControlPanelView"
+      permission="cmf.ManagePortal"
+      template="controlpanel.pt"
+      />
+  <browser:page
+      name="jqueryui-plugins-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.PluginsControlPanelView"
       permission="cmf.ManagePortal"
       />
+
+  <subscriber handler=".controlpanel.update_dependencies" />
 
 </configure>

@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xml:lang="en" lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+<metal:main fill-slot="prefs_configlet_main">
+
+    <metal:form define-macro="form">
+
+         <h1 class="documentFirstHeading"
+             i18n:translate=""
+             tal:condition="view/label"
+             tal:content="view/label"
+             metal:define-slot="heading">
+             Do something
+         </h1>
+
+         <div class="documentDescription" i18n:translate=""
+            tal:condition="view/description"
+            tal:content="view/description">
+             Description
+         </div>
+
+        <div id="content-core">
+
+            <ul>
+              <tal:block tal:repeat="action view/actions">
+                <li><a tal:attributes="href action/url; title action/description" tal:content="action/title"></a></li>
+              </tal:block>
+            </ul>
+
+        </div>
+    </metal:form>
+  </metal:main>
+</body>
+</html>

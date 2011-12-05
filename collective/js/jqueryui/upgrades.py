@@ -110,5 +110,14 @@ def upgrade_1896_1898(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'jsregistry', run_dependencies=False,
                                    purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'plone.app.registry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'actions', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'controlpanel', run_dependencies=False,
+                                   purge_old=False)
 
     jsregistry.cookResources()

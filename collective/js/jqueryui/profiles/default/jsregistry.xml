@@ -43,34 +43,33 @@
 
 <!-- UI Effects -->
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.core.min.js" />
+     id="++resource++jquery-ui/jquery.effects.core.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.blind.min.js" />
+     id="++resource++jquery-ui/jquery.effects.blind.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.bounce.min.js" />
+     id="++resource++jquery-ui/jquery.effects.bounce.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.clip.min.js" />
+     id="++resource++jquery-ui/jquery.effects.clip.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.drop.min.js" />
+     id="++resource++jquery-ui/jquery.effects.drop.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.explode.min.js" />
+     id="++resource++jquery-ui/jquery.effects.explode.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.fade.min.js" />
+     id="++resource++jquery-ui/jquery.effects.fade.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.fold.min.js" />
+     id="++resource++jquery-ui/jquery.effects.fold.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.highlight.min.js" />
+     id="++resource++jquery-ui/jquery.effects.highlight.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.pulsate.min.js" />
+     id="++resource++jquery-ui/jquery.effects.pulsate.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.scale.min.js" />
+     id="++resource++jquery-ui/jquery.effects.scale.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.shake.min.js" />
+     id="++resource++jquery-ui/jquery.effects.shake.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.slide.min.js" />
+     id="++resource++jquery-ui/jquery.effects.slide.min.js" />
  <javascript cacheable="True" compression="none" cookable="True" enabled="0"
-     id="++resource++jquery-ui/jquery.ui.effects.transfer.min.js" />
- <javascript cacheable="True" compression="none" cookable="True" enabled="0"
+     id="++resource++jquery-ui/jquery.effects.transfer.min.js" />
 
  <!-- UI I18N for calendar -->
  <javascript cacheable="True" compression="none"

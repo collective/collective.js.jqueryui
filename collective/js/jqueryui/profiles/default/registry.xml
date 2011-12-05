@@ -1,0 +1,3 @@
+<registry>
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins" />
+</registry>
