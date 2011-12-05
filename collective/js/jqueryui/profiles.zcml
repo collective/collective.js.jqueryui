@@ -95,5 +95,13 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.cook_resources"
       />
+  <genericsetup:upgradeStep
+      source="1896"
+      destination="1898"
+      title="Register plugins and remove old bundle"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1896_1898"
+      />
 
 </configure>

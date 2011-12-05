@@ -100,3 +100,15 @@ def upgrade_1894_1895(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'cssregistry', run_dependencies=False,
                                     purge_old=False)
+
+def upgrade_1896_1898(context):
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    setup = getToolByName(context, 'portal_setup')
+
+    jsregistry.unregisterResource('++resource++jquery-ui.min.js')
+    jsregistry.unregisterResource('++resource++jquery-ui-i18n.js') #will be readdded
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'jsregistry', run_dependencies=False,
+                                   purge_old=False)
+
+    jsregistry.cookResources()

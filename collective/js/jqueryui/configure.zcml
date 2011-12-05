@@ -33,6 +33,10 @@
       name="jquery-ui-themes"
       directory="css"
       />
+  <browser:resourceDirectory
+      name="jquery-ui"
+      directory="js"
+      />
 
   <browser:viewlet
       name="l10n.datepicker"
@@ -56,6 +60,13 @@
       class=".example.Example"
       layer=".interfaces.IJqueryUILayer"
       permission="zope2.View"
+      />
+
+  <browser:page
+      name="jqueryui-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.ControlPanelView"
+      permission="cmf.ManagePortal"
       />
 
 </configure>
