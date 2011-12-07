@@ -79,6 +79,14 @@
       permission="cmf.ManagePortal"
       />
 
+  <browser:page
+      name="jqueryui-sunburst-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SunburstControlPanelView"
+      permission="cmf.ManagePortal"
+      />
+
   <subscriber handler=".controlpanel.update_dependencies" />
+  <subscriber handler=".controlpanel.update_css" />
 
 </configure>

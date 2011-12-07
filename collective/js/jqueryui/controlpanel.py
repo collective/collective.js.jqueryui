@@ -13,6 +13,8 @@ from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
 
 from collective.js.jqueryui.config import JQUERYUI_DEPENDENCIES
+from collective.js.jqueryui.config import PATCH_RESOURCE_ID
+from collective.js.jqueryui.config import CSS_RESOURCE_ID
 
 
 logger = logging.getLogger('collective.js.jqueryui')
@@ -112,6 +114,7 @@ class IJQueryUIPlugins(interface.Interface):
 
     effects_transfert = schema.Bool(title=u"Effects 'transfert'",
                          description=u"",required=False,default=False)
+    
 
 class ControlPanelForm(basepanel.RegistryEditForm):
     schema = IJQueryUIPlugins
@@ -162,6 +165,44 @@ def update_registry(to_enable=[], to_disable=[]):
             logger.error('no resource %s'%js)
 
     jsregistry.cookResources()
+
+class IJQueryUICSS(interface.Interface):
+    """JQueryUI CSS"""
+    
+    css = schema.Bool(title=u"Sunburst CSS for jqueryui",
+                      description=u"Activate the JQueryUI theme 'sunburst'",
+                      default=False)
+    
+    patch = schema.Bool(title=u"Sunburst CSS Integration",
+                        description=u"Activate the integration between JQueryUI\
+                               'sunburst' theme and the Plone 'Sunburst' theme",
+                       default=False)
+
+class SunburstControlPanelForm(basepanel.RegistryEditForm):
+    schema = IJQueryUICSS
+
+SunburstControlPanelView = layout.wrap_form(SunburstControlPanelForm,
+                                       basepanel.ControlPanelFormWrapper)
+
+SunburstControlPanelView.label = u"JQueryUI Sunburst CSS settings"
+
+
+@component.adapter(IJQueryUICSS, IRecordModifiedEvent)
+def update_css(record, event):
+    site = getSite()
+    cssregistry = site.portal_css
+
+    key = event.record.fieldName
+    stylesheet = None
+    if key=='css':
+        stylesheet = cssregistry.getResource(CSS_RESOURCE_ID)
+    elif key=='patch':
+        stylesheet = cssregistry.getResource(PATCH_RESOURCE_ID)
+    status = event.newValue
+    if stylesheet is not None:
+        stylesheet.setEnabled(status)
+        cssregistry.cookResources()
+
 
 class MainControlPanelView(BrowserView):
     label = u"JQueryUI control panel"

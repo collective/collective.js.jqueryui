@@ -14,5 +14,15 @@
    </property>
    <property name="visible">True</property>
   </object>
+  <object name="sunburst" meta_type="CMF Action" i18n:domain="collective.js.jqueryui">
+   <property name="title" i18n:translate="">Sunburst Theme</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:$object_url/@@jqueryui-sunburst-controlpanel</property>
+   <property name="icon_expr">string:$portal_url/++resource++jqueryui_icon.jpg</property>
+   <property name="permissions">
+    <element value="Plone Site Setup: Overview"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
  </object>
 </object>

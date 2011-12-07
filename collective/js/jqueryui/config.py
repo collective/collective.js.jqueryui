@@ -38,3 +38,6 @@ DEPS['effects.slide']    =('effects.core',)
 DEPS['effects.transfer'] =('effects.core',)
 
 JQUERYUI_DEPENDENCIES = DEPS
+
+CSS_RESOURCE_ID='++resource++jquery-ui-themes/sunburst/jqueryui.css'
+PATCH_RESOURCE_ID='++resource++jquery-ui-themes/sunburst-patch.css'

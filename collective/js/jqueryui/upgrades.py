@@ -103,12 +103,20 @@ def upgrade_1894_1895(context):
 
 def upgrade_1896_1898(context):
     jsregistry = getToolByName(context, 'portal_javascripts')
+    cssregistry = getToolByName(context, 'portal_css')
+
     setup = getToolByName(context, 'portal_setup')
 
     jsregistry.unregisterResource('++resource++jquery-ui.min.js')
     jsregistry.unregisterResource('++resource++jquery-ui-i18n.js') #will be readdded
+    cssregistry.unregisterResource('++resource++jquery-ui-themes/sunburst/jqueryui.css')
+    cssregistry.unregisterResource('++resource++jquery-ui-themes/sunburst-patch.css')
+
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'jsregistry', run_dependencies=False,
+                                   purge_old=False)
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'cssregistry', run_dependencies=False,
                                    purge_old=False)
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'plone.app.registry', run_dependencies=False,
@@ -121,3 +129,5 @@ def upgrade_1896_1898(context):
                                    purge_old=False)
 
     jsregistry.cookResources()
+    cssregistry.cookResources()
+
