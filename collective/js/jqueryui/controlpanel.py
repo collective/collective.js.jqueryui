@@ -136,7 +136,7 @@ def update_dependencies(record, event):
     if event.oldValue and not event.newValue:
         #means it has been deactivated
         to_disable.add(RESOURCE_ID%rkey)
-    else:
+    elif not event.oldValue and event.newValue:
         to_enable.add(RESOURCE_ID%rkey)
         deps = JQUERYUI_DEPENDENCIES[rkey]
         for dep in deps:
