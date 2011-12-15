@@ -1,4 +1,5 @@
 from Products.CMFCore.utils import getToolByName
+from zope.component.interfaces import ComponentLookupError
 
 def install_browserlayer(context):
     setup = getToolByName(context, 'portal_setup')
@@ -119,15 +120,36 @@ def upgrade_1896_1898(context):
                                    'cssregistry', run_dependencies=False,
                                    purge_old=False)
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
-                                   'plone.app.registry', run_dependencies=False,
-                                   purge_old=False)
-    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'actions', run_dependencies=False,
                                    purge_old=False)
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'controlpanel', run_dependencies=False,
                                    purge_old=False)
 
-    jsregistry.cookResources()
-    cssregistry.cookResources()
+    #We choose to activate back all configuration for compatibility purpose.
+    #Adds-on may support the new way to activate plugins
+    from zope.component import getUtility
+    from plone.registry.interfaces import IRegistry
+    from collective.js.jqueryui.config import DEPS
+    from collective.js.jqueryui.interfaces import IJQueryUICSS, IJQueryUIPlugins
+    #is plone.app.registry
+    try:
+        registry = getUtility(IRegistry)
+    except ComponentLookupError:
+        setup.runAllImportStepsFromProfile('profile-plone.app.registry:default')
+        registry = getUtility(IRegistry)
+
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                                   'plone.app.registry', run_dependencies=False,
+                                   purge_old=False)
+
+    proxy = registry.forInterface(IJQueryUIPlugins)
+    keys = DEPS.keys()
+    for key in keys:
+        if key == 'ui.tabs':continue
+        setattr(proxy, key.replace('.','_'), True)
+        
+    proxy = registry.forInterface(IJQueryUICSS)
+    proxy.css = True
+    proxy.patch = True
 
