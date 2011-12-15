@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.8.16.2 (unreleased)
+1.8.16.2 (2011-12-15)
 ---------------------
 
-- Nothing changed yet.
-
+- Add a controlpanel using plone.app.registry to select plugins and optimize
+  your site. Addons using collective.js.jqueryui should update their install
+  to set which plugins they need.
 
 1.8.16.1 (2011-12-02)
 ---------------------
