@@ -15,7 +15,7 @@ DEPS['ui.sortable']  =('ui.core','ui.widget','ui.mouse')
 
 DEPS['ui.accordion']   =('ui.core','ui.widget')
 DEPS['ui.autocomplete']=('ui.core','ui.widget','ui.position')
-DEPS['ui.buttom']      =('ui.core','ui.widget')
+DEPS['ui.button']      =('ui.core','ui.widget')
 DEPS['ui.dialog']      =('ui.core','ui.widget','ui.position')
 DEPS['ui.slider']      =('ui.core','ui.widget','ui.mouse')
 DEPS['ui.tabs']        =('ui.core','ui.widget')

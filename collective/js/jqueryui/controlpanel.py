@@ -112,7 +112,7 @@ class IJQueryUIPlugins(interface.Interface):
     effects_slide = schema.Bool(title=u"Effects 'slide'",
                          description=u"",required=False,default=False)
 
-    effects_transfert = schema.Bool(title=u"Effects 'transfert'",
+    effects_transfer = schema.Bool(title=u"Effects 'transfer'",
                          description=u"",required=False,default=False)
     
 
