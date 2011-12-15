@@ -12,6 +12,13 @@
 
     <metal:form define-macro="form">
 
+    <a href=""
+       id="setup-link"
+       tal:attributes="href string:$portal_url/plone_control_panel"
+       i18n:translate="">
+        Site Setup
+    </a> &rsaquo;
+
          <h1 class="documentFirstHeading"
              i18n:translate=""
              tal:condition="view/label"
@@ -20,13 +27,23 @@
              Do something
          </h1>
 
-         <div class="documentDescription" i18n:translate=""
-            tal:condition="view/description"
-            tal:content="view/description">
-             Description
+    <a href=""
+        class="link-parent"
+        tal:attributes="href string:${portal_url}/plone_control_panel"
+        i18n:domain="plone"
+        i18n:translate="label_up_to_plone_setup">
+            Up to Site Setup
+    </a>
+
+         <div class="documentDescription" i18n:translate="">
+             Here you have access to all controlpanels related to jqueryui integration in Plone.
+             Make your choice.
          </div>
 
         <div id="content-core">
+        
+            <p>The list below is a set of controlpanels add by addons related to jqueryui.
+            Use the plugins controlpanel to control which plugin you want to use.</p>
 
             <ul>
               <tal:block tal:repeat="action view/actions">

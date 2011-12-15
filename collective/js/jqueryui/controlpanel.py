@@ -15,6 +15,8 @@ from Products.CMFCore.utils import getToolByName
 from collective.js.jqueryui.config import JQUERYUI_DEPENDENCIES
 from collective.js.jqueryui.config import PATCH_RESOURCE_ID
 from collective.js.jqueryui.config import CSS_RESOURCE_ID
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+RESOURCE_ID='++resource++jquery-ui/jquery.%s.min.js'
 
 
 logger = logging.getLogger('collective.js.jqueryui')
@@ -118,12 +120,18 @@ class IJQueryUIPlugins(interface.Interface):
 
 class ControlPanelForm(basepanel.RegistryEditForm):
     schema = IJQueryUIPlugins
+    control_panel_view = "@@jqueryui-plugins-controlpanel"
 
-PluginsControlPanelView = layout.wrap_form(ControlPanelForm,
-                                    basepanel.ControlPanelFormWrapper)
-PluginsControlPanelView.label = u"JQueryUI plugins settings"
+class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
+    form = ControlPanelForm
 
-RESOURCE_ID='++resource++jquery-ui/jquery.%s.min.js'
+    index = ViewPageTemplateFile('controlpanel_layout.pt')
+
+    label = u"JQueryUI plugins settings"
+
+    def parent_panel_url(self):
+        return '%s/@@jqueryui-controlpanel' % (self.context.absolute_url())
+
 
 @component.adapter(IJQueryUIPlugins, IRecordModifiedEvent)
 def update_dependencies(record, event):
@@ -166,6 +174,24 @@ def update_registry(to_enable=[], to_disable=[]):
 
     jsregistry.cookResources()
 
+def verify_jsregistry(record, jsregistry):
+    """This function check the jsregistry configuration against the jsregistry
+    """
+    key = JQUERYUI_DEPENDENCIES.keys()
+    for key in keys:
+        rkey = key.replace('.','_')
+        resource_id = RESOURCE_ID%key
+        setting = getattr(record,rkey,None)
+        if value is None:
+            continue
+        js = jsregistry.getResource(resource_id)
+        enabled = js.getEnabled()
+        if enabled == setting:
+            continue
+        #we have a not syncrhonized configuration
+        logger.error('%s enabled issue. auto fix it setEnabled(%s)'%(resource_id,value))
+        js.setEnabled(value)
+
 class IJQueryUICSS(interface.Interface):
     """JQueryUI CSS"""
     
@@ -180,12 +206,18 @@ class IJQueryUICSS(interface.Interface):
 
 class SunburstControlPanelForm(basepanel.RegistryEditForm):
     schema = IJQueryUICSS
+    control_panel_view = "@@jqueryui-sunburst-controlpanel"
 
-SunburstControlPanelView = layout.wrap_form(SunburstControlPanelForm,
-                                       basepanel.ControlPanelFormWrapper)
+class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
+    form = SunburstControlPanelForm
 
-SunburstControlPanelView.label = u"JQueryUI Sunburst CSS settings"
+    index = ViewPageTemplateFile('controlpanel_layout.pt')
 
+    label = u"JQueryUI Sunburst CSS settings"
+
+    def parent_panel_url(self):
+        return '%s/@@jqueryui-controlpanel' % (self.context.absolute_url())
+    
 
 @component.adapter(IJQueryUICSS, IRecordModifiedEvent)
 def update_css(record, event):
@@ -206,7 +238,6 @@ def update_css(record, event):
 
 class MainControlPanelView(BrowserView):
     label = u"JQueryUI control panel"
-    description = u""
 
     def __init__(self, context, request):
         self.context = context
@@ -217,4 +248,3 @@ class MainControlPanelView(BrowserView):
         actions = cstate.actions('jqueryui_panels')
         return actions
     
-        
