@@ -126,30 +126,16 @@ def upgrade_1896_1898(context):
                                    'controlpanel', run_dependencies=False,
                                    purge_old=False)
 
-    #We choose to activate back all configuration for compatibility purpose.
-    #Adds-on may support the new way to activate plugins
+    #We choose to activate all plugins for compatibility purpose.
+    #but we need to be sure plone.app.registry is installed
     from zope.component import getUtility
     from plone.registry.interfaces import IRegistry
-    from collective.js.jqueryui.config import DEPS
-    from collective.js.jqueryui.interfaces import IJQueryUICSS, IJQueryUIPlugins
     #is plone.app.registry
     try:
         registry = getUtility(IRegistry)
     except ComponentLookupError:
         setup.runAllImportStepsFromProfile('profile-plone.app.registry:default')
-        registry = getUtility(IRegistry)
 
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'plone.app.registry', run_dependencies=False,
                                    purge_old=False)
-
-    proxy = registry.forInterface(IJQueryUIPlugins)
-    keys = DEPS.keys()
-    for key in keys:
-        if key == 'ui.tabs':continue
-        setattr(proxy, key.replace('.','_'), True)
-        
-    proxy = registry.forInterface(IJQueryUICSS)
-    proxy.css = True
-    proxy.patch = True
-
