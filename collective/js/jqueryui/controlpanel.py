@@ -150,9 +150,14 @@ def update_dependencies(record, event):
         for dep in deps:
             to_enable.add(RESOURCE_ID%(dep))
 
-    logger.info("enable %s"%to_enable)
-    logger.info("disable %s"%to_disable)
+    if to_enable:
+        logger.info("enable %s"%to_enable)
+    if to_disable:
+        logger.info("disable %s"%to_disable)
+
     update_registry(to_enable, to_disable)
+    verify_jsregistry(record)
+
 
 def update_registry(to_enable=[], to_disable=[]):
     site=getSite()
@@ -174,23 +179,30 @@ def update_registry(to_enable=[], to_disable=[]):
 
     jsregistry.cookResources()
 
-def verify_jsregistry(record, jsregistry):
+def verify_jsregistry(record):
     """This function check the jsregistry configuration against the jsregistry
     """
-    key = JQUERYUI_DEPENDENCIES.keys()
+    site=getSite()
+    jsregistry = site.portal_javascripts
+
+    keys = JQUERYUI_DEPENDENCIES.keys()
     for key in keys:
         rkey = key.replace('.','_')
         resource_id = RESOURCE_ID%key
         setting = getattr(record,rkey,None)
-        if value is None:
+        if setting is None:
             continue
         js = jsregistry.getResource(resource_id)
         enabled = js.getEnabled()
         if enabled == setting:
             continue
+        if not setting:
+            #we don't want it explicitly but it can be a dependency
+            continue
         #we have a not syncrhonized configuration
-        logger.error('%s enabled issue. auto fix it setEnabled(%s)'%(resource_id,value))
-        js.setEnabled(value)
+        msg = '%s issue. auto enable it'%(resource_id)
+        logger.error(msg)
+        js.setEnabled(True)
 
 class IJQueryUICSS(interface.Interface):
     """JQueryUI CSS"""
