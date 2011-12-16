@@ -144,8 +144,13 @@ def update_dependencies(record, event):
     if event.oldValue and not event.newValue:
         #means it has been deactivated
         to_disable.add(RESOURCE_ID%rkey)
+        if rkey == 'ui.datepicker':
+            to_disable.add('++resource++jquery-ui-i18n.js')
+
     elif not event.oldValue and event.newValue:
         to_enable.add(RESOURCE_ID%rkey)
+        if rkey == 'ui.datepicker':
+            to_enable.add('++resource++jquery-ui-i18n.js')
         deps = JQUERYUI_DEPENDENCIES[rkey]
         for dep in deps:
             to_enable.add(RESOURCE_ID%(dep))
@@ -203,6 +208,9 @@ def verify_jsregistry(record):
         msg = '%s issue. auto enable it'%(resource_id)
         logger.error(msg)
         js.setEnabled(True)
+        if key == 'ui.datepicker':
+            js = jsregistry.getResource('++resource++jquery-ui-i18n.js')
+            js.setEnabled(True)
 
 class IJQueryUICSS(interface.Interface):
     """JQueryUI CSS"""

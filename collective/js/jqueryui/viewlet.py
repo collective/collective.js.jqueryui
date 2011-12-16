@@ -1,6 +1,9 @@
 from plone.app.layout.viewlets.common import ViewletBase
 from collective.js.jqueryui.utils import get_datepicker_date_format
 from zope.component import queryMultiAdapter
+from zope.component._api import getUtility
+from plone.registry.interfaces import IRegistry
+from collective.js.jqueryui.interfaces import IJQueryUIPlugins
 
 # this list was generated from jqueryui 1.8rc3
 JQUERYUI_LANGUAGES = (
@@ -39,6 +42,9 @@ class L10nDatepicker(ViewletBase):
     def render(self):
         util = queryMultiAdapter((self.context, self.request), name='jqueryui-include-condition')
         if not util or not util():
+            return ''
+        record = getUtility(IRegistry).forInterface(IJQueryUIPlugins)
+        if not record.ui_datepicker:
             return ''
         return u"""<script type="text/javascript">
         jQuery(function($){
