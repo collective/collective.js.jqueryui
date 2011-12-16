@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.16.4 (unreleased)
+1.8.16.4 (2011-12-16)
 ---------------------
 
 - manage i18nviewlet and ++resource++jquery-ui-i18n.js file as dependency of
