@@ -139,3 +139,9 @@ def upgrade_1896_1898(context):
     setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
                                    'plone.app.registry', run_dependencies=False,
                                    purge_old=False)
+
+def upgrade_1898_1899(context):
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile('profile-collective.js.jqueryui:default',
+                               'collective.js.jqueryui', run_dependencies=False,
+                               purge_old=False)

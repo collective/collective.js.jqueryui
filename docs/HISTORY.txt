@@ -8,6 +8,8 @@ Changelog
   datepicker
 - add handler to check integrity of jsregistry
 - improve navigation in control panels
+- fix install where js were not enabled. the reason was plone.app.registry
+  step is imported before jsregistry step. fixed by adding a new step.
 
 1.8.16.3 (2011-12-15)
 ---------------------

@@ -155,11 +155,6 @@ def update_dependencies(record, event):
         for dep in deps:
             to_enable.add(RESOURCE_ID%(dep))
 
-    if to_enable:
-        logger.info("enable %s"%to_enable)
-    if to_disable:
-        logger.info("disable %s"%to_disable)
-
     update_registry(to_enable, to_disable)
     verify_jsregistry(record)
 
@@ -172,15 +167,11 @@ def update_registry(to_enable=[], to_disable=[]):
         resource = jsregistry.getResource(js)
         if resource:
             resource.setEnabled(False)
-        else:
-            logger.error('no resource %s'%js)
 
     for js in to_enable:
         resource = jsregistry.getResource(js)
         if resource:
             resource.setEnabled(True)
-        else:
-            logger.error('no resource %s'%js)
 
     jsregistry.cookResources()
 
@@ -198,6 +189,9 @@ def verify_jsregistry(record):
         if setting is None:
             continue
         js = jsregistry.getResource(resource_id)
+        #at install time resources are not load ...
+        if not js:
+            continue
         enabled = js.getEnabled()
         if enabled == setting:
             continue
@@ -206,7 +200,7 @@ def verify_jsregistry(record):
             continue
         #we have a not syncrhonized configuration
         msg = '%s issue. auto enable it'%(resource_id)
-        logger.error(msg)
+        logger.info(msg)
         js.setEnabled(True)
         if key == 'ui.datepicker':
             js = jsregistry.getResource('++resource++jquery-ui-i18n.js')

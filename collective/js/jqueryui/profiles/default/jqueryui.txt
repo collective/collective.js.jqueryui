@@ -1,0 +1,1 @@
+plone.app.registry step is imported before jsregistry. we need to regain priority

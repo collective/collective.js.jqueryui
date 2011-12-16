@@ -12,6 +12,16 @@
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
 
+  <genericsetup:importStep
+      name="collective.js.jqueryui"
+      title="collective.js.jqueryui regain priority to registry"
+      description="plone.app.registry step is executed before jsregistry so fix it"
+      handler=".setuphandlers.applySettings">
+      <depends name="cssregistry"/>
+      <depends name="jsregistry"/>
+      <depends name="plone.app.registry"/>
+    </genericsetup:importStep>
+
   <genericsetup:upgradeStep
       source="*"
       destination="2"
@@ -102,6 +112,14 @@
       description=""
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1896_1898"
+      />
+  <genericsetup:upgradeStep
+      source="1898"
+      destination="1899"
+      title="apply settings"
+      description="Because of steps order we need to apply settings"
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_1898_1899"
       />
 
 </configure>
