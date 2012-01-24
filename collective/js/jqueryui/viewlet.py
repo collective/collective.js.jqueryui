@@ -1,7 +1,6 @@
+from zope import component
 from plone.app.layout.viewlets.common import ViewletBase
 from collective.js.jqueryui.utils import get_datepicker_date_format
-from zope.component import queryMultiAdapter
-from zope.component._api import getUtility
 from plone.registry.interfaces import IRegistry
 from collective.js.jqueryui.interfaces import IJQueryUIPlugins
 
@@ -40,12 +39,18 @@ class L10nDatepicker(ViewletBase):
         self.jq_date_format = get_datepicker_date_format(self.request)
 
     def render(self):
-        util = queryMultiAdapter((self.context, self.request), name='jqueryui-include-condition')
+        util = component.queryMultiAdapter((self.context, self.request),
+                                           name='jqueryui-include-condition')
         if not util or not util():
-            return ''
-        record = getUtility(IRegistry).forInterface(IJQueryUIPlugins)
+            return u''
+        registry = component.queryUtility(IRegistry)
+        if registry is None:
+            return u''
+        record = registry.forInterface(IJQueryUIPlugins, None)
+        if record is None:
+            return u''
         if not record.ui_datepicker:
-            return ''
+            return u''
         return u"""<script type="text/javascript">
         jQuery(function($){
             $.datepicker.setDefaults(
@@ -53,5 +58,3 @@ class L10nDatepicker(ViewletBase):
                 {dateFormat: '%s'}));
         });
         </script>""" % (self.jq_language(), self.jq_date_format)
-    
-

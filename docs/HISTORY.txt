@@ -4,8 +4,8 @@ Changelog
 1.8.16.5 (unreleased)
 ---------------------
 
-- Nothing changed yet.
-
+- Fix viewlet from breaking the whole site while you have not upgraded the addon
+  [toutpt]
 
 1.8.16.4 (2011-12-16)
 ---------------------

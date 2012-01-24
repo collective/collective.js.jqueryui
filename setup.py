@@ -5,7 +5,7 @@ version = '1.8.16.5dev'
 
 setup(name='collective.js.jqueryui',
       version=version,
-      description="JQueryUI ready to be included in portal_javascript for Plone 4 by Makina Corpus",
+      description="JQueryUI ready to be included in portal_javascript for Plone 4",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "UPGRADE.txt")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
@@ -13,6 +13,10 @@ setup(name='collective.js.jqueryui',
       classifiers=[
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
+        "Framework :: Zope2",
+        "Framework :: Plone",
+        "Framework :: Plone :: 4.0",
+        "Framework :: Plone :: 4.1",
         ],
       keywords='',
       author='JeanMichel FRANCOIS aka toutpt',
