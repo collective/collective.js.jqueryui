@@ -1,20 +1,29 @@
 Introduction
 ============
 
-Integration of jqueryui in Plone 4.
+Integration of jQueryUI in Plone 4.
 
-This version includes jqueryui 1.8.16 without the tabs plugin.
+This version includes jQueryUI 1.8.16 without the tabs plugin.
 
 It is different from collective.jqueryui in many ways:
 
 * no skin dirs (js and css are in resource dirs)
-* no all the bunch of files and documentations from original jqueryui
+* no all the bunch of files and documentations from original jQueryUI
 * this one is minified
-* just add all jqueryui to portal_js, and default css to portal_css (if you 
+* just add all jQueryUI to portal_js, and default css to portal_css (if you 
   apply the profile)
 
 To have an example of the current integration you can check @@example.jqueryui
 page. You must activate example within portal_properties.
+
+WARNINGS
+========
+
+For Plone 3 you need version 1.7.x of this package
+
+JQueryUI > 1.8.6 is supposed to be compatible with jQuery 1.3.2.
+At the moment you should prefer to use the 1.7.X version of jQueryUI
+(same package exists for 1.7 branch)
 
 include plugins and optimizations
 =================================
@@ -22,10 +31,10 @@ include plugins and optimizations
 By default this addon register all plugins and activate all of them except tabs.
 So ui.tabs is registred but not activated.
 
-Because jqueryui is big on both javascripts and css you may want to optimize
+Because jQueryUI is big on both javascripts and css you may want to optimize
 the configuration of your site or your addon which depends on this one.
 
-So you can activate/unactivate plugins using registry profile or the jqueryui
+So you can activate/unactivate plugins using registry profile or the jQueryUI
 controlpanel.
 
 Using registry.xml, you can activate only what you want:
@@ -123,15 +132,3 @@ Contributors
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
 
-Notes
-=====
-
-The package contains now only one profile. It doesn't replace
-the jQuery version like the previous versions did.
-
-WARNINGS
-========
-
-JQueryUI > 1.8.6 is supposed to be compatible with jQuery 1.3.2.
-At the moment you should prefer to use the 1.7.X version of jqueryui
-(same package exists for 1.7 branch)
