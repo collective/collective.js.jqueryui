@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.8.16.6 (unreleased)
+---------------------
+
+- Fixed backwards compatibility with Plone 4.0.x. [mitchellrj]
+
 1.8.16.5 (2012-01-24)
 ---------------------
 
