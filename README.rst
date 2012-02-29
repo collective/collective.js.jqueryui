@@ -128,6 +128,7 @@ Contributors
 * Kees Hink [khink]
 * Robert Niederreiter [rnix]
 * JeanMichel FRANCOIS [toutpt]
+* Richard Mitchell [mitchellrj] (Netsight [netsight])
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
