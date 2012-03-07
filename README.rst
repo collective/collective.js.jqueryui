@@ -28,8 +28,9 @@ At the moment you should prefer to use the 1.7.X version of jQueryUI
 include plugins and optimizations
 =================================
 
-By default this addon register all plugins and activate all of them except tabs.
-So ui.tabs is registred but not activated.
+By default this addon register all plugins and activate all of them except tabs
+and autocomplete.
+So ui.tabs and ui.autocomplete is registred but not activated.
 
 Because jQueryUI is big on both javascripts and css you may want to optimize
 the configuration of your site or your addon which depends on this one.
