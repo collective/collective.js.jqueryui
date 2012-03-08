@@ -29,6 +29,7 @@ setup(name='collective.js.jqueryui',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.registry',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

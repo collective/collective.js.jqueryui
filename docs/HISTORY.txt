@@ -4,6 +4,10 @@ Changelog
 1.8.16.6 (unreleased)
 ---------------------
 
+- Fix dependencies for Plone 4.0.X: add plone.app.registry
+  [toutpt]
+
+
 1.8.16.5 (2012-01-24)
 ---------------------
 
