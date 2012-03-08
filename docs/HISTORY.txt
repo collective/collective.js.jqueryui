@@ -4,10 +4,6 @@ Changelog
 1.8.16.6 (unreleased)
 ---------------------
 
-- Do not activate the autocomplete plugin by default. It interferes with
-  jquerytools autocomplete
-  [do3cc]
-
 1.8.16.5 (2012-01-24)
 ---------------------
 

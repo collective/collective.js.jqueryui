@@ -10,7 +10,7 @@
       <value key="ui_selectable">True</value>
       <value key="ui_sortable">True</value>
       <value key="ui_accordion">True</value>
-      <value key="ui_autocomplete">False</value>
+      <value key="ui_autocomplete">True</value>
       <value key="ui_button">True</value>
       <value key="ui_dialog">True</value>
       <value key="ui_slider">True</value>
