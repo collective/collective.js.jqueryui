@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.16.6 (unreleased)
+1.8.16.6 (2012-03-15)
 ---------------------
 
 - Fix dependencies for Plone 4.0.X: add plone.app.registry
