@@ -41,3 +41,13 @@ JQUERYUI_DEPENDENCIES = DEPS
 
 CSS_RESOURCE_ID='++resource++jquery-ui-themes/sunburst/jqueryui.css'
 PATCH_RESOURCE_ID='++resource++jquery-ui-themes/sunburst-patch.css'
+
+ORDERED_PLUGINS = ['ui.core','ui.widget','ui.mouse','ui.position',
+                   'ui.draggable','ui.droppable','ui.resizable','ui.selectable',
+                   'ui.sortable','ui.accordion','ui.autocomplete','ui.button',
+                   'ui.dialog','ui.slider','ui.tabs','ui.datepicker',
+                   'ui.progressbar','effects.core','effects.blind',
+                   'effects.bounce','effects.clip','effects.drop',
+                   'effects.explode','effects.fade','effects.fold',
+                   'effects.highlight','effects.pulsate','effects.scale',
+                   'effects.shake','effects.slide','effects.transfer']

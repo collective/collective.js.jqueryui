@@ -2,7 +2,11 @@ import logging
 from zope import component
 from zope import interface
 from zope import schema
-from zope.component.hooks import getSite
+try:
+    from zope.component.hooks import getSite
+except ImportError:
+    #BBB
+    from zope.site.hooks import getSite
 
 from plone.registry.interfaces import IRecordModifiedEvent
 from plone.z3cform import layout
@@ -132,31 +136,31 @@ class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
     def parent_panel_url(self):
         return '%s/@@jqueryui-controlpanel' % (self.context.absolute_url())
 
-
-@component.adapter(IJQueryUIPlugins, IRecordModifiedEvent)
-def update_dependencies(record, event):
-
-    key = event.record.fieldName
-    rkey = key.replace('_','.')
-    to_enable =set()
-    to_disable=set()
-
-    if event.oldValue and not event.newValue:
-        #means it has been deactivated
-        to_disable.add(RESOURCE_ID%rkey)
-        if rkey == 'ui.datepicker':
-            to_disable.add('++resource++jquery-ui-i18n.js')
-
-    elif not event.oldValue and event.newValue:
-        to_enable.add(RESOURCE_ID%rkey)
-        if rkey == 'ui.datepicker':
-            to_enable.add('++resource++jquery-ui-i18n.js')
-        deps = JQUERYUI_DEPENDENCIES[rkey]
-        for dep in deps:
-            to_enable.add(RESOURCE_ID%(dep))
-
-    update_registry(to_enable, to_disable)
-    verify_jsregistry(record)
+#
+#@component.adapter(IJQueryUIPlugins, IRecordModifiedEvent)
+#def update_dependencies(record, event):
+#
+#    key = event.record.fieldName
+#    rkey = key.replace('_','.')
+#    to_enable =set()
+#    to_disable=set()
+#
+#    if event.oldValue and not event.newValue:
+#        #means it has been deactivated
+#        to_disable.add(RESOURCE_ID%rkey)
+#        if rkey == 'ui.datepicker':
+#            to_disable.add('++resource++jquery-ui-i18n.js')
+#
+#    elif not event.oldValue and event.newValue:
+#        to_enable.add(RESOURCE_ID%rkey)
+#        if rkey == 'ui.datepicker':
+#            to_enable.add('++resource++jquery-ui-i18n.js')
+#        deps = JQUERYUI_DEPENDENCIES[rkey]
+#        for dep in deps:
+#            to_enable.add(RESOURCE_ID%(dep))
+#
+#    update_registry(to_enable, to_disable)
+#    verify_jsregistry(record)
 
 
 def update_registry(to_enable=[], to_disable=[]):

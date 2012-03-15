@@ -6,7 +6,9 @@ Changelog
 
 - Fix dependencies for Plone 4.0.X: add plone.app.registry
   [toutpt]
-
+- Fix getSite() for Plone 4.0.
+- Backport plone.app.jqueryui work: Only one browserview to manage plugins.
+  make portal_javascripts have only one resource.
 
 1.8.16.5 (2012-01-24)
 ---------------------

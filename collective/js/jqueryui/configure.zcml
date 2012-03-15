@@ -88,7 +88,15 @@
       permission="cmf.ManagePortal"
       />
 
-  <subscriber handler=".controlpanel.update_dependencies" />
   <subscriber handler=".controlpanel.update_css" />
+
+  <!-- Backport works done on plone.app.jqueryui -->
+  <browser:page
+      for="*"
+      name="collective.js.jqueryui.custom.min.js"
+      class=".resources.JQueryUICustomJS"
+      permission="zope2.View"
+      />
+  <subscriber handler=".resources.cook_js_resources" />
 
 </configure>
