@@ -5,11 +5,13 @@ logger = logging.getLogger('collective.js.jqueryui')
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
 
+
 class IncludeJQueryUI(BrowserView):
     """Used to know if jqueryui resources must be included"""
     @memoize
     def __call__(self):
-        pp = getToolByName(self.context, 'portal_properties').jqueryui_properties
+        props = getToolByName(self.context, 'portal_properties')
+        pp = props.jqueryui_properties
         if pp.global_include:
             return True
 
@@ -22,6 +24,6 @@ class IncludeJQueryUI(BrowserView):
             return template_id in include_ids
 
         current_url = context_state.current_page_url()
-        view_id = current_url.split('/')[-1].replace('@@','')
+        view_id = current_url.split('/')[-1].replace('@@', '')
         logger.info(view_id)
         return view_id in include_ids

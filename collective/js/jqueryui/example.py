@@ -1,11 +1,12 @@
 from Products.Five import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
+
 class Example(BrowserView):
     """Simple Example View with jqueryui example"""
-    
+
     index = ViewPageTemplateFile('example.pt')
-    
+
     def __call__(self):
         pp = self.context.portal_properties
         try:
@@ -27,17 +28,17 @@ class Example(BrowserView):
     jq("#radioset").buttonset();
     // Tabs
     jq('#tabs').tabs();
-    // Dialog           
+    // Dialog
     jq('#dialog').dialog({
         autoOpen: false,
         width: 600,
         buttons: {
-            "Ok": function() { 
-                jq(this).dialog("close"); 
-            }, 
-            "Cancel": function() { 
-                jq(this).dialog("close"); 
-            } 
+            "Ok": function() {
+                jq(this).dialog("close");
+            },
+            "Cancel": function() {
+                jq(this).dialog("close");
+            }
         }
     });
     // Dialog Link
@@ -56,11 +57,11 @@ class Example(BrowserView):
     });
     // Progressbar
     jq("#progressbar").progressbar({
-        value: 20 
+        value: 20
     });
     //hover states on the static widgets
     jq('#dialog_link, ul#icons li').hover(
-        function() { jq(this).addClass('ui-state-hover'); }, 
+        function() { jq(this).addClass('ui-state-hover'); },
         function() { jq(this).removeClass('ui-state-hover'); }
     );
     });"""

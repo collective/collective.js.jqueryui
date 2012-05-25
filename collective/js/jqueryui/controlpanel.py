@@ -9,122 +9,125 @@ except ImportError:
     from zope.site.hooks import getSite
 
 from plone.registry.interfaces import IRecordModifiedEvent
-from plone.z3cform import layout
 
 from plone.app.registry.browser import controlpanel as basepanel
 
 from Products.Five import BrowserView
-from Products.CMFCore.utils import getToolByName
 
 from collective.js.jqueryui.config import JQUERYUI_DEPENDENCIES
 from collective.js.jqueryui.config import PATCH_RESOURCE_ID
 from collective.js.jqueryui.config import CSS_RESOURCE_ID
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-RESOURCE_ID='++resource++jquery-ui/jquery.%s.min.js'
+RESOURCE_ID = '++resource++jquery-ui/jquery.%s.min.js'
 
 
 logger = logging.getLogger('collective.js.jqueryui')
 
+ui_core_desc = u"The core of jQuery UI, required for all interactions \
+  and widgets."
+
+
 class IJQueryUIPlugins(interface.Interface):
-    
+
     ui_core = schema.Bool(title=u"Core",
-                       description=u"The core of jQuery UI, required for all interactions and widgets.",
-                       required=False,default=False)
-    
+                       description=ui_core_desc,
+                       required=False, default=False)
+
     ui_widget = schema.Bool(title=u"Widget",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_mouse = schema.Bool(title=u"Mouse",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_position = schema.Bool(title=u"Position",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_draggable = schema.Bool(title=u"Draggable",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_droppable = schema.Bool(title=u"Droppable",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_resizable = schema.Bool(title=u"Resizable",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_selectable = schema.Bool(title=u"Selectable",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_sortable = schema.Bool(title=u"Sortable",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_accordion = schema.Bool(title=u"Accordion",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_autocomplete = schema.Bool(title=u"Autocomplete",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_button = schema.Bool(title=u"Button",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_dialog = schema.Bool(title=u"Dialog",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_slider = schema.Bool(title=u"Slider",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_tabs = schema.Bool(title=u"Tabs",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_datepicker = schema.Bool(title=u"Date picker",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     ui_progressbar = schema.Bool(title=u"Progress bar",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_core = schema.Bool(title=u"Effects 'core'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_blind = schema.Bool(title=u"Effects 'blind'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_bounce = schema.Bool(title=u"Effects 'bounce'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_clip = schema.Bool(title=u"Effects 'clip'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_drop = schema.Bool(title=u"Effects 'drop'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_explode = schema.Bool(title=u"Effects 'explode'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_fade = schema.Bool(title=u"Effects 'fade'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_fold = schema.Bool(title=u"Effects 'fold",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_highlight = schema.Bool(title=u"Effects 'highlight'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_pulsate = schema.Bool(title=u"Effects 'pulsate'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_scale = schema.Bool(title=u"Effects 'scale'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_shake = schema.Bool(title=u"Effects 'shake'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_slide = schema.Bool(title=u"Effects 'slide'",
-                         description=u"",required=False,default=False)
+                         description=u"", required=False, default=False)
 
     effects_transfer = schema.Bool(title=u"Effects 'transfer'",
-                         description=u"",required=False,default=False)
-    
+                         description=u"", required=False, default=False)
+
 
 class ControlPanelForm(basepanel.RegistryEditForm):
     schema = IJQueryUIPlugins
     control_panel_view = "@@jqueryui-plugins-controlpanel"
+
 
 class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
     form = ControlPanelForm
@@ -164,9 +167,9 @@ class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
 
 
 def update_registry(to_enable=[], to_disable=[]):
-    site=getSite()
+    site = getSite()
     jsregistry = site.portal_javascripts
-    
+
     for js in to_disable:
         resource = jsregistry.getResource(js)
         if resource:
@@ -179,17 +182,18 @@ def update_registry(to_enable=[], to_disable=[]):
 
     jsregistry.cookResources()
 
+
 def verify_jsregistry(record):
     """This function check the jsregistry configuration against the jsregistry
     """
-    site=getSite()
+    site = getSite()
     jsregistry = site.portal_javascripts
 
     keys = JQUERYUI_DEPENDENCIES.keys()
     for key in keys:
-        rkey = key.replace('.','_')
-        resource_id = RESOURCE_ID%key
-        setting = getattr(record,rkey,None)
+        rkey = key.replace('.', '_')
+        resource_id = RESOURCE_ID % key
+        setting = getattr(record, rkey, None)
         if setting is None:
             continue
         js = jsregistry.getResource(resource_id)
@@ -203,28 +207,32 @@ def verify_jsregistry(record):
             #we don't want it explicitly but it can be a dependency
             continue
         #we have a not syncrhonized configuration
-        msg = '%s issue. auto enable it'%(resource_id)
+        msg = '%s issue. auto enable it' % resource_id
         logger.info(msg)
         js.setEnabled(True)
         if key == 'ui.datepicker':
             js = jsregistry.getResource('++resource++jquery-ui-i18n.js')
             js.setEnabled(True)
 
+
 class IJQueryUICSS(interface.Interface):
     """JQueryUI CSS"""
-    
+
     css = schema.Bool(title=u"Sunburst CSS for jqueryui",
-                      description=u"Activate the JQueryUI theme 'sunburst'",
+                      description=u"Activate the JQueryUI theme 'Sunburst'",
                       default=False)
-    
+
     patch = schema.Bool(title=u"Sunburst CSS Integration",
-                        description=u"Activate the integration between JQueryUI\
-                               'sunburst' theme and the Plone 'Sunburst' theme",
+                        description=u"Activate the integration between \
+                                JQueryUI 'Sunburst' theme and the Plone \
+                                'Sunburst' theme",
                        default=False)
+
 
 class SunburstControlPanelForm(basepanel.RegistryEditForm):
     schema = IJQueryUICSS
     control_panel_view = "@@jqueryui-sunburst-controlpanel"
+
 
 class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
     form = SunburstControlPanelForm
@@ -235,7 +243,7 @@ class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
 
     def parent_panel_url(self):
         return '%s/@@jqueryui-controlpanel' % (self.context.absolute_url())
-    
+
 
 @component.adapter(IJQueryUICSS, IRecordModifiedEvent)
 def update_css(record, event):
@@ -244,9 +252,9 @@ def update_css(record, event):
 
     key = event.record.fieldName
     stylesheet = None
-    if key=='css':
+    if key == 'css':
         stylesheet = cssregistry.getResource(CSS_RESOURCE_ID)
-    elif key=='patch':
+    elif key == 'patch':
         stylesheet = cssregistry.getResource(PATCH_RESOURCE_ID)
     status = event.newValue
     if stylesheet is not None:
@@ -260,9 +268,8 @@ class MainControlPanelView(BrowserView):
     def __init__(self, context, request):
         self.context = context
         self.request = request
-    
+
     def actions(self):
         cstate = self.context.restrictedTraverse('plone_context_state')
         actions = cstate.actions('jqueryui_panels')
         return actions
-    

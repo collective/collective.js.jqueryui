@@ -14,10 +14,11 @@ from collective.js.jqueryui import interfaces, config
 
 logger = logging.getLogger('collective.js.jqueryui')
 
+
 class JQueryUICustomJS(BrowserView):
     """This view aggregate javascripts according to the configuration. It has
     been created to not polute the portal_javascripts will all plugins"""
-    
+
     def __call__(self):
         settings = self.settings
 
@@ -31,7 +32,8 @@ class JQueryUICustomJS(BrowserView):
         return self.get_resources_content(resources)
 
     def settings(self):
-        """Return records from portal_registry corresponding to IJQueryUIPlugins
+        """Return records from portal_registry corresponding to
+        IJQueryUIPlugins
         """
         registry = component.queryUtility(IRegistry)
 
@@ -46,14 +48,14 @@ class JQueryUICustomJS(BrowserView):
         portal_registry"""
         settings = self.settings()
         deps = config.JQUERYUI_DEPENDENCIES
-        all = deps.keys()
+        #all = deps.keys()
         resources = []
-        wanted = [] #not ordered list of wanted plugins
+        wanted = []  # not ordered list of wanted plugins
         tpl = "++resource++jquery-ui/jquery.%s.min.js"
         ordered_plugins = copy(config.ORDERED_PLUGINS)
 
         for plugin in all:
-            attr_name = plugin.replace('.','_')
+            attr_name = plugin.replace('.', '_')
             is_wanted = getattr(settings, attr_name, False)
 
             if is_wanted:
@@ -67,12 +69,11 @@ class JQueryUICustomJS(BrowserView):
                 ordered_plugins.remove(plugin)
 
         for plugin in ordered_plugins:
-            resources.append(tpl%plugin)
+            resources.append(tpl % plugin)
             if plugin == 'ui.datepicker':
                 resources.append('++resource++jquery-ui-i18n.js')
 
         return resources
-
 
     def get_resources_content(self, resources):
         """Resources must be a list of resource ids.
@@ -83,11 +84,10 @@ class JQueryUICustomJS(BrowserView):
         if resources is None:
             resources = self.get_resources()
 
-
         for resourceid in resources:
             try:
                 resource = self.context.restrictedTraverse(resourceid)
-            except KeyError,e:
+            except KeyError, e:
                 logger.error(e)
                 continue
 
@@ -95,11 +95,12 @@ class JQueryUICustomJS(BrowserView):
                 continue
 
             data.write(open(resource.context.path).read())
- 
+
         return data.getvalue()
+
 
 @component.adapter(interfaces.IJQueryUIPlugins, IRecordModifiedEvent)
 def cook_js_resources(record, event):
-    site=getSite()
+    site = getSite()
     jsregistry = site.portal_javascripts
     jsregistry.cookResources()
