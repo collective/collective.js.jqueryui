@@ -246,7 +246,7 @@ class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
 
 
 @component.adapter(IJQueryUICSS, IRecordModifiedEvent)
-def update_css(record, event):
+def cook_css_resources(record, event):
     site = getSite()
     cssregistry = site.portal_css
 
@@ -273,3 +273,10 @@ class MainControlPanelView(BrowserView):
         cstate = self.context.restrictedTraverse('plone_context_state')
         actions = cstate.actions('jqueryui_panels')
         return actions
+
+@component.adapter(IJQueryUIPlugins, IRecordModifiedEvent)
+def cook_js_resources(record, event):
+    site = getSite()
+    jsregistry = site.portal_javascripts
+    jsregistry.cookResources()
+

@@ -1,6 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser" 
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:zcml="http://namespaces.zope.org/zcml"
@@ -88,8 +88,6 @@
       permission="cmf.ManagePortal"
       />
 
-  <subscriber handler=".controlpanel.update_css" />
-
   <!-- Backport works done on plone.app.jqueryui -->
   <browser:page
       for="*"
@@ -97,6 +95,14 @@
       class=".resources.JQueryUICustomJS"
       permission="zope2.View"
       />
-  <subscriber handler=".resources.cook_js_resources" />
+  <browser:page
+      for="*"
+      name="collective.js.jqueryui.custom.min.css"
+      class=".resources.JQueryUICustomCSS"
+      permission="zope2.View"
+      />
+
+  <subscriber handler=".controlpanel.cook_js_resources" />
+  <subscriber handler=".controlpanel.cook_css_resources" />
 
 </configure>
