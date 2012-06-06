@@ -4,7 +4,7 @@ Changelog
 1.8.16.7 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Use now a js and a css view to handle both resources [kiorky]
 
 
 1.8.16.6 (2012-03-15)

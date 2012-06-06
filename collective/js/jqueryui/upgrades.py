@@ -188,3 +188,22 @@ def upgrade_1899_1900(context):
                                purge_old=False)
 
     jsregistry.cookResources()
+
+
+def upgrade_1900_2000(context):
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    cssregistry = getToolByName(context, 'portal_css')
+    ids = ['++resource++jquery-ui-themes/sunburst/jqueryui.css',
+           '++resource++jquery-ui-themes/sunburst-patch.css',]
+    resourcesids = cssregistry.getResourceIds()
+    for i in ids:
+        if i in resourcesids:
+            cssregistry.unregisterResource(i)
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile(
+        'profile-collective.js.jqueryui:default',
+        'cssregistry',
+        run_dependencies=False,
+        purge_old=False)
+    cssregistry.cookResources()
+
