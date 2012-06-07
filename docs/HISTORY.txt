@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.16.7 (unreleased)
+1.8.16.7 (2012-06-07)
 ---------------------
 
 - Use now a js and a css view to handle both resources [kiorky]

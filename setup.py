@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.8.16.7.dev0'
+version = '1.8.16.7'
 
 setup(name='collective.js.jqueryui',
       version=version,
@@ -18,7 +18,7 @@ setup(name='collective.js.jqueryui',
         "Framework :: Plone :: 4.0",
         "Framework :: Plone :: 4.1",
         ],
-      keywords='',
+      keywords='plone jqueryui',
       author='JeanMichel FRANCOIS aka toutpt',
       author_email='toutpt@gmail.com',
       url='https://github.com/collective/collective.js.jqueryui',
