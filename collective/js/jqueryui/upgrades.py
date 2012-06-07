@@ -191,10 +191,9 @@ def upgrade_1899_1900(context):
 
 
 def upgrade_1900_2000(context):
-    jsregistry = getToolByName(context, 'portal_javascripts')
     cssregistry = getToolByName(context, 'portal_css')
     ids = ['++resource++jquery-ui-themes/sunburst/jqueryui.css',
-           '++resource++jquery-ui-themes/sunburst-patch.css',]
+           '++resource++jquery-ui-themes/sunburst-patch.css']
     resourcesids = cssregistry.getResourceIds()
     for i in ids:
         if i in resourcesids:
@@ -206,4 +205,3 @@ def upgrade_1900_2000(context):
         run_dependencies=False,
         purge_old=False)
     cssregistry.cookResources()
-

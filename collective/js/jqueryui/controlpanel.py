@@ -274,9 +274,9 @@ class MainControlPanelView(BrowserView):
         actions = cstate.actions('jqueryui_panels')
         return actions
 
+
 @component.adapter(IJQueryUIPlugins, IRecordModifiedEvent)
 def cook_js_resources(record, event):
     site = getSite()
     jsregistry = site.portal_javascripts
     jsregistry.cookResources()
-
