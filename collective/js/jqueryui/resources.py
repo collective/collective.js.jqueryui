@@ -7,7 +7,7 @@ try:
 except ImportError:
     #BBB
     from zope.site.hooks import getSite
-from plone.registry.interfaces import IRegistry, IRecordModifiedEvent
+from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
 from Products.ResourceRegistries.tools.packer import CSSPacker
@@ -16,6 +16,7 @@ from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from collective.js.jqueryui import interfaces, config
 
 logger = logging.getLogger('collective.js.jqueryui')
+
 
 class Resources(BrowserView):
     _key = None
@@ -113,6 +114,7 @@ class JQueryUICustomJS(Resources):
     _mimetype = 'application/javascript'
     _toolid = 'portal_javascripts'
     _packer = JavascriptPacker
+
     def get_resources(self):
         """Return a list of resources (at least their ids) computed from
         the configuration provided by IJQueryUIPlugins's records in plone
@@ -148,6 +150,7 @@ class JQueryUICustomCSS(Resources):
     _mimetype = 'text/css'
     _toolid = 'portal_css'
     _packer = CSSPacker
+
     def get_resources(self):
         """Return a list of resources (at least their ids) computed from
         the configuration provided by IJQueryUIPlugins's records in plone
@@ -161,4 +164,3 @@ class JQueryUICustomCSS(Resources):
             if getattr(settings, skey, None):
                 resources.append(cssid)
         return resources
-
