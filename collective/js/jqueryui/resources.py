@@ -80,6 +80,7 @@ class Resources(BrowserView):
         data = StringIO()
         if resources is None:
             resources = self.get_resources()
+        upath = self.context.absolute_url_path()
         for resourceid in resources:
             try:
                 resource = self.context.restrictedTraverse(
@@ -101,7 +102,6 @@ class Resources(BrowserView):
                 fic.close()
                 try:
                     content = unicode(content)
-                    upath = self.context.absolute_url_path()
 
                 except Exception, e:
                     content = unicode(
