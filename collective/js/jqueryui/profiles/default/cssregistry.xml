@@ -7,6 +7,6 @@
       cookable="True"
       media="all"
       rel="stylesheet"
-      applyPrefix="True"
+      applyPrefix="False"
       rendering="import"/>
 </object>
