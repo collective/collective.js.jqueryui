@@ -12,9 +12,11 @@ from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
 from Products.ResourceRegistries.tools.packer import CSSPacker
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
+from Products.ResourceRegistries.utils import applyPrefix
 
 from collective.js.jqueryui import interfaces, config
 
+from Acquisition import aq_parent
 logger = logging.getLogger('collective.js.jqueryui')
 
 
@@ -25,6 +27,8 @@ class Resources(BrowserView):
     _tool = None
     _toolid = None
     _packer = None
+    _js = False
+    _css = False
 
     @property
     def tool(self):
@@ -76,6 +80,7 @@ class Resources(BrowserView):
         data = StringIO()
         if resources is None:
             resources = self.get_resources()
+        upath = self.context.absolute_url_path()
         for resourceid in resources:
             try:
                 resource = self.context.restrictedTraverse(
@@ -97,9 +102,17 @@ class Resources(BrowserView):
                 fic.close()
                 try:
                     content = unicode(content)
+
                 except Exception, e:
                     content = unicode(
                         content.decode('utf-8'))
+                if self._css:
+                    prefix = '/'.join([upath, resourceid])
+                    if prefix.endswith('/'):
+                        prefix = prefix[:-1]
+                    prefix = '/'.join(
+                        prefix.split('/')[:-1])
+                    content = applyPrefix(content, prefix)
                 data.write(
                     self.pack(content)
                 )
@@ -110,6 +123,8 @@ class Resources(BrowserView):
 class JQueryUICustomJS(Resources):
     """This view aggregate javascripts according to the configuration. It has
     been created to not polute the portal_javascripts will all plugins"""
+    _js = True
+    _css = False
     _key = interfaces.IJQueryUIPlugins
     _mimetype = 'application/javascript'
     _toolid = 'portal_javascripts'
@@ -150,6 +165,9 @@ class JQueryUICustomCSS(Resources):
     _mimetype = 'text/css'
     _toolid = 'portal_css'
     _packer = CSSPacker
+    _js = False
+    _css = True
+
 
     def get_resources(self):
         """Return a list of resources (at least their ids) computed from
