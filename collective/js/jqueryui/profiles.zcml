@@ -137,4 +137,12 @@
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1900_2000"
       /> 
+  <genericsetup:upgradeStep
+      source="2000"
+      destination="2100"
+      title="use only one resources in portal_css"
+      description="backport work done for plone.app.jqueryui"
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_2000_2100"
+      />  
 </configure>
