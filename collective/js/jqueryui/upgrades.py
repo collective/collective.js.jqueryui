@@ -205,3 +205,15 @@ def upgrade_1900_2000(context):
         run_dependencies=False,
         purge_old=False)
     cssregistry.cookResources()
+
+def upgrade_2000_2100(context):
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    cssregistry = getToolByName(context, 'portal_css')
+    setup = getToolByName(context, 'portal_setup')
+    setup.runImportStepFromProfile(
+        'profile-collective.js.jqueryui:default',
+        'cssregistry',
+        run_dependencies=False,
+        purge_old=False)
+    cssregistry.cookResources()
+ 
