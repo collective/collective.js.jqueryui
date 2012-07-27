@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.16.8 (unreleased)
+1.8.16.8 (2012-07-27)
 ---------------------
 
 - Honnor applyPrefix [kiorky]
