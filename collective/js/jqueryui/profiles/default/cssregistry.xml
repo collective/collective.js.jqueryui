@@ -3,10 +3,11 @@
   <stylesheet
       id="collective.js.jqueryui.custom.min.css"
       enabled="1"
-      expression="context/@@jqueryui-include-condition"
+      expression=""
       cookable="True"
       media="screen"
       rel="stylesheet"
       applyPrefix="False"
-      rendering="link"/>
+      rendering="link"
+      insert-after="public.css"/>
 </object>
