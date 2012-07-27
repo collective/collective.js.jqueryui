@@ -136,7 +136,7 @@
       description="backport work done for plone.app.jqueryui"
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_1900_2000"
-      /> 
+      />
   <genericsetup:upgradeStep
       source="2000"
       destination="2100"

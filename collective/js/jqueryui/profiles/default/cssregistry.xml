@@ -5,8 +5,8 @@
       enabled="1"
       expression="context/@@jqueryui-include-condition"
       cookable="True"
-      media="all"
+      media="screen"
       rel="stylesheet"
       applyPrefix="False"
-      rendering="import"/>
+      rendering="link"/>
 </object>
