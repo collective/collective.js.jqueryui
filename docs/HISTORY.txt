@@ -4,8 +4,11 @@ Changelog
 1.8.16.8 (unreleased)
 ---------------------
 
-- Nothing changed yet.
-
+- CSS: remove include expression of css registry.
+- CSS: move the css after public.css
+- CSS: move to rendering = link and media = screen to fit with sunburst
+- CSS: fix honorPrefix upgrade
+  [toutpt]
 
 1.8.16.7 (2012-06-07)
 ---------------------
