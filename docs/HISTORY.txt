@@ -4,6 +4,7 @@ Changelog
 1.8.16.8 (unreleased)
 ---------------------
 
+- Honnor applyPrefix [kiorky]
 - CSS: remove include expression of css registry.
 - CSS: move the css after public.css
 - CSS: move to rendering = link and media = screen to fit with sunburst
@@ -14,7 +15,6 @@ Changelog
 ---------------------
 
 - Use now a js and a css view to handle both resources [kiorky]
-- Honnor applyPrefix [kiorky]
 
 
 1.8.16.6 (2012-03-15)
