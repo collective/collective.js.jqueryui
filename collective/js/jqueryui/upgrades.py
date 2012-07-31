@@ -216,4 +216,10 @@ def upgrade_2000_2100(context):
         run_dependencies=False,
         purge_old=False)
     cssregistry.cookResources()
- 
+
+def upgrade_2100_2200(context):
+    jsregistry = getToolByName(context, 'portal_javascripts')
+    cssregistry = getToolByName(context, 'portal_css')
+    setup = getToolByName(context, 'portal_setup')
+    cssregistry.cookResources()
+
