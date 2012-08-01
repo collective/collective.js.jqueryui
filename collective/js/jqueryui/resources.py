@@ -107,6 +107,7 @@ class Resources(BrowserView):
                     content = unicode(
                         content.decode('utf-8'))
                 if self._css:
+                    upath = upath.rstrip('/')
                     prefix = '/'.join([upath, resourceid])
                     if prefix.endswith('/'):
                         prefix = prefix[:-1]

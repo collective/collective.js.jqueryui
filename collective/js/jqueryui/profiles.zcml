@@ -3,12 +3,12 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.js.jqueryui">
 
-  <genericsetup:registerProfile 
-      name="default" 
-      title="jQuery UI" 
-      directory="profiles/default" 
+  <genericsetup:registerProfile
+      name="default"
+      title="jQuery UI"
+      directory="profiles/default"
       description="jQuery UI for Plone"
-      provides="Products.GenericSetup.interfaces.EXTENSION" 
+      provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
 
@@ -144,5 +144,13 @@
       description="backport work done for plone.app.jqueryui"
       profile="collective.js.jqueryui:default"
       handler=".upgrades.upgrade_2000_2100"
-      />  
+      />
+  <genericsetup:upgradeStep
+      source="2100"
+      destination="2200"
+      title="Recook css"
+      description=""
+      profile="collective.js.jqueryui:default"
+      handler=".upgrades.upgrade_2100_2200"
+      />
 </configure>
