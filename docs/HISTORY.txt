@@ -5,7 +5,9 @@ Changelog
 ---------------------
 
 - another fix for applyPrefix [kiorky]
-
+- Keep this package Plone independent. Added zcml files for Plone and Zope and
+  include them accordingly by configure.zcml
+  [avoinea]
 
 1.8.16.8 (2012-07-27)
 ---------------------
@@ -84,7 +86,7 @@ Changelog
 
 - make example.jqueryui view activable (unactivated by default)
   [toutpt]
-  
+
 - only include datepicker viewlet code if jqueryui is enabled for
   the content item
   [vangheem]
@@ -145,7 +147,7 @@ Changelog
 - Updated to jqueryui 1.8.7
   [toutpt]
 
-- Disable compression of jquery-ui-i18n.js. Compression was broken, resulting 
+- Disable compression of jquery-ui-i18n.js. Compression was broken, resulting
   in Chinese characters in the calendar popup.
   [khink]
 

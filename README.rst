@@ -1,3 +1,4 @@
+
 Introduction
 ============
 
@@ -10,7 +11,7 @@ It is different from collective.jqueryui in many ways:
 * no skin dirs (js and css are in resource dirs)
 * no all the bunch of files and documentations from original jQueryUI
 * this one is minified
-* just add all jQueryUI to portal_js, and default css to portal_css (if you 
+* just add all jQueryUI to portal_js, and default css to portal_css (if you
   apply the profile)
 
 To have an example of the current integration you can check @@example.jqueryui
@@ -25,7 +26,39 @@ JQueryUI > 1.8.6 is supposed to be compatible with jQuery 1.3.2.
 At the moment you should prefer to use the 1.7.X version of jQueryUI
 (same package exists for 1.7 branch)
 
-include plugins and optimizations
+Integration for Zope and Plone
+==============================
+This package can be used as a Plone add-on - for this it adds GenericSetup
+profiles and Plone ControlPanel configlets - or it can be used as a simple Zope
+jQuery UI resources registrar. See bellow how your zc.buildout config file
+should look like if you use collective.js.jqueryui with or without Plone.
+
+
+Plone
+-----
+buildout.cfg::
+
+    [instance]
+    eggs =
+        collective.js.jqueryui [plone]
+    zcml =
+        collective.js.jqueryui
+
+
+Zope
+----
+buildout.cfg::
+
+    [instance]
+    eggs =
+        collective.js.jqueryui [zope]
+    zcml =
+        collective.js.jqueryui
+
+
+
+
+Include plugins and optimizations
 =================================
 
 By default this addon register all plugins and activate all of them except tabs.
@@ -121,14 +154,14 @@ Credits and contributions
 Contributors
 ============
 
-* Vincent Fretin [vincentfretin] 
+* Vincent Fretin [vincentfretin]
 * Hanno Schlichting [hanno]
 * Nathan Vangheem [vangheem]
 * Marcos F. Romero [marcosfromero]
 * Kees Hink [khink]
 * Robert Niederreiter [rnix]
 * JeanMichel FRANCOIS [toutpt]
+* Alin Voinea [avoinea]
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
-
