@@ -36,14 +36,23 @@ should look like if you use collective.js.jqueryui with or without Plone.
 
 Plone
 -----
+for Plone > 4.0:
+
 buildout.cfg::
 
     [instance]
-    eggs =
-        collective.js.jqueryui [plone]
-    zcml =
-        collective.js.jqueryui
+    eggs +=
+         collective.js.jqueryui
 
+for Plone == 4.0 you must add plone.app.registry yourself:
+
+buildout.cfg::
+
+    extends=http://good-py.appspot.com/release/plone.app.registry/1.0b2
+    [instance]
+    eggs +=
+        collective.js.jqueryui
+        plone.app.registry
 
 Zope
 ----
@@ -51,7 +60,7 @@ buildout.cfg::
 
     [instance]
     eggs =
-        collective.js.jqueryui [zope]
+        collective.js.jqueryui
     zcml =
         collective.js.jqueryui
 

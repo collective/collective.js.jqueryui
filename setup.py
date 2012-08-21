@@ -31,13 +31,7 @@ setup(name='collective.js.jqueryui',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
-      extras_require={
-          'plone': [
-              'plone.app.registry',
-          ],
-          'zope': [
-          ]
-      },
+      extras_require={},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
