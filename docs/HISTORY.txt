@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8.16.9 (unreleased)
+1.8.16.9 (2012-09-10)
 ---------------------
 
 - another fix for applyPrefix [kiorky]
