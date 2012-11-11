@@ -20,13 +20,6 @@
     />
 
   <browser:page
-    name="jqueryui-include-condition"
-    for="*"
-    class=".condition.IncludeJQueryUI"
-    permission="zope2.View"
-    />
-
-  <browser:page
     name="jqueryui-controlpanel"
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     class=".controlpanel.MainControlPanelView"

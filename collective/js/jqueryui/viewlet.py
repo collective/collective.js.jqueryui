@@ -39,10 +39,11 @@ class L10nDatepicker(ViewletBase):
         self.jq_date_format = get_datepicker_date_format(self.request)
 
     def render(self):
-        util = component.queryMultiAdapter((self.context, self.request),
-                                           name='jqueryui-include-condition')
-        if not util or not util():
-            return u''
+#        util = component.queryMultiAdapter((self.context, self.request),
+#                                           name='jqueryui-include-condition')
+#        if not util or not util():
+#            return u''@
+
         registry = component.queryUtility(IRegistry)
         if registry is None:
             return u''
