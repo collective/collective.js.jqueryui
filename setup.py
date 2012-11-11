@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.8.16.10.dev0'
+version = '1.9.1.0.dev0'
 
 setup(name='collective.js.jqueryui',
       version=version,
@@ -29,6 +29,7 @@ setup(name='collective.js.jqueryui',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.jquery'
           # -*- Extra requirements: -*-
       ],
       extras_require={},

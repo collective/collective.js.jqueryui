@@ -66,19 +66,28 @@ class IJQueryUIPlugins(interface.Interface):
     ui_button = schema.Bool(title=u"Button",
                          description=u"", required=False, default=False)
 
+    ui_datepicker = schema.Bool(title=u"Date picker",
+                         description=u"", required=False, default=False)
+
     ui_dialog = schema.Bool(title=u"Dialog",
+                         description=u"", required=False, default=False)
+
+    ui_menu = schema.Bool(title=u"Menu",
+                         description=u"", required=False, default=False)
+
+    ui_progressbar = schema.Bool(title=u"Progress bar",
                          description=u"", required=False, default=False)
 
     ui_slider = schema.Bool(title=u"Slider",
                          description=u"", required=False, default=False)
 
+    ui_spinner = schema.Bool(title=u"Spinner",
+                         description=u"", required=False, default=False)
+
     ui_tabs = schema.Bool(title=u"Tabs",
                          description=u"", required=False, default=False)
 
-    ui_datepicker = schema.Bool(title=u"Date picker",
-                         description=u"", required=False, default=False)
-
-    ui_progressbar = schema.Bool(title=u"Progress bar",
+    ui_tooltip = schema.Bool(title=u"Tooltip",
                          description=u"", required=False, default=False)
 
     effects_core = schema.Bool(title=u"Effects 'core'",

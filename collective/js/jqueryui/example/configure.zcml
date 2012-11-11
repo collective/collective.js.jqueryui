@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.halloeditor">
+
+  <browser:page
+    name="example.collective.js.jqueryui"
+    for="*"
+    class=".jqueryui.Example"
+    template="jqueryui.pt"
+    permission="zope2.View"
+    />
+  <browser:resource
+    name="example.collective.js.jqueryui.js"
+    file="jqueryui.js"
+    />
+</configure>

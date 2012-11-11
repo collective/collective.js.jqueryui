@@ -1,10 +1,10 @@
 Changelog
 =========
 
-1.8.16.10 (unreleased)
+1.9.1.0 (unreleased)
 ----------------------
 
-- Nothing changed yet.
+- upgrade jQueryUI to 1.9.1 [toutpt]
 
 
 1.8.16.9 (2012-09-10)

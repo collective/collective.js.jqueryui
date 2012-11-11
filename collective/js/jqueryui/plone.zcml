@@ -27,14 +27,6 @@
     />
 
   <browser:page
-    name="example.jqueryui"
-    for="*"
-    class=".example.Example"
-    layer=".interfaces.IJqueryUILayer"
-    permission="zope2.View"
-    />
-
-  <browser:page
     name="jqueryui-controlpanel"
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     class=".controlpanel.MainControlPanelView"

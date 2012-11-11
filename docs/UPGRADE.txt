@@ -16,16 +16,14 @@ Commands to execute::
     PKG="/home/toutpt/workspace/collective.js.jqueryui/collective/js/jqueryui"
     VERSION="1.8.13"
     PREV="1.8.12"
-    cd /tmp/
     unzip ~/jquery-ui-$VERSION.custom.zip
+    cd ~/jquery-ui-$VERSION.custom
     rm $PKG/jquery-ui-$PREV.custom.min.js
     rm $PKG/jquery-ui-$PREV.custom.js
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.js
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
 
-    cd themes
-    unzip ~/jquery-ui-$VERSION.custom.zip
     rm $PKG/css/sunburst/images/*
     rm $PKG/css/sunburst/jqueryui.css
     cp css/sunburst/jquery-ui-$VERSION.custom.css $PKG/css/sunburst/jqueryui.css
@@ -35,13 +33,13 @@ Commands to execute::
 
 - increment the profile version in metadata.xml
 
-- add ugprade step::
+- update the ugprade step::
 
     <genericsetup:upgradeStep
-        source="1895"
-        destination="1896"
-        title="Upgrade jqueryui to 1.8.16"
+        source="*"
+        destination="3001"
+        title=""
         description=""
         profile="collective.js.jqueryui:default"
-        handler=".upgrades.cook_resources"
+        handler=".upgrades.common"
     />

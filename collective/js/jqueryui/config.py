@@ -1,4 +1,4 @@
-VERSION = '1.8.16'
+VERSION = '1.9.1'
 
 DEPS = {}
 
@@ -16,11 +16,14 @@ DEPS['ui.sortable'] = ('ui.core', 'ui.widget', 'ui.mouse')
 DEPS['ui.accordion'] = ('ui.core', 'ui.widget')
 DEPS['ui.autocomplete'] = ('ui.core', 'ui.widget', 'ui.position')
 DEPS['ui.button'] = ('ui.core', 'ui.widget')
-DEPS['ui.dialog'] = ('ui.core', 'ui.widget', 'ui.position')
-DEPS['ui.slider'] = ('ui.core', 'ui.widget', 'ui.mouse')
-DEPS['ui.tabs'] = ('ui.core', 'ui.widget')
 DEPS['ui.datepicker'] = ('ui.core',)
+DEPS['ui.dialog'] = ('ui.core', 'ui.widget', 'ui.position')
+DEPS['ui.menu'] = ('ui.core', 'ui.widget', 'ui.position')
 DEPS['ui.progressbar'] = ('ui.core', 'ui.widget')
+DEPS['ui.slider'] = ('ui.core', 'ui.widget', 'ui.mouse')
+DEPS['ui.spinner'] = ('ui.core', 'ui.widget', 'ui.button')
+DEPS['ui.tabs'] = ('ui.core', 'ui.widget')
+DEPS['ui.tooltip'] = ('ui.core', 'ui.widget', 'ui.position')
 
 DEPS['effects.core'] = tuple()
 DEPS['effects.blind'] = ('effects.core',)
@@ -46,8 +49,9 @@ ORDERED_PLUGINS = ['ui.core', 'ui.widget', 'ui.mouse', 'ui.position',
                    'ui.draggable', 'ui.droppable', 'ui.resizable',
                    'ui.selectable', 'ui.sortable', 'ui.accordion',
                    'ui.autocomplete', 'ui.button',
-                   'ui.dialog', 'ui.slider', 'ui.tabs', 'ui.datepicker',
-                   'ui.progressbar', 'effects.core', 'effects.blind',
+                   'ui.datepicker', 'ui.dialog', 'ui.menu', 'ui.progressbar',
+                   'ui.slider', 'ui.spinner', 'ui.tabs', 'ui.tooltip',
+                   'effects.core', 'effects.blind',
                    'effects.bounce', 'effects.clip', 'effects.drop',
                    'effects.explode', 'effects.fade', 'effects.fold',
                    'effects.highlight', 'effects.pulsate', 'effects.scale',

@@ -12,11 +12,14 @@
       <value key="ui_accordion">True</value>
       <value key="ui_autocomplete">True</value>
       <value key="ui_button">True</value>
-      <value key="ui_dialog">True</value>
-      <value key="ui_slider">True</value>
-      <value key="ui_tabs">False</value>
       <value key="ui_datepicker">True</value>
+      <value key="ui_dialog">True</value>
+      <value key="ui_menu">False</value>
       <value key="ui_progressbar">True</value>
+      <value key="ui_slider">True</value>
+      <value key="ui_spinner">False</value>
+      <value key="ui_tabs">False</value>
+      <value key="ui_tooltip">False</value>
       <value key="effects_core">True</value>
       <value key="effects_blind">True</value>
       <value key="effects_bounce">True</value>

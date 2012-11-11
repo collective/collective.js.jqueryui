@@ -2,29 +2,27 @@
 Introduction
 ============
 
-Integration of jQueryUI in Plone 4.
+Integration of jQueryUI in Plone 4.3.
 
-This version includes jQueryUI 1.8.16 without the tabs plugin.
+Version: 1.9.1
 
-It is different from collective.jqueryui in many ways:
-
-* no skin dirs (js and css are in resource dirs)
-* no all the bunch of files and documentations from original jQueryUI
-* this one is minified
-* just add all jQueryUI to portal_js, and default css to portal_css (if you
-  apply the profile)
-
-To have an example of the current integration you can check @@example.jqueryui
-page. You must activate example within portal_properties.
 
 WARNINGS
 ========
+
+Plone < 4
+---------
 
 For Plone 3 you need version 1.7.x of this package
 
 JQueryUI > 1.8.6 is supposed to be compatible with jQuery 1.3.2.
 At the moment you should prefer to use the 1.7.X version of jQueryUI
 (same package exists for 1.7 branch)
+
+Plone < 4.3
+-----------
+
+Use version < 1.9
 
 Integration for Zope and Plone
 ==============================
