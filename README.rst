@@ -1,11 +1,9 @@
-
 Introduction
 ============
 
 Integration of jQueryUI in Plone 4.3.
 
 Version: 1.9.1
-
 
 WARNINGS
 ========
@@ -155,7 +153,7 @@ Credits and contributions
 
 |makinacom|_
 
-* `Planet Makina Corpus <http://www.makina-corpus.org>`_  `Contact us <mailto:python@makina-corpus.org>`_
+* `Makina Corpus <http://www.makina-corpus.com>`_
 * `Ecreall <http://www.ecreall.com>`_
 
 Contributors
