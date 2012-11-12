@@ -4,7 +4,7 @@ Changelog
 1.9.1.1 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- remove include condition stuff which break on 1.9.1.0 [toutpt]
 
 
 1.9.1.0 (2012-11-11)
