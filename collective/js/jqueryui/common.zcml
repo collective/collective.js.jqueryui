@@ -5,17 +5,17 @@
 
   <browser:resource
     name="jquery-ui.js"
-    file="jquery-ui-1.9.1.custom.js"
+    file="jquery-ui-1.9.2.custom.js"
     />
 
   <browser:resource
     name="jquery-ui.min.js"
-    file="jquery-ui-1.9.1.custom.min.js"
+    file="jquery-ui-1.9.2.custom.min.js"
     />
 
   <browser:resource
     name="jquery-ui-1.9.min.js"
-    file="jquery-ui-1.9.1.custom.min.js"
+    file="jquery-ui-1.9.2.custom.min.js"
     />
 
   <browser:resource
