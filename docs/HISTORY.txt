@@ -7,7 +7,7 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 --------------------
 
 - Upgrade to jqueryui 1.9.2 (fix #14)
-  [toutpt]
+- fix rename of effects introduced in 1.9
 
 1.9.1.1 (2012-11-12)
 --------------------
