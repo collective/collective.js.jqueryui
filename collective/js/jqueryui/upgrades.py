@@ -16,3 +16,6 @@ def common(context):
         record_id = 'collective.js.jqueryui.controlpanel.IJQueryUIPlugins.effects_%s'%i
         if record_id in registry.records:
             del registry.records[record_id]
+        record_id = 'collective.js.jqueryui.controlpanel.IJQueryUIPlugins.ui_effects_%s'%i
+        if record_id in registry.records:
+            del registry.records[record_id]

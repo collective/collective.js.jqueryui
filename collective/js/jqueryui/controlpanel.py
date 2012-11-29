@@ -90,46 +90,46 @@ class IJQueryUIPlugins(interface.Interface):
     ui_tooltip = schema.Bool(title=u"Tooltip",
                          description=u"", required=False, default=False)
 
-    ui_effects_core = schema.Bool(title=u"Effects 'core'",
+    ui_effect = schema.Bool(title=u"Effects 'core'",
                          description=u"", required=False, default=False)
 
-    ui_effects_blind = schema.Bool(title=u"Effects 'blind'",
+    ui_effect_blind = schema.Bool(title=u"Effects 'blind'",
                          description=u"", required=False, default=False)
 
-    ui_effects_bounce = schema.Bool(title=u"Effects 'bounce'",
+    ui_effect_bounce = schema.Bool(title=u"Effects 'bounce'",
                          description=u"", required=False, default=False)
 
-    ui_effects_clip = schema.Bool(title=u"Effects 'clip'",
+    ui_effect_clip = schema.Bool(title=u"Effects 'clip'",
                          description=u"", required=False, default=False)
 
-    ui_effects_drop = schema.Bool(title=u"Effects 'drop'",
+    ui_effect_drop = schema.Bool(title=u"Effects 'drop'",
                          description=u"", required=False, default=False)
 
-    ui_effects_explode = schema.Bool(title=u"Effects 'explode'",
+    ui_effect_explode = schema.Bool(title=u"Effects 'explode'",
                          description=u"", required=False, default=False)
 
-    ui_effects_fade = schema.Bool(title=u"Effects 'fade'",
+    ui_effect_fade = schema.Bool(title=u"Effects 'fade'",
                          description=u"", required=False, default=False)
 
-    ui_effects_fold = schema.Bool(title=u"Effects 'fold",
+    ui_effect_fold = schema.Bool(title=u"Effects 'fold",
                          description=u"", required=False, default=False)
 
-    ui_effects_highlight = schema.Bool(title=u"Effects 'highlight'",
+    ui_effect_highlight = schema.Bool(title=u"Effects 'highlight'",
                          description=u"", required=False, default=False)
 
-    ui_effects_pulsate = schema.Bool(title=u"Effects 'pulsate'",
+    ui_effect_pulsate = schema.Bool(title=u"Effects 'pulsate'",
                          description=u"", required=False, default=False)
 
-    ui_effects_scale = schema.Bool(title=u"Effects 'scale'",
+    ui_effect_scale = schema.Bool(title=u"Effects 'scale'",
                          description=u"", required=False, default=False)
 
-    ui_effects_shake = schema.Bool(title=u"Effects 'shake'",
+    ui_effect_shake = schema.Bool(title=u"Effects 'shake'",
                          description=u"", required=False, default=False)
 
-    ui_effects_slide = schema.Bool(title=u"Effects 'slide'",
+    ui_effect_slide = schema.Bool(title=u"Effects 'slide'",
                          description=u"", required=False, default=False)
 
-    ui_effects_transfer = schema.Bool(title=u"Effects 'transfer'",
+    ui_effect_transfer = schema.Bool(title=u"Effects 'transfer'",
                          description=u"", required=False, default=False)
 
 
