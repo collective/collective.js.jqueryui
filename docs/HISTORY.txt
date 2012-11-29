@@ -3,6 +3,12 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
+1.9.2.1 (unreleased)
+--------------------
+
+- Nothing changed yet.
+
+
 1.9.2.0 (2012-11-29)
 --------------------
 
