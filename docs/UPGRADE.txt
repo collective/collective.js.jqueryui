@@ -2,14 +2,10 @@ How to upgrade this package
 ===========================
 
 - Go to http://jqueryui.com/download
-- Unselect the tabs plugins which conflict with jquerytools
-- Download jquery-ui-1.8.X.custom.zip
-
 - Go to the URL specified in the collective/js/jqueryui/css/sunburst/jquery-ui-1.8.12.custom.css file to pre-load current theme settings.
 - Click on "Download theme" in the left-side "Theme rollover".
-- Click on "Advanced Theme Settings" to expand options and type "sunburst" in "Theme Folder Name" field.
-- Create theme directory
-- Download jquery-ui-1.8.X.custom.zip
+- At the bottom "Theme" update by "sunburst" in "Theme Folder Name" field.
+- Download jquery-ui-X.custom.zip
 
 Commands to execute::
 
@@ -20,9 +16,12 @@ Commands to execute::
     cd ~/jquery-ui-$VERSION.custom
     rm $PKG/jquery-ui-$PREV.custom.min.js
     rm $PKG/jquery-ui-$PREV.custom.js
+    rm $PKG/js/*
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.js
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
+    cp development-bundle/ui/minified/*.min.js $PKG/js/
+    rm $PKG/js/jqueryu-ui.custom.min.js
 
     rm $PKG/css/sunburst/images/*
     rm $PKG/css/sunburst/jqueryui.css
