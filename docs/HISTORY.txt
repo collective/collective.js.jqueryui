@@ -3,8 +3,8 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-1.10.2 (unreleased)
--------------------
+1.10.1.1 (2013-03-06)
+---------------------
 
 - Nothing changed yet.
 
