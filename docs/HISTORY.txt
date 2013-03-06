@@ -3,11 +3,10 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-1.10.0.2 (unreleased)
----------------------
+1.10.1 (unreleased)
+-------------------
 
-- Nothing changed yet.
-
+- Upgrade to jqueryui 1.10.1
 
 1.10.0.1 (2013-01-30)
 ---------------------

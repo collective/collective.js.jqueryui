@@ -21,14 +21,13 @@ Commands to execute::
     cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
     cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
     cp development-bundle/ui/minified/*.min.js $PKG/js/
-    rm $PKG/js/jqueryu-ui.custom.min.js
 
     rm $PKG/css/sunburst/images/*
     rm $PKG/css/sunburst/jqueryui.css
     cp css/sunburst/jquery-ui-$VERSION.custom.css $PKG/css/sunburst/jqueryui.css
     cp css/sunburst/images/* $PKG/css/sunburst/images/
 
-- update version in README.txt and configure.zcml and config.py
+- update version in README.txt and common.zcml and config.py
 
 - increment the profile version in metadata.xml
 

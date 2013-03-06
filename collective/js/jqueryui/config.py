@@ -1,4 +1,4 @@
-VERSION = '1.9.1'
+VERSION = '1.10.1'
 
 DEPS = {}
 
@@ -54,5 +54,6 @@ ORDERED_PLUGINS = ['ui.core', 'ui.widget', 'ui.mouse', 'ui.position',
                    'ui.effects.core', 'ui.effects.blind',
                    'ui.effects.bounce', 'ui.effects.clip', 'ui.effects.drop',
                    'ui.effects.explode', 'ui.effects.fade', 'ui.effects.fold',
-                   'ui.effects.highlight', 'ui.effects.pulsate', 'ui.effects.scale',
-                   'ui.effects.shake', 'ui.effects.slide', 'ui.effects.transfer']
+                   'ui.effects.highlight', 'ui.effects.pulsate',
+                   'ui.effects.scale', 'ui.effects.shake', 'ui.effects.slide',
+                   'ui.effects.transfer']
