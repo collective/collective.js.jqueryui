@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-1.10.1.2 (unreleased)
+1.10.1.2 (2013-03-06)
 ---------------------
 
 - Fix TypeError when jQuery UI CSS files are not selected [toutpt]
