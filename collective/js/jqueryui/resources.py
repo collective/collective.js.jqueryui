@@ -61,11 +61,11 @@ class Resources(BrowserView):
         if settings is None:
             return
         resources = self.get_resources()
-        if not resources:
-            return
         if self._mimetype:
             self.request.response.setHeader('Content-Type',
                                             self._mimetype)
+        if resources is None:
+            resources = ""
         return self.get_resources_content(resources)
 
     def pack(self, content):
@@ -168,7 +168,6 @@ class JQueryUICustomCSS(Resources):
     _packer = CSSPacker
     _js = False
     _css = True
-
 
     def get_resources(self):
         """Return a list of resources (at least their ids) computed from
