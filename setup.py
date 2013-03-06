@@ -36,6 +36,7 @@ setup(name='collective.js.jqueryui',
           'plone.app.jquery'
           # -*- Extra requirements: -*-
       ],
+      setup_requires = ["setuptools_git"],
       extras_require={},
       entry_points="""
       # -*- Entry points: -*-
