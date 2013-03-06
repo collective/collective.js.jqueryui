@@ -1,24 +1,27 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.10.0.2.dev0'
+version = '1.10.1'
 
 setup(name='collective.js.jqueryui',
       version=version,
-      description="JQueryUI ready to be included in portal_javascript for Plone 4",
+      description="JQueryUI ready for Plone",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "UPGRADE.txt")).read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+           open(os.path.join("docs", "UPGRADE.txt")).read() + "\n" +
+           open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Environment :: Web Environment",
+        "License :: OSI Approved :: GNU General Public License (GPL)",
+        "Operating System :: OS Independent",
         "Framework :: Zope2",
         "Framework :: Plone",
-        "Framework :: Plone :: 4.0",
         "Framework :: Plone :: 4.1",
         "Framework :: Plone :: 4.2",
-        ],
+        "Framework :: Plone :: 4.3",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
+      ],
       keywords='plone jqueryui',
       author='JeanMichel FRANCOIS aka toutpt',
       author_email='toutpt@gmail.com',
