@@ -7,7 +7,7 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 ---------------------
 
 - Make the JS of the viewlet don't break if $.datepicker is undefined. [toutpt]
-
+- Add requirement plone.app.jquery>1.6
 
 1.10.1.2 (2013-03-06)
 ---------------------

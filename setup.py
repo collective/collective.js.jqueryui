@@ -33,10 +33,10 @@ setup(name='collective.js.jqueryui',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.jquery'
+          'plone.app.jquery >1.6'
           # -*- Extra requirements: -*-
       ],
-      setup_requires = ["setuptools_git"],
+      setup_requires=["setuptools_git"],
       extras_require={},
       entry_points="""
       # -*- Entry points: -*-
