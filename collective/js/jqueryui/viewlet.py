@@ -54,8 +54,10 @@ class L10nDatepicker(ViewletBase):
             return u''
         return u"""<script type="text/javascript">
         jQuery(function($){
-            $.datepicker.setDefaults(
+            if (typeof($.datepicker) != "undefined"){
+              $.datepicker.setDefaults(
                 jQuery.extend($.datepicker.regional['%s'],
                 {dateFormat: '%s'}));
+            }
         });
         </script>""" % (self.jq_language(), self.jq_date_format)
