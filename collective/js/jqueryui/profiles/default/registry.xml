@@ -39,11 +39,11 @@
       <value key="css">True</value>
       <value key="patch">True</value>
     </records>
-    <record name="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings.resourceBundlesForThemes">
-    <value purge="false">
-      <element key="Sunburst Theme" purge="false">
-        <element>jqueryui</element>
-      </element>
-    </value>
+    <record interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings" field="resourceBundlesForThemes">
+      <value purge="false">
+        <element key="(default)" purge="false">
+          <element>jqueryui</element>
+        </element>
+      </value>
     </record>
 </registry>

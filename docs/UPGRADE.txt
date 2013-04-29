@@ -2,7 +2,7 @@ How to upgrade this package
 ===========================
 
 - Go to http://jqueryui.com/download
-- Go to the URL specified in the collective/js/jqueryui/css/sunburst/jquery-ui-1.8.12.custom.css file to pre-load current theme settings.
+- Go to the URL specified in the collective/js/jqueryui/css/sunburst/jqueryui.css file to pre-load current theme settings.
 - Click on "Download theme" in the left-side "Theme rollover".
 - At the bottom "Theme" update by "sunburst" in "Theme Folder Name" field.
 - Download jquery-ui-X.custom.zip
@@ -17,10 +17,10 @@ Commands to execute::
     rm $PKG/jquery-ui-$PREV.custom.min.js
     rm $PKG/jquery-ui-$PREV.custom.js
     rm $PKG/js/*
-    cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.js
-    cp js/jquery-ui-$VERSION.custom.min.js $PKG/jquery-ui-$VERSION.custom.min.js
-    cp development-bundle/ui/i18n/jquery-ui-i18n.js $PKG/jquery-ui-i18n.js
-    cp development-bundle/ui/minified/*.min.js $PKG/js/
+    cp ui/jquery-ui.js $PKG/jquery-ui-$VERSION.custom.js
+    cp ui/minified/jquery-ui.min.js $PKG/jquery-ui-$VERSION.custom.min.js
+    cp ui/minified/i18n/jquery-ui-i18n.min.js $PKG/jquery-ui-i18n.js
+    cp ui/minified/*.min.js $PKG/js/
 
     rm $PKG/css/sunburst/images/*
     rm $PKG/css/sunburst/jqueryui.css
