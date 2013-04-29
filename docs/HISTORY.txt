@@ -3,12 +3,18 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
+1.10.3 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
 1.10.2 (2013-04-29)
 -------------------
 
 - Make the JS of the viewlet don't break if $.datepicker is undefined. [toutpt]
 - Add requirement plone.app.jquery>1.6
-- Register resources in 'jqueryui' bundle and add this bundle for Sunburst theme
+- Register resources in 'jqueryui' bundle and add this bundle as (default)
 
 1.10.1.2 (2013-03-06)
 ---------------------
