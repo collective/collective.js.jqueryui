@@ -143,7 +143,7 @@ class JQueryUICustomJS(Resources):
         tpl = "++resource++jquery-ui/jquery.%s.min.js"
         ordered_plugins = copy(config.ORDERED_PLUGINS)
         for plugin in alljs:
-            attr_name = plugin.replace('.', '_')
+            attr_name = plugin.replace('.', '_').replace('-', '_')
             is_wanted = getattr(settings, attr_name, False)
             if is_wanted:
                 wanted.append(plugin)

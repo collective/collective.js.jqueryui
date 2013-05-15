@@ -6,7 +6,9 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 1.10.3 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fixed naming of effects dependencies and mapping of effects dependencies
+  to effects configuration.
+  [do3cc]
 
 
 1.10.2 (2013-04-29)

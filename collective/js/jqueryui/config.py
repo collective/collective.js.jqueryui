@@ -25,20 +25,20 @@ DEPS['ui.spinner'] = ('ui.core', 'ui.widget', 'ui.button')
 DEPS['ui.tabs'] = ('ui.core', 'ui.widget')
 DEPS['ui.tooltip'] = ('ui.core', 'ui.widget', 'ui.position')
 
-DEPS['ui.effects.core'] = tuple()
-DEPS['ui.effects.blind'] = ('ui.effects.core',)
-DEPS['ui.effects.bounce'] = ('ui.effects.core',)
-DEPS['ui.effects.clip'] = ('ui.effects.core',)
-DEPS['ui.effects.drop'] = ('ui.effects.core',)
-DEPS['ui.effects.explode'] = ('ui.effects.core',)
-DEPS['ui.effects.fade'] = ('ui.effects.core',)
-DEPS['ui.effects.fold'] = ('ui.effects.core',)
-DEPS['ui.effects.highlight'] = ('ui.effects.core',)
-DEPS['ui.effects.pulsate'] = ('ui.effects.core',)
-DEPS['ui.effects.scale'] = ('ui.effects.core',)
-DEPS['ui.effects.shake'] = ('ui.effects.core',)
-DEPS['ui.effects.slide'] = ('ui.effects.core',)
-DEPS['ui.effects.transfer'] = ('ui.effects.core',)
+DEPS['ui.effect'] = tuple()
+DEPS['ui.effect-blind'] = ('ui.effect',)
+DEPS['ui.effect-bounce'] = ('ui.effect',)
+DEPS['ui.effect-clip'] = ('ui.effect',)
+DEPS['ui.effect-drop'] = ('ui.effect',)
+DEPS['ui.effect-explode'] = ('ui.effect',)
+DEPS['ui.effect-fade'] = ('ui.effect',)
+DEPS['ui.effect-fold'] = ('ui.effect',)
+DEPS['ui.effect-highlight'] = ('ui.effect',)
+DEPS['ui.effect-pulsate'] = ('ui.effect',)
+DEPS['ui.effect-scale'] = ('ui.effect',)
+DEPS['ui.effect-shake'] = ('ui.effect',)
+DEPS['ui.effect-slide'] = ('ui.effect',)
+DEPS['ui.effect-transfer'] = ('ui.effect',)
 
 JQUERYUI_DEPENDENCIES = DEPS
 
@@ -51,9 +51,9 @@ ORDERED_PLUGINS = ['ui.core', 'ui.widget', 'ui.mouse', 'ui.position',
                    'ui.autocomplete', 'ui.button',
                    'ui.datepicker', 'ui.dialog', 'ui.menu', 'ui.progressbar',
                    'ui.slider', 'ui.spinner', 'ui.tabs', 'ui.tooltip',
-                   'ui.effects.core', 'ui.effects.blind',
-                   'ui.effects.bounce', 'ui.effects.clip', 'ui.effects.drop',
-                   'ui.effects.explode', 'ui.effects.fade', 'ui.effects.fold',
-                   'ui.effects.highlight', 'ui.effects.pulsate',
-                   'ui.effects.scale', 'ui.effects.shake', 'ui.effects.slide',
-                   'ui.effects.transfer']
+                   'ui.effect', 'ui.effect-blind',
+                   'ui.effect-bounce', 'ui.effect-clip', 'ui.effect-drop',
+                   'ui.effect-explode', 'ui.effect-fade', 'ui.effect-fold',
+                   'ui.effect-highlight', 'ui.effect-pulsate',
+                   'ui.effect-scale', 'ui.effect-shake', 'ui.effect-slide',
+                   'ui.effect-transfer']
