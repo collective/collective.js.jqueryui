@@ -97,27 +97,31 @@ class Resources(BrowserView):
                     )
                 )
                 data.write(u"\n")
-                fic = open(resource.context.path, 'r')
-                content = fic.read()
-                fic.close()
-                try:
-                    content = unicode(content)
 
-                except Exception, e:
-                    content = unicode(
-                        content.decode('utf-8'))
-                if self._css:
-                    upath = upath.rstrip('/')
-                    prefix = '/'.join([upath, resourceid])
-                    if prefix.endswith('/'):
-                        prefix = prefix[:-1]
-                    prefix = '/'.join(
-                        prefix.split('/')[:-1])
-                    content = applyPrefix(content, prefix)
-                data.write(
-                    self.pack(content)
-                )
-                data.write(u"\n")
+            # read the content of the resource
+            fic = open(resource.context.path, 'r')
+            content = fic.read()
+            fic.close()
+            try:
+                content = unicode(content)
+
+            except Exception, e:
+                content = unicode(content.decode('utf-8'))
+
+            #css applyPrefix
+            if self._css:
+                upath = upath.rstrip('/')
+                prefix = '/'.join([upath, resourceid])
+                if prefix.endswith('/'):
+                    prefix = prefix[:-1]
+                prefix = '/'.join(
+                    prefix.split('/')[:-1])
+                content = applyPrefix(content, prefix)
+
+            #content is already minified
+            data.write(content)
+            data.write(u"\n")
+
         return data.getvalue()
 
 

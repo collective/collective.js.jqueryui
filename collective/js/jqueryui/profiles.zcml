@@ -27,7 +27,7 @@
 
   <genericsetup:upgradeStep
       source="*"
-      destination="3201"
+      destination="3202"
       title="Common upgrade"
       description=""
       profile="collective.js.jqueryui:default"
