@@ -2,6 +2,8 @@
 <object name="portal_css">
   <stylesheet
       id="collective.js.jqueryui.custom.min.css"
+      bundle="jqueryui"
+      compression="none"
       enabled="1"
       expression=""
       cookable="True"
@@ -9,5 +11,6 @@
       rel="stylesheet"
       applyPrefix="False"
       rendering="link"
-      insert-after="public.css"/>
+      insert-after="public.css"
+      />
 </object>

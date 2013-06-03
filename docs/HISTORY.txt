@@ -6,7 +6,10 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 1.9.2.1 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix https://dev.plone.org/ticket/13606: safe compression on big javascript
+  files. Just remove the compression on all resources, we already use
+  minified version
+  [toutpt]
 
 
 1.9.2.0 (2012-11-29)
