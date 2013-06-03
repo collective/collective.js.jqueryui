@@ -2,7 +2,7 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
     <javascript id="collective.js.jqueryui.custom.min.js"
         compression="none"
-        bundle="jqueryui"
+        bundle="default"
         insert-after="++resource++plone.app.jquery.js"
         />
 </object>
