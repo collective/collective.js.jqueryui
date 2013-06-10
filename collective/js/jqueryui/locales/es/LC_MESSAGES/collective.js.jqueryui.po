@@ -1,0 +1,1187 @@
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.js.jqueryui\n"
+"POT-Creation-Date: 2013-06-10 18:05+0000\n"
+"PO-Revision-Date: 2013-06-10 13:13-0430\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: collective.js.jqueryui\n"
+"Language: es\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#: ../example/jqueryui.pt:393
+msgid ".ui-icon-alert"
+msgstr "Usar con el atributo de clase '.ui-icon-alert'"
+
+#: ../example/jqueryui.pt:197
+msgid ".ui-icon-arrow-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-e'"
+
+#: ../example/jqueryui.pt:193
+msgid ".ui-icon-arrow-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-n'"
+
+#: ../example/jqueryui.pt:195
+msgid ".ui-icon-arrow-1-ne"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-ne'"
+
+#: ../example/jqueryui.pt:207
+msgid ".ui-icon-arrow-1-nw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-nw'"
+
+#: ../example/jqueryui.pt:201
+msgid ".ui-icon-arrow-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-s'"
+
+#: ../example/jqueryui.pt:199
+msgid ".ui-icon-arrow-1-se"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-se'"
+
+#: ../example/jqueryui.pt:203
+msgid ".ui-icon-arrow-1-sw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-sw'"
+
+#: ../example/jqueryui.pt:205
+msgid ".ui-icon-arrow-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-1-w'"
+
+#: ../example/jqueryui.pt:213
+msgid ".ui-icon-arrow-2-e-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-2-e-w'"
+
+#: ../example/jqueryui.pt:209
+msgid ".ui-icon-arrow-2-n-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-2-n-s'"
+
+#: ../example/jqueryui.pt:211
+msgid ".ui-icon-arrow-2-ne-sw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-2-ne-sw'"
+
+#: ../example/jqueryui.pt:215
+msgid ".ui-icon-arrow-2-se-nw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-2-se-nw'"
+
+#: ../example/jqueryui.pt:281
+msgid ".ui-icon-arrow-4"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-4'"
+
+#: ../example/jqueryui.pt:283
+msgid ".ui-icon-arrow-4-diag"
+msgstr "Usar con el atributo de clase '.ui-icon-arrow-4-diag'"
+
+#: ../example/jqueryui.pt:277
+msgid ".ui-icon-arrowrefresh-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowrefresh-1-e'"
+
+#: ../example/jqueryui.pt:275
+msgid ".ui-icon-arrowrefresh-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowrefresh-1-n'"
+
+#: ../example/jqueryui.pt:279
+msgid ".ui-icon-arrowrefresh-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowrefresh-1-s'"
+
+#: ../example/jqueryui.pt:273
+msgid ".ui-icon-arrowrefresh-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowrefresh-1-w'"
+
+#: ../example/jqueryui.pt:269
+msgid ".ui-icon-arrowreturn-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturn-1-e'"
+
+#: ../example/jqueryui.pt:267
+msgid ".ui-icon-arrowreturn-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturn-1-n'"
+
+#: ../example/jqueryui.pt:271
+msgid ".ui-icon-arrowreturn-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturn-1-s'"
+
+#: ../example/jqueryui.pt:265
+msgid ".ui-icon-arrowreturn-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturn-1-w'"
+
+#: ../example/jqueryui.pt:261
+msgid ".ui-icon-arrowreturnthick-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturnthick-1-e'"
+
+#: ../example/jqueryui.pt:259
+msgid ".ui-icon-arrowreturnthick-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturnthick-1-n'"
+
+#: ../example/jqueryui.pt:263
+msgid ".ui-icon-arrowreturnthick-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturnthick-1-s'"
+
+#: ../example/jqueryui.pt:257
+msgid ".ui-icon-arrowreturnthick-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowreturnthick-1-w'"
+
+#: ../example/jqueryui.pt:219
+msgid ".ui-icon-arrowstop-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowstop-1-e'"
+
+#: ../example/jqueryui.pt:217
+msgid ".ui-icon-arrowstop-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowstop-1-n'"
+
+#: ../example/jqueryui.pt:221
+msgid ".ui-icon-arrowstop-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowstop-1-s'"
+
+#: ../example/jqueryui.pt:223
+msgid ".ui-icon-arrowstop-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowstop-1-w'"
+
+#: ../example/jqueryui.pt:229
+msgid ".ui-icon-arrowthick-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-e'"
+
+#: ../example/jqueryui.pt:225
+msgid ".ui-icon-arrowthick-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-n'"
+
+#: ../example/jqueryui.pt:227
+msgid ".ui-icon-arrowthick-1-ne"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-ne'"
+
+#: ../example/jqueryui.pt:239
+msgid ".ui-icon-arrowthick-1-nw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-nw'"
+
+#: ../example/jqueryui.pt:233
+msgid ".ui-icon-arrowthick-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-s'"
+
+#: ../example/jqueryui.pt:231
+msgid ".ui-icon-arrowthick-1-se"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-se'"
+
+#: ../example/jqueryui.pt:235
+msgid ".ui-icon-arrowthick-1-sw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-sw'"
+
+#: ../example/jqueryui.pt:237
+msgid ".ui-icon-arrowthick-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-1-w'"
+
+#: ../example/jqueryui.pt:245
+msgid ".ui-icon-arrowthick-2-e-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-2-e-w'"
+
+#: ../example/jqueryui.pt:241
+msgid ".ui-icon-arrowthick-2-n-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-2-n-s'"
+
+#: ../example/jqueryui.pt:243
+msgid ".ui-icon-arrowthick-2-ne-sw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-2-ne-sw'"
+
+#: ../example/jqueryui.pt:247
+msgid ".ui-icon-arrowthick-2-se-nw"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthick-2-se-nw'"
+
+#: ../example/jqueryui.pt:251
+msgid ".ui-icon-arrowthickstop-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthickstop-1-e'"
+
+#: ../example/jqueryui.pt:249
+msgid ".ui-icon-arrowthickstop-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthickstop-1-n'"
+
+#: ../example/jqueryui.pt:253
+msgid ".ui-icon-arrowthickstop-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthickstop-1-s'"
+
+#: ../example/jqueryui.pt:255
+msgid ".ui-icon-arrowthickstop-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-arrowthickstop-1-w'"
+
+#: ../example/jqueryui.pt:439
+msgid ".ui-icon-battery-0"
+msgstr "Usar con el atributo de clase '.ui-icon-battery-0'"
+
+#: ../example/jqueryui.pt:441
+msgid ".ui-icon-battery-1"
+msgstr "Usar con el atributo de clase '.ui-icon-battery-1'"
+
+#: ../example/jqueryui.pt:443
+msgid ".ui-icon-battery-2"
+msgstr "Usar con el atributo de clase '.ui-icon-battery-2'"
+
+#: ../example/jqueryui.pt:445
+msgid ".ui-icon-battery-3"
+msgstr "Usar con el atributo de clase '.ui-icon-battery-3'"
+
+#: ../example/jqueryui.pt:325
+msgid ".ui-icon-bookmark"
+msgstr "Usar con el atributo de clase '.ui-icon-bookmark'"
+
+#: ../example/jqueryui.pt:403
+msgid ".ui-icon-bullet"
+msgstr "Usar con el atributo de clase '.ui-icon-bullet'"
+
+#: ../example/jqueryui.pt:333
+msgid ".ui-icon-calculator"
+msgstr "Usar con el atributo de clase '.ui-icon-calculator'"
+
+#: ../example/jqueryui.pt:343
+msgid ".ui-icon-calendar"
+msgstr "Usar con el atributo de clase '.ui-icon-calendar'"
+
+#: ../example/jqueryui.pt:361
+msgid ".ui-icon-cancel"
+msgstr "Usar con el atributo de clase '.ui-icon-cancel'"
+
+#: ../example/jqueryui.pt:157
+msgid ".ui-icon-carat-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-e'"
+
+#: ../example/jqueryui.pt:153
+msgid ".ui-icon-carat-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-n'"
+
+#: ../example/jqueryui.pt:155
+msgid ".ui-icon-carat-1-ne"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-ne'"
+
+#: ../example/jqueryui.pt:167
+msgid ".ui-icon-carat-1-nw"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-nw'"
+
+#: ../example/jqueryui.pt:161
+msgid ".ui-icon-carat-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-s'"
+
+#: ../example/jqueryui.pt:159
+msgid ".ui-icon-carat-1-se"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-se'"
+
+#: ../example/jqueryui.pt:163
+msgid ".ui-icon-carat-1-sw"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-sw'"
+
+#: ../example/jqueryui.pt:165
+msgid ".ui-icon-carat-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-1-w'"
+
+#: ../example/jqueryui.pt:171
+msgid ".ui-icon-carat-2-e-w"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-2-e-w'"
+
+#: ../example/jqueryui.pt:169
+msgid ".ui-icon-carat-2-n-s"
+msgstr "Usar con el atributo de clase '.ui-icon-carat-2-n-s'"
+
+#: ../example/jqueryui.pt:335
+msgid ".ui-icon-cart"
+msgstr "Usar con el atributo de clase '.ui-icon-cart'"
+
+#: ../example/jqueryui.pt:401
+msgid ".ui-icon-check"
+msgstr "Usar con el atributo de clase '.ui-icon-check'"
+
+#: ../example/jqueryui.pt:461
+msgid ".ui-icon-circle-arrow-e"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-arrow-e'"
+
+#: ../example/jqueryui.pt:467
+msgid ".ui-icon-circle-arrow-n"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-arrow-n'"
+
+#: ../example/jqueryui.pt:463
+msgid ".ui-icon-circle-arrow-s"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-arrow-s'"
+
+#: ../example/jqueryui.pt:465
+msgid ".ui-icon-circle-arrow-w"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-arrow-w'"
+
+#: ../example/jqueryui.pt:473
+msgid ".ui-icon-circle-check"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-check'"
+
+#: ../example/jqueryui.pt:451
+msgid ".ui-icon-circle-close"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-close'"
+
+#: ../example/jqueryui.pt:449
+msgid ".ui-icon-circle-minus"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-minus'"
+
+#: ../example/jqueryui.pt:447
+msgid ".ui-icon-circle-plus"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-plus'"
+
+#: ../example/jqueryui.pt:453
+msgid ".ui-icon-circle-triangle-e"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-triangle-e'"
+
+#: ../example/jqueryui.pt:459
+msgid ".ui-icon-circle-triangle-n"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-triangle-n'"
+
+#: ../example/jqueryui.pt:455
+msgid ".ui-icon-circle-triangle-s"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-triangle-s'"
+
+#: ../example/jqueryui.pt:457
+msgid ".ui-icon-circle-triangle-w"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-triangle-w'"
+
+#: ../example/jqueryui.pt:469
+msgid ".ui-icon-circle-zoomin"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-zoomin'"
+
+#: ../example/jqueryui.pt:471
+msgid ".ui-icon-circle-zoomout"
+msgstr "Usar con el atributo de clase '.ui-icon-circle-zoomout'"
+
+#: ../example/jqueryui.pt:479
+msgid ".ui-icon-circlesmall-close"
+msgstr "Usar con el atributo de clase '.ui-icon-circlesmall-close'"
+
+#: ../example/jqueryui.pt:477
+msgid ".ui-icon-circlesmall-minus"
+msgstr "Usar con el atributo de clase '.ui-icon-circlesmall-minus'"
+
+#: ../example/jqueryui.pt:475
+msgid ".ui-icon-circlesmall-plus"
+msgstr "Usar con el atributo de clase '.ui-icon-circlesmall-plus'"
+
+#: ../example/jqueryui.pt:381
+msgid ".ui-icon-clipboard"
+msgstr "Usar con el atributo de clase '.ui-icon-clipboard'"
+
+#: ../example/jqueryui.pt:339
+msgid ".ui-icon-clock"
+msgstr "Usar con el atributo de clase '.ui-icon-clock'"
+
+#: ../example/jqueryui.pt:371
+msgid ".ui-icon-close"
+msgstr "Usar con el atributo de clase '.ui-icon-close'"
+
+#: ../example/jqueryui.pt:373
+msgid ".ui-icon-closethick"
+msgstr "Usar con el atributo de clase '.ui-icon-closethick'"
+
+#: ../example/jqueryui.pt:313
+msgid ".ui-icon-comment"
+msgstr "Usar con el atributo de clase '.ui-icon-comment'"
+
+#: ../example/jqueryui.pt:385
+msgid ".ui-icon-contact"
+msgstr "Usar con el atributo de clase '.ui-icon-contact'"
+
+#: ../example/jqueryui.pt:383
+msgid ".ui-icon-copy"
+msgstr "Usar con el atributo de clase '.ui-icon-copy'"
+
+#: ../example/jqueryui.pt:341
+msgid ".ui-icon-disk"
+msgstr "Usar con el atributo de clase '.ui-icon-disk'"
+
+#: ../example/jqueryui.pt:301
+msgid ".ui-icon-document"
+msgstr "Usar con el atributo de clase '.ui-icon-document'"
+
+#: ../example/jqueryui.pt:303
+msgid ".ui-icon-document-b"
+msgstr "Usar con el atributo de clase '.ui-icon-document-b'"
+
+#: ../example/jqueryui.pt:427
+msgid ".ui-icon-eject"
+msgstr "Usar con el atributo de clase '.ui-icon-eject'"
+
+#: ../example/jqueryui.pt:285
+msgid ".ui-icon-extlink"
+msgstr "Usar con el atributo de clase '.ui-icon-extlink'"
+
+#: ../example/jqueryui.pt:331
+msgid ".ui-icon-flag"
+msgstr "Usar con el atributo de clase '.ui-icon-flag'"
+
+#: ../example/jqueryui.pt:297
+msgid ".ui-icon-folder-collapsed"
+msgstr "Usar con el atributo de clase '.ui-icon-folder-collapsed'"
+
+#: ../example/jqueryui.pt:299
+msgid ".ui-icon-folder-open"
+msgstr "Usar con el atributo de clase '.ui-icon-folder-open'"
+
+#: ../example/jqueryui.pt:353
+msgid ".ui-icon-gear"
+msgstr "Usar con el atributo de clase '.ui-icon-gear'"
+
+#: ../example/jqueryui.pt:497
+msgid ".ui-icon-grip-diagonal-se"
+msgstr "Usar con el atributo de clase '.ui-icon-grip-diagonal-se'"
+
+#: ../example/jqueryui.pt:489
+msgid ".ui-icon-grip-dotted-horizontal"
+msgstr "Usar con el atributo de clase '.ui-icon-grip-dotted-horizontal'"
+
+#: ../example/jqueryui.pt:487
+msgid ".ui-icon-grip-dotted-vertical"
+msgstr "Usar con el atributo de clase '.ui-icon-grip-dotted-vertical'"
+
+#: ../example/jqueryui.pt:493
+msgid ".ui-icon-grip-solid-horizontal"
+msgstr "Usar con el atributo de clase '.ui-icon-grip-solid-horizontal'"
+
+#: ../example/jqueryui.pt:491
+msgid ".ui-icon-grip-solid-vertical"
+msgstr "Usar con el atributo de clase '.ui-icon-grip-solid-vertical'"
+
+#: ../example/jqueryui.pt:495
+msgid ".ui-icon-gripsmall-diagonal-se"
+msgstr "Usar con el atributo de clase '.ui-icon-gripsmall-diagonal-se'"
+
+#: ../example/jqueryui.pt:355
+msgid ".ui-icon-heart"
+msgstr "Usar con el atributo de clase '.ui-icon-heart'"
+
+#: ../example/jqueryui.pt:399
+msgid ".ui-icon-help"
+msgstr "Usar con el atributo de clase '.ui-icon-help'"
+
+#: ../example/jqueryui.pt:329
+msgid ".ui-icon-home"
+msgstr "Usar con el atributo de clase '.ui-icon-home'"
+
+#: ../example/jqueryui.pt:387
+msgid ".ui-icon-image"
+msgstr "Usar con el atributo de clase '.ui-icon-image'"
+
+#: ../example/jqueryui.pt:395
+msgid ".ui-icon-info"
+msgstr "Usar con el atributo de clase '.ui-icon-info'"
+
+#: ../example/jqueryui.pt:375
+msgid ".ui-icon-key"
+msgstr "Usar con el atributo de clase '.ui-icon-key'"
+
+#: ../example/jqueryui.pt:377
+msgid ".ui-icon-lightbulb"
+msgstr "Usar con el atributo de clase '.ui-icon-lightbulb'"
+
+#: ../example/jqueryui.pt:359
+msgid ".ui-icon-link"
+msgstr "Usar con el atributo de clase '.ui-icon-link'"
+
+#: ../example/jqueryui.pt:321
+msgid ".ui-icon-locked"
+msgstr "Usar con el atributo de clase '.ui-icon-locked'"
+
+#: ../example/jqueryui.pt:307
+msgid ".ui-icon-mail-closed"
+msgstr "Usar con el atributo de clase '.ui-icon-mail-closed'"
+
+#: ../example/jqueryui.pt:309
+msgid ".ui-icon-mail-open"
+msgstr "Usar con el atributo de clase '.ui-icon-mail-open'"
+
+#: ../example/jqueryui.pt:367
+msgid ".ui-icon-minus"
+msgstr "Usar con el atributo de clase '.ui-icon-minus'"
+
+#: ../example/jqueryui.pt:369
+msgid ".ui-icon-minusthick"
+msgstr "Usar con el atributo de clase '.ui-icon-minusthick'"
+
+#: ../example/jqueryui.pt:287
+msgid ".ui-icon-newwin"
+msgstr "Usar con el atributo de clase '.ui-icon-newwin'"
+
+#: ../example/jqueryui.pt:305
+msgid ".ui-icon-note"
+msgstr "Usar con el atributo de clase '.ui-icon-note'"
+
+#: ../example/jqueryui.pt:397
+msgid ".ui-icon-notice"
+msgstr "Usar con el atributo de clase '.ui-icon-notice'"
+
+#: ../example/jqueryui.pt:415
+msgid ".ui-icon-pause"
+msgstr "Usar con el atributo de clase '.ui-icon-pause'"
+
+#: ../example/jqueryui.pt:337
+msgid ".ui-icon-pencil"
+msgstr "Usar con el atributo de clase '.ui-icon-pencil'"
+
+#: ../example/jqueryui.pt:315
+msgid ".ui-icon-person"
+msgstr "Usar con el atributo de clase '.ui-icon-person'"
+
+#: ../example/jqueryui.pt:411
+msgid ".ui-icon-pin-s"
+msgstr "Usar con el atributo de clase '.ui-icon-pin-s'"
+
+#: ../example/jqueryui.pt:409
+msgid ".ui-icon-pin-w"
+msgstr "Usar con el atributo de clase '.ui-icon-pin-w'"
+
+#: ../example/jqueryui.pt:413
+msgid ".ui-icon-play"
+msgstr "Usar con el atributo de clase '.ui-icon-play'"
+
+#: ../example/jqueryui.pt:363
+msgid ".ui-icon-plus"
+msgstr "Usar con el atributo de clase '.ui-icon-plus'"
+
+#: ../example/jqueryui.pt:365
+msgid ".ui-icon-plusthick"
+msgstr "Usar con el atributo de clase '.ui-icon-plusthick'"
+
+#: ../example/jqueryui.pt:433
+msgid ".ui-icon-power"
+msgstr "Usar con el atributo de clase '.ui-icon-power'"
+
+#: ../example/jqueryui.pt:317
+msgid ".ui-icon-print"
+msgstr "Usar con el atributo de clase '.ui-icon-print'"
+
+#: ../example/jqueryui.pt:405
+msgid ".ui-icon-radio-off"
+msgstr "Usar con el atributo de clase '.ui-icon-radio-off'"
+
+#: ../example/jqueryui.pt:407
+msgid ".ui-icon-radio-on"
+msgstr "Usar con el atributo de clase '.ui-icon-radio-on'"
+
+#: ../example/jqueryui.pt:289
+msgid ".ui-icon-refresh"
+msgstr "Usar con el atributo de clase '.ui-icon-refresh'"
+
+#: ../example/jqueryui.pt:379
+msgid ".ui-icon-scissors"
+msgstr "Usar con el atributo de clase '.ui-icon-scissors'"
+
+#: ../example/jqueryui.pt:391
+msgid ".ui-icon-script"
+msgstr "Usar con el atributo de clase '.ui-icon-script'"
+
+#: ../example/jqueryui.pt:349
+msgid ".ui-icon-search"
+msgstr "Usar con el atributo de clase '.ui-icon-search'"
+
+#: ../example/jqueryui.pt:421
+msgid ".ui-icon-seek-end"
+msgstr "Usar con el atributo de clase '.ui-icon-seek-end'"
+
+#: ../example/jqueryui.pt:423
+msgid ".ui-icon-seek-first"
+msgstr "Usar con el atributo de clase '.ui-icon-seek-first'"
+
+#: ../example/jqueryui.pt:417
+msgid ".ui-icon-seek-next"
+msgstr "Usar con el atributo de clase '.ui-icon-seek-next'"
+
+#: ../example/jqueryui.pt:419
+msgid ".ui-icon-seek-prev"
+msgstr "Usar con el atributo de clase '.ui-icon-seek-prev'"
+
+#: ../example/jqueryui.pt:291
+msgid ".ui-icon-shuffle"
+msgstr "Usar con el atributo de clase '.ui-icon-shuffle'"
+
+#: ../example/jqueryui.pt:437
+msgid ".ui-icon-signal"
+msgstr "Usar con el atributo de clase '.ui-icon-signal'"
+
+#: ../example/jqueryui.pt:435
+msgid ".ui-icon-signal-diag"
+msgstr "Usar con el atributo de clase '.ui-icon-signal-diag'"
+
+#: ../example/jqueryui.pt:485
+msgid ".ui-icon-squaresmall-close"
+msgstr "Usar con el atributo de clase '.ui-icon-squaresmall-close'"
+
+#: ../example/jqueryui.pt:483
+msgid ".ui-icon-squaresmall-minus"
+msgstr "Usar con el atributo de clase '.ui-icon-squaresmall-minus'"
+
+#: ../example/jqueryui.pt:481
+msgid ".ui-icon-squaresmall-plus"
+msgstr "Usar con el atributo de clase '.ui-icon-squaresmall-plus'"
+
+#: ../example/jqueryui.pt:357
+msgid ".ui-icon-star"
+msgstr "Usar con el atributo de clase '.ui-icon-star'"
+
+#: ../example/jqueryui.pt:425
+msgid ".ui-icon-stop"
+msgstr "Usar con el atributo de clase '.ui-icon-stop'"
+
+#: ../example/jqueryui.pt:311
+msgid ".ui-icon-suitcase"
+msgstr "Usar con el atributo de clase '.ui-icon-suitcase'"
+
+#: ../example/jqueryui.pt:327
+msgid ".ui-icon-tag"
+msgstr "Usar con el atributo de clase '.ui-icon-tag'"
+
+#: ../example/jqueryui.pt:293
+msgid ".ui-icon-transfer-e-w"
+msgstr "Usar con el atributo de clase '.ui-icon-transfer-e-w'"
+
+#: ../example/jqueryui.pt:295
+msgid ".ui-icon-transferthick-e-w"
+msgstr "Usar con el atributo de clase '.ui-icon-transferthick-e-w'"
+
+#: ../example/jqueryui.pt:319
+msgid ".ui-icon-trash"
+msgstr "Usar con el atributo de clase '.ui-icon-trash'"
+
+#: ../example/jqueryui.pt:177
+msgid ".ui-icon-triangle-1-e"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-e'"
+
+#: ../example/jqueryui.pt:173
+msgid ".ui-icon-triangle-1-n"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-n'"
+
+#: ../example/jqueryui.pt:175
+msgid ".ui-icon-triangle-1-ne"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-ne'"
+
+#: ../example/jqueryui.pt:187
+msgid ".ui-icon-triangle-1-nw"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-nw'"
+
+#: ../example/jqueryui.pt:181
+msgid ".ui-icon-triangle-1-s"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-s'"
+
+#: ../example/jqueryui.pt:179
+msgid ".ui-icon-triangle-1-se"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-se'"
+
+#: ../example/jqueryui.pt:183
+msgid ".ui-icon-triangle-1-sw"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-sw'"
+
+#: ../example/jqueryui.pt:185
+msgid ".ui-icon-triangle-1-w"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-1-w'"
+
+#: ../example/jqueryui.pt:191
+msgid ".ui-icon-triangle-2-e-w"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-2-e-w'"
+
+#: ../example/jqueryui.pt:189
+msgid ".ui-icon-triangle-2-n-s"
+msgstr "Usar con el atributo de clase '.ui-icon-triangle-2-n-s'"
+
+#: ../example/jqueryui.pt:323
+msgid ".ui-icon-unlocked"
+msgstr "Usar con el atributo de clase '.ui-icon-unlocked'"
+
+#: ../example/jqueryui.pt:389
+msgid ".ui-icon-video"
+msgstr "Usar con el atributo de clase '.ui-icon-video'"
+
+#: ../example/jqueryui.pt:429
+msgid ".ui-icon-volume-off"
+msgstr "Usar con el atributo de clase '.ui-icon-volume-off'"
+
+#: ../example/jqueryui.pt:431
+msgid ".ui-icon-volume-on"
+msgstr "Usar con el atributo de clase '.ui-icon-volume-on'"
+
+#: ../example/jqueryui.pt:351
+msgid ".ui-icon-wrench"
+msgstr "Usar con el atributo de clase '.ui-icon-wrench'"
+
+#: ../example/jqueryui.pt:345
+msgid ".ui-icon-zoomin"
+msgstr "Usar con el atributo de clase '.ui-icon-zoomin'"
+
+#: ../example/jqueryui.pt:347
+msgid ".ui-icon-zoomout"
+msgstr "Usar con el atributo de clase '.ui-icon-zoomout'"
+
+#: ../example/jqueryui.pt:115
+msgid "A button element"
+msgstr "Un elemento de botón"
+
+#: ../controlpanel.py:68
+msgid "A single content area with multiple panels, each associated with   a header in a list."
+msgstr "Un área de contenido simple con múltiples paneles, cada uno asociado con encabezado en una lista."
+
+#: ../controlpanel.py:139
+#: ../example/jqueryui.pt:93
+msgid "Accordion"
+msgstr "Efecto de Acordeón"
+
+#: ../controlpanel.py:310
+msgid "Activate the JQueryUI theme 'Sunburst'"
+msgstr "Activar el jQuery UI para el tema 'Sunburst'"
+
+#: ../controlpanel.py:314
+msgid "Activate the integration between                                 JQueryUI 'Sunburst' theme and the Plone                                 'Sunburst' theme"
+msgstr "Activar la integración entre el tema 'Sunburst' de jQuery UI y el tema 'Sunburst' de Plone"
+
+#: ../example/jqueryui.pt:531
+msgid "Alert:"
+msgstr "Alerta:"
+
+#: ../controlpanel.py:38
+msgid "Allow elements to be moved using the mouse."
+msgstr "Permite a los elementos que puedan ser movidos usando el ratón."
+
+#: ../controlpanel.py:73
+msgid "Apply an animation effect to an element."
+msgstr "Aplicar un efecto de animación a un elemento."
+
+#: ../controlpanel.py:142
+#: ../example/jqueryui.pt:106
+msgid "Autocomplete"
+msgstr "Efecto de Autocompletación"
+
+#: ../controlpanel.py:50
+msgid "Autocomplete enables users to quickly find and select from    a pre-populated list of values as they type, leveraging searching and filtering."
+msgstr "Autocompletar permite a los usuarios encontrar de forma rápida y seleccionar de una lista rellenada previamente de los valores a medida que escriba, aprovechando búsqueda y filtrado."
+
+#: ../example/jqueryui.pt:71
+msgid "Blind"
+msgstr "Persiana"
+
+#: ../example/jqueryui.pt:72
+msgid "Bounce"
+msgstr "Rebote"
+
+#: ../controlpanel.py:145
+#: ../example/jqueryui.pt:114
+msgid "Button"
+msgstr "Botón"
+
+#: ../controlpanel.py:42
+msgid "Change the size of an element using the mouse."
+msgstr "Cambia el tamaño de un elemento usando el ratón."
+
+#: ../example/jqueryui.pt:118
+msgid "Choice 1"
+msgstr "Elección 1"
+
+#: ../example/jqueryui.pt:119
+msgid "Choice 2"
+msgstr "Elección 2"
+
+#: ../example/jqueryui.pt:120
+msgid "Choice 3"
+msgstr "Elección 3"
+
+#: ../example/jqueryui.pt:73
+msgid "Clip"
+msgstr "Clip"
+
+#: ../controlpanel.py:48
+msgid "Convert a pair of headers and content panels into an accordion."
+msgstr "Convertir un par de encabezado y paneles de contenidos dentro de un acordeón."
+
+#: ../controlpanel.py:111
+msgid "Core"
+msgstr "Núcleo"
+
+#: ../controlpanel.py:40
+msgid "Create targets for draggable elements."
+msgstr "Crear objetivos para los elementos que pueden arrastrarse."
+
+#: ../controlpanel.py:71
+msgid "Customizable, themeable tooltips, replacing native tooltips."
+msgstr "Ayuda de uso Personalizables, en sustitución de los mensajes Ayudas de uso nativos."
+
+#: ../controlpanel.py:148
+msgid "Date picker"
+msgstr "Selector de fecha"
+
+#: ../example/jqueryui.pt:509
+msgid "Datepicker"
+msgstr "Selector de fecha"
+
+#: ../controlpanel.py:151
+#: ../example/jqueryui.pt:127
+msgid "Dialog"
+msgstr "Efecto de Diálogo"
+
+#: ../example/jqueryui.pt:145
+msgid "Dialog Title"
+msgstr "Titulo del Diálogo"
+
+#: ../controlpanel.py:61
+msgid "Display status of a determinate or indeterminate process."
+msgstr "Mostrar estatus de un determinado o indeterminado proceso."
+
+#: ../controlpanel.py:63
+msgid "Drag a handle to select a numeric value."
+msgstr "Arrastre un manipulador para seleccionar un valor numérico."
+
+#: ../controlpanel.py:124
+msgid "Draggable"
+msgstr "Arrastrable"
+
+#: ../example/jqueryui.pt:74
+msgid "Drop"
+msgstr "Soltar"
+
+#: ../controlpanel.py:127
+msgid "Droppable"
+msgstr "Soltable"
+
+#: ../example/jqueryui.pt:63
+msgid "Effect"
+msgstr "Efecto de animación"
+
+#: ../controlpanel.py:175
+msgid "Effects 'blind'"
+msgstr "Efectos 'persiana'"
+
+#: ../controlpanel.py:178
+msgid "Effects 'bounce'"
+msgstr "Efectos 'rebote'"
+
+#: ../controlpanel.py:181
+msgid "Effects 'clip'"
+msgstr "Efectos 'clip'"
+
+#: ../controlpanel.py:172
+msgid "Effects 'core'"
+msgstr "Efectos 'núcleo'"
+
+#: ../controlpanel.py:184
+msgid "Effects 'drop'"
+msgstr "Efectos 'soltar'"
+
+#: ../controlpanel.py:187
+msgid "Effects 'explode'"
+msgstr "Efectos 'explotar'"
+
+#: ../controlpanel.py:190
+msgid "Effects 'fade'"
+msgstr "Efectos 'desvanecer'"
+
+#: ../controlpanel.py:193
+msgid "Effects 'fold'"
+msgstr "Efectos 'doblar'"
+
+#: ../controlpanel.py:196
+msgid "Effects 'highlight'"
+msgstr "Efectos 'resaltar'"
+
+#: ../controlpanel.py:199
+msgid "Effects 'pulsate'"
+msgstr "Efectos 'pulso'"
+
+#: ../controlpanel.py:202
+msgid "Effects 'scale'"
+msgstr "Efectos 'reducir o aumentar'"
+
+#: ../controlpanel.py:205
+msgid "Effects 'shake'"
+msgstr "Efectos 'agitar'"
+
+#: ../controlpanel.py:208
+msgid "Effects 'slide'"
+msgstr "Efectos 'deslizar'"
+
+#: ../controlpanel.py:211
+msgid "Effects 'transfer'"
+msgstr "Efectos 'transferencia'"
+
+#: ../controlpanel.py:65
+msgid "Enhance a text input for entering numeric values, with up/down   buttons and arrow key handling."
+msgstr "Mejorar una entrada de texto para introducir valores numéricos, con los botones arriba / abajo y pulsando la flecha de manipulación."
+
+#: ../example/jqueryui.pt:75
+msgid "Explode"
+msgstr "Explotar"
+
+#: ../example/jqueryui.pt:76
+msgid "Fade"
+msgstr "Desvanecer"
+
+#: ../example/jqueryui.pt:95
+msgid "First"
+msgstr "Primero"
+
+#: ../example/jqueryui.pt:77
+msgid "Fold"
+msgstr "Doblar"
+
+#: ../example/jqueryui.pt:151
+msgid "Framework Icons (content color preview)"
+msgstr "Iconos de Framework (vista previa de color de contenido)"
+
+#: ../controlpanel.pt:38
+msgid "Here you have access to all controlpanels related to jqueryui integration in Plone. Make your choice."
+msgstr "Aquí usted tiene acceso a todos los paneles de control relacionado a la integración jQuery UI en Plone."
+
+#: ../example/jqueryui.pt:524
+msgid "Hey!"
+msgstr "¡Hey!"
+
+#: ../example/jqueryui.pt:78
+msgid "Highlight"
+msgstr "Resaltar"
+
+#: ../example/jqueryui.pt:520
+msgid "Highlight / Error"
+msgstr "Resaltado / Error"
+
+#: ../profiles/default/controlpanel.xml
+#: ../profiles/uninstall/controlpanel.xml
+msgid "JQueryUI"
+msgstr "jQuery UI"
+
+#: ../controlpanel.py:330
+msgid "JQueryUI Sunburst CSS settings"
+msgstr "Configuraciones CSS del tema Sunburst para jQuery UI"
+
+#: ../controlpanel.py:354
+msgid "JQueryUI control panel"
+msgstr "Panel de control jQuery UI"
+
+#: ../controlpanel.py:225
+msgid "JQueryUI plugins settings"
+msgstr "Configuraciones de complementos jQuery UI"
+
+#: ../controlpanel.py:154
+msgid "Menu"
+msgstr "Menú"
+
+#: ../controlpanel.py:118
+msgid "Mouse"
+msgstr "Ratón"
+
+#: ../example/jqueryui.pt:128
+msgid "Open Dialog"
+msgstr "Abrir Diálogo"
+
+#: ../controlpanel.py:57
+msgid "Open content in an interactive overlay."
+msgstr "Abra el contenido de una superposición interactiva."
+
+#: ../example/jqueryui.pt:130
+msgid "Overlay and Shadow Classes <em>(not currently used in UI widgets)</em>"
+msgstr "Clases de superposición y sombra <em>(no se utiliza actualmente en los widgets de interfaz de usuario)</em>"
+
+#: ../profiles/default/actions.xml
+msgid "Plugins"
+msgstr "Complementos"
+
+#: ../controlpanel.py:121
+msgid "Position"
+msgstr "Posición"
+
+#: ../controlpanel.py:36
+msgid "Position an element relative to another."
+msgstr "Coloque un elemento con relación a otro."
+
+#: ../controlpanel.py:157
+msgid "Progress bar"
+msgstr "Barra de progreso"
+
+#: ../example/jqueryui.pt:515
+msgid "Progressbar"
+msgstr "Barra de progreso"
+
+#: ../example/jqueryui.pt:79
+msgid "Puff"
+msgstr "Escalar hacia afuera"
+
+#: ../example/jqueryui.pt:80
+msgid "Pulsate"
+msgstr "Pulso"
+
+#: ../controlpanel.py:46
+msgid "Reorder elements in a list or grid using the mouse."
+msgstr "Reordenar los elementos de una lista o rejilla con el ratón."
+
+#: ../controlpanel.py:130
+msgid "Resizable"
+msgstr "Redimensionable"
+
+#: ../example/jqueryui.pt:88
+msgid "Run Effect"
+msgstr "Ejecutar efecto"
+
+#: ../example/jqueryui.pt:531
+msgid "Sample ui-state-error style."
+msgstr "Ejemplo de estilo 'ui-state-error'."
+
+#: ../example/jqueryui.pt:524
+msgid "Sample ui-state-highlight style."
+msgstr "Ejemplo de estilo 'ui-state-highlight'."
+
+#: ../example/jqueryui.pt:81
+msgid "Scale"
+msgstr "Reducir o aumentar"
+
+#: ../example/jqueryui.pt:97
+msgid "Second"
+msgstr "Segundo"
+
+#: ../controlpanel.py:55
+msgid "Select a date from a popup or inline calendar"
+msgstr "Seleccione una fecha en un calendario emergente o en línea."
+
+#: ../controlpanel.py:133
+msgid "Selectable"
+msgstr "Seleccionable"
+
+#: ../example/jqueryui.pt:82
+msgid "Shake"
+msgstr "Agitar"
+
+#: ../controlpanel.py:102
+msgid "Shakes the element multiple times, vertically or horizontally."
+msgstr "Agita el elemento varias veces, vertical u horizontalmente."
+
+#: ../controlpanel.py:100
+msgid "Shrink or grow an element by a percentage factor."
+msgstr "Reducir o aumentar un elemento en un factor porcentual."
+
+#: ../example/jqueryui.pt:83
+msgid "Size"
+msgstr "Cambiar tamaño"
+
+#: ../example/jqueryui.pt:84
+msgid "Slide"
+msgstr "Deslizar"
+
+#: ../controlpanel.py:160
+#: ../example/jqueryui.pt:503
+msgid "Slider"
+msgstr "Deslizar"
+
+#: ../controlpanel.py:104
+msgid "Slides the element out of the viewport."
+msgstr "Deslizar del elemento de la portada."
+
+#: ../controlpanel.py:136
+msgid "Sortable"
+msgstr "Ordenable"
+
+#: ../controlpanel.py:163
+msgid "Spinner"
+msgstr "Marcador incrementable"
+
+#: ../controlpanel.py:313
+msgid "Sunburst CSS Integration"
+msgstr "Integración CSS del tema Sunburst"
+
+#: ../controlpanel.py:309
+msgid "Sunburst CSS for jqueryui"
+msgstr "jQuery UI para el CSS del tema Sunburst"
+
+#: ../profiles/default/actions.xml
+msgid "Sunburst Theme"
+msgstr "Tema Sunburst"
+
+#: ../controlpanel.py:166
+msgid "Tabs"
+msgstr "Pestañas"
+
+#: ../controlpanel.py:75
+msgid "The blind effect hides or shows an element by wrapping   the element in a container, and 'pulling the blinds'"
+msgstr "El efecto Persiana oculta o muestra un elemento envolviendo el elemento en un contenedor, y 'tirando el efecto las persianas'"
+
+#: ../controlpanel.py:78
+msgid "The bounce effect bounces an element. When used with    hide or show, the last or first bounce will also fade in/out."
+msgstr "El efecto rebote, hace rebotar un elemento. Cuando se utiliza con ocultar o mostrar, el último o el primer rebote también desvanece."
+
+#: ../controlpanel.py:81
+msgid "The clip effect will hide or show an element by clipping   the element vertically or horizontally."
+msgstr "El efecto clip ocultara o mostrara un elemento como un dobles de periódico del elemento de forma vertical u horizontal."
+
+#: ../controlpanel.py:27
+msgid "The core of jQuery UI, required for all interactions   and widgets."
+msgstr "El núcleo de jQuery UI, se requiere para todas las interacciones y widgets."
+
+#: ../controlpanel.py:84
+msgid "The drop effect hides or shows an element fading in/out   and sliding in a direction."
+msgstr "El efecto soltar oculta o muestra un elemento desvaneciendo y deslizándose en una dirección."
+
+#: ../controlpanel.py:87
+msgid "The explode effect hides or shows an element by   splitting it into pieces."
+msgstr "El efecto explotar oculta o muestra un elemento dividido en pedazos."
+
+#: ../controlpanel.py:90
+msgid "The fade effect hides or shows an element by fading it."
+msgstr "El efecto desvanecer oculta o muestra un elemento desvaneciéndose."
+
+#: ../controlpanel.py:92
+msgid "The fold effect hides or shows an element by folding it."
+msgstr "El efecto doblar oculta o muestra un elemento doblándose."
+
+#: ../controlpanel.py:94
+msgid "The highlight effect hides or shows an element by   animating its background color first."
+msgstr "El efecto resaltar oculta o muestra un elemento animando primero su color de fondo para resaltar el elemento."
+
+#: ../controlpanel.pt:45
+msgid "The list below is a set of controlpanels add by addons related to jqueryui. Use the plugins controlpanel to control which plugin you want to use."
+msgstr "La siguiente lista es un conjunto de paneles de control que se agregan como complementos relacionados con jQuery UI. Use el panel de control de complementos para controlar en qué complemento usted desea utilizar."
+
+#: ../controlpanel.py:33
+msgid "The mouse interaction is not intended to be used directly.   It is purely a base layer for other widgets to inherit from."
+msgstr "La interacción del ratón no está destinado a ser utilizado directamente. Es puramente una capa de base para otros widgets a heredar."
+
+#: ../controlpanel.py:97
+msgid "The pulsate effect hides or shows an element by   pulsing it in or out."
+msgstr "El efecto pulsar oculta o muestra un elemento como un pulso."
+
+#: ../controlpanel.py:53
+msgid "Themeable buttons and button sets."
+msgstr "Conjuntos de botón y botones personalizables."
+
+#: ../controlpanel.py:59
+msgid "Themeable menu with mouse and keyboard interactions for navigation."
+msgstr "Menú personalizable con el ratón y interacciones de teclado para la navegación."
+
+#: ../example/jqueryui.pt:99
+msgid "Third"
+msgstr "Tercero"
+
+#: ../controlpanel.py:169
+msgid "Tooltip"
+msgstr "Ayuda de uso"
+
+#: ../example/jqueryui.pt:85
+msgid "Transfer"
+msgstr "Transferencia"
+
+#: ../controlpanel.py:106
+msgid "Transfers the outline of an element to another element."
+msgstr "Transfiere el contorno de un elemento a otro elemento."
+
+#: ../controlpanel.py:44
+msgid "Use the mouse to select elements, individually or in a group."
+msgstr "Use el ratón para seleccionar elementos, individualmente o en un grupo."
+
+#: ../controlpanel.py:115
+msgid "Widget"
+msgstr "Widget"
+
+#: ../controlpanel.py:30
+msgid "Widgets are feature-rich, stateful plugins that have   a full life-cycle, along with methods and events."
+msgstr "Los widgets son rico en funciones, complementos que tienen un ciclo de vida completo, junto con los métodos y eventos."
+
+#. Default: "Up to JQueryUI Settings"
+#: ../controlpanel_layout.pt:28
+msgid "label_up_to_jqueryuisettings"
+msgstr "Subir a configuraciones jQuery UI"
+
+#: ../example/jqueryui.pt:108
+msgid "type 'a'"
+msgstr "escriba la letra 'a' y mostrar las coincidencias en la búsqueda"
+

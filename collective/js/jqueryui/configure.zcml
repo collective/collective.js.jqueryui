@@ -1,7 +1,10 @@
 <configure
   xmlns="http://namespaces.zope.org/zope"
   xmlns:zcml="http://namespaces.zope.org/zcml"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
   i18n_domain="collective.js.jqueryui">
+
+  <i18n:registerTranslations directory="locales" />
 
   <configure zcml:condition="installed Products.CMFPlone">
     <include file="plone.zcml" />

@@ -14,6 +14,7 @@ from plone.app.registry.browser import controlpanel as basepanel
 
 from Products.Five import BrowserView
 
+from collective.js.jqueryui import jQueryUIMF as _
 from collective.js.jqueryui.config import JQUERYUI_DEPENDENCIES
 from collective.js.jqueryui.config import PATCH_RESOURCE_ID
 from collective.js.jqueryui.config import CSS_RESOURCE_ID
@@ -23,114 +24,192 @@ RESOURCE_ID = '++resource++jquery-ui/jquery.%s.min.js'
 
 logger = logging.getLogger('collective.js.jqueryui')
 
-ui_core_desc = u"The core of jQuery UI, required for all interactions \
-  and widgets."
+ui_core_desc = _(u"The core of jQuery UI, required for all interactions \
+  and widgets.")
+
+ui_widget_desc = _(u"Widgets are feature-rich, stateful plugins that have \
+  a full life-cycle, along with methods and events.")
+
+ui_mouse_desc = _(u"The mouse interaction is not intended to be used directly. \
+  It is purely a base layer for other widgets to inherit from.")
+
+ui_position_desc = _(u"Position an element relative to another.")
+
+ui_draggable_desc = _(u"Allow elements to be moved using the mouse.")
+
+ui_droppable_desc = _(u"Create targets for draggable elements.")
+
+ui_resizable_desc = _(u"Change the size of an element using the mouse.")
+
+ui_selectable_desc = _(u"Use the mouse to select elements, individually or in a group.")
+
+ui_sortable_desc = _(u"Reorder elements in a list or grid using the mouse.")
+
+ui_accordion_desc = _(u"Convert a pair of headers and content panels into an accordion.")
+
+ui_autocomplete_desc = _(u"Autocomplete enables users to quickly find and select from  \
+  a pre-populated list of values as they type, leveraging searching and filtering.")
+
+ui_button_desc = _(u"Themeable buttons and button sets.")
+
+ui_datepicker_desc = _(u"Select a date from a popup or inline calendar")
+
+ui_dialog_desc = _(u"Open content in an interactive overlay.")
+
+ui_menu_desc = _(u"Themeable menu with mouse and keyboard interactions for navigation.")
+
+ui_progressbar_desc = _(u"Display status of a determinate or indeterminate process.")
+
+ui_slider_desc = _(u"Drag a handle to select a numeric value.")
+
+ui_spinner_desc = _(u"Enhance a text input for entering numeric values, with up/down \
+  buttons and arrow key handling.")
+
+ui_tabs_desc = _(u"A single content area with multiple panels, each associated with \
+  a header in a list.")
+
+ui_tooltip_desc = _(u"Customizable, themeable tooltips, replacing native tooltips.")
+
+ui_effect_desc = _(u"Apply an animation effect to an element.")
+
+ui_effect_blind_desc = _(u"The blind effect hides or shows an element by wrapping \
+  the element in a container, and 'pulling the blinds'")
+
+ui_effect_bounce_desc = _(u"The bounce effect bounces an element. When used with  \
+  hide or show, the last or first bounce will also fade in/out.")
+
+ui_effect_clip_desc = _(u"The clip effect will hide or show an element by clipping \
+  the element vertically or horizontally.")
+
+ui_effect_drop_desc = _(u"The drop effect hides or shows an element fading in/out \
+  and sliding in a direction.")
+
+ui_effect_explode_desc = _(u"The explode effect hides or shows an element by \
+  splitting it into pieces.")
+
+ui_effect_fade_desc = _(u"The fade effect hides or shows an element by fading it.")
+
+ui_effect_fold_desc = _(u"The fold effect hides or shows an element by folding it.")
+
+ui_effect_highlight_desc = _(u"The highlight effect hides or shows an element by \
+  animating its background color first.")
+
+ui_effect_pulsate_desc = _(u"The pulsate effect hides or shows an element by \
+  pulsing it in or out.")
+
+ui_effect_scale_desc = _(u"Shrink or grow an element by a percentage factor.")
+
+ui_effect_shake_desc = _(u"Shakes the element multiple times, vertically or horizontally.")
+
+ui_effect_slide_desc = _(u"Slides the element out of the viewport.")
+
+ui_effect_transfer_desc = _(u"Transfers the outline of an element to another element.")
 
 
 class IJQueryUIPlugins(interface.Interface):
 
-    ui_core = schema.Bool(title=u"Core",
+    ui_core = schema.Bool(title=_(u"Core"),
                        description=ui_core_desc,
                        required=False, default=False)
 
-    ui_widget = schema.Bool(title=u"Widget",
-                         description=u"", required=False, default=False)
+    ui_widget = schema.Bool(title=_(u"Widget"),
+                         description=ui_widget_desc, required=False, default=False)
 
-    ui_mouse = schema.Bool(title=u"Mouse",
-                         description=u"", required=False, default=False)
+    ui_mouse = schema.Bool(title=_(u"Mouse"),
+                         description=ui_mouse_desc, required=False, default=False)
 
-    ui_position = schema.Bool(title=u"Position",
-                         description=u"", required=False, default=False)
+    ui_position = schema.Bool(title=_(u"Position"),
+                         description=ui_position_desc, required=False, default=False)
 
-    ui_draggable = schema.Bool(title=u"Draggable",
-                         description=u"", required=False, default=False)
+    ui_draggable = schema.Bool(title=_(u"Draggable"),
+                         description=ui_draggable_desc, required=False, default=False)
 
-    ui_droppable = schema.Bool(title=u"Droppable",
-                         description=u"", required=False, default=False)
+    ui_droppable = schema.Bool(title=_(u"Droppable"),
+                         description=ui_droppable_desc, required=False, default=False)
 
-    ui_resizable = schema.Bool(title=u"Resizable",
-                         description=u"", required=False, default=False)
+    ui_resizable = schema.Bool(title=_(u"Resizable"),
+                         description=ui_resizable_desc, required=False, default=False)
 
-    ui_selectable = schema.Bool(title=u"Selectable",
-                         description=u"", required=False, default=False)
+    ui_selectable = schema.Bool(title=_(u"Selectable"),
+                         description=ui_selectable_desc, required=False, default=False)
 
-    ui_sortable = schema.Bool(title=u"Sortable",
-                         description=u"", required=False, default=False)
+    ui_sortable = schema.Bool(title=_(u"Sortable"),
+                         description=ui_sortable_desc, required=False, default=False)
 
-    ui_accordion = schema.Bool(title=u"Accordion",
-                         description=u"", required=False, default=False)
+    ui_accordion = schema.Bool(title=_(u"Accordion"),
+                         description=ui_accordion_desc, required=False, default=False)
 
-    ui_autocomplete = schema.Bool(title=u"Autocomplete",
-                         description=u"", required=False, default=False)
+    ui_autocomplete = schema.Bool(title=_(u"Autocomplete"),
+                         description=ui_autocomplete_desc, required=False, default=False)
 
-    ui_button = schema.Bool(title=u"Button",
-                         description=u"", required=False, default=False)
+    ui_button = schema.Bool(title=_(u"Button"),
+                         description=ui_button_desc, required=False, default=False)
 
-    ui_datepicker = schema.Bool(title=u"Date picker",
-                         description=u"", required=False, default=False)
+    ui_datepicker = schema.Bool(title=_(u"Date picker"),
+                         description=ui_datepicker_desc, required=False, default=False)
 
-    ui_dialog = schema.Bool(title=u"Dialog",
-                         description=u"", required=False, default=False)
+    ui_dialog = schema.Bool(title=_(u"Dialog"),
+                         description=ui_dialog_desc, required=False, default=False)
 
-    ui_menu = schema.Bool(title=u"Menu",
-                         description=u"", required=False, default=False)
+    ui_menu = schema.Bool(title=_(u"Menu"),
+                         description=ui_menu_desc, required=False, default=False)
 
-    ui_progressbar = schema.Bool(title=u"Progress bar",
-                         description=u"", required=False, default=False)
+    ui_progressbar = schema.Bool(title=_(u"Progress bar"),
+                         description=ui_progressbar_desc, required=False, default=False)
 
-    ui_slider = schema.Bool(title=u"Slider",
-                         description=u"", required=False, default=False)
+    ui_slider = schema.Bool(title=_(u"Slider"),
+                         description=ui_slider_desc, required=False, default=False)
 
-    ui_spinner = schema.Bool(title=u"Spinner",
-                         description=u"", required=False, default=False)
+    ui_spinner = schema.Bool(title=_(u"Spinner"),
+                         description=ui_spinner_desc, required=False, default=False)
 
-    ui_tabs = schema.Bool(title=u"Tabs",
-                         description=u"", required=False, default=False)
+    ui_tabs = schema.Bool(title=_(u"Tabs"),
+                         description=ui_tabs_desc, required=False, default=False)
 
-    ui_tooltip = schema.Bool(title=u"Tooltip",
-                         description=u"", required=False, default=False)
+    ui_tooltip = schema.Bool(title=_(u"Tooltip"),
+                         description=ui_tooltip_desc, required=False, default=False)
 
-    ui_effect = schema.Bool(title=u"Effects 'core'",
-                         description=u"", required=False, default=False)
+    ui_effect = schema.Bool(title=_(u"Effects 'core'"),
+                         description=ui_effect_desc, required=False, default=False)
 
-    ui_effect_blind = schema.Bool(title=u"Effects 'blind'",
-                         description=u"", required=False, default=False)
+    ui_effect_blind = schema.Bool(title=_(u"Effects 'blind'"),
+                         description=ui_effect_blind_desc, required=False, default=False)
 
-    ui_effect_bounce = schema.Bool(title=u"Effects 'bounce'",
-                         description=u"", required=False, default=False)
+    ui_effect_bounce = schema.Bool(title=_(u"Effects 'bounce'"),
+                         description=ui_effect_bounce_desc, required=False, default=False)
 
-    ui_effect_clip = schema.Bool(title=u"Effects 'clip'",
-                         description=u"", required=False, default=False)
+    ui_effect_clip = schema.Bool(title=_(u"Effects 'clip'"),
+                         description=ui_effect_clip_desc, required=False, default=False)
 
-    ui_effect_drop = schema.Bool(title=u"Effects 'drop'",
-                         description=u"", required=False, default=False)
+    ui_effect_drop = schema.Bool(title=_(u"Effects 'drop'"),
+                         description=ui_effect_drop_desc, required=False, default=False)
 
-    ui_effect_explode = schema.Bool(title=u"Effects 'explode'",
-                         description=u"", required=False, default=False)
+    ui_effect_explode = schema.Bool(title=_(u"Effects 'explode'"),
+                         description=ui_effect_explode_desc, required=False, default=False)
 
-    ui_effect_fade = schema.Bool(title=u"Effects 'fade'",
-                         description=u"", required=False, default=False)
+    ui_effect_fade = schema.Bool(title=_(u"Effects 'fade'"),
+                         description=ui_effect_fade_desc, required=False, default=False)
 
-    ui_effect_fold = schema.Bool(title=u"Effects 'fold",
-                         description=u"", required=False, default=False)
+    ui_effect_fold = schema.Bool(title=_(u"Effects 'fold'"),
+                         description=ui_effect_fold_desc, required=False, default=False)
 
-    ui_effect_highlight = schema.Bool(title=u"Effects 'highlight'",
-                         description=u"", required=False, default=False)
+    ui_effect_highlight = schema.Bool(title=_(u"Effects 'highlight'"),
+                         description=ui_effect_highlight_desc, required=False, default=False)
 
-    ui_effect_pulsate = schema.Bool(title=u"Effects 'pulsate'",
-                         description=u"", required=False, default=False)
+    ui_effect_pulsate = schema.Bool(title=_(u"Effects 'pulsate'"),
+                         description=ui_effect_pulsate_desc, required=False, default=False)
 
-    ui_effect_scale = schema.Bool(title=u"Effects 'scale'",
-                         description=u"", required=False, default=False)
+    ui_effect_scale = schema.Bool(title=_(u"Effects 'scale'"),
+                         description=ui_effect_scale_desc, required=False, default=False)
 
-    ui_effect_shake = schema.Bool(title=u"Effects 'shake'",
-                         description=u"", required=False, default=False)
+    ui_effect_shake = schema.Bool(title=_(u"Effects 'shake'"),
+                         description=ui_effect_shake_desc, required=False, default=False)
 
-    ui_effect_slide = schema.Bool(title=u"Effects 'slide'",
-                         description=u"", required=False, default=False)
+    ui_effect_slide = schema.Bool(title=_(u"Effects 'slide'"),
+                         description=ui_effect_slide_desc, required=False, default=False)
 
-    ui_effect_transfer = schema.Bool(title=u"Effects 'transfer'",
-                         description=u"", required=False, default=False)
+    ui_effect_transfer = schema.Bool(title=_(u"Effects 'transfer'"),
+                         description=ui_effect_transfer_desc, required=False, default=False)
 
 
 class ControlPanelForm(basepanel.RegistryEditForm):
@@ -143,7 +222,7 @@ class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
 
     index = ViewPageTemplateFile('controlpanel_layout.pt')
 
-    label = u"JQueryUI plugins settings"
+    label = _(u"JQueryUI plugins settings")
 
     def parent_panel_url(self):
         return '%s/@@jqueryui-controlpanel' % (self.context.absolute_url())
@@ -227,14 +306,14 @@ def verify_jsregistry(record):
 class IJQueryUICSS(interface.Interface):
     """JQueryUI CSS"""
 
-    css = schema.Bool(title=u"Sunburst CSS for jqueryui",
-                      description=u"Activate the JQueryUI theme 'Sunburst'",
+    css = schema.Bool(title=_(u"Sunburst CSS for jqueryui"),
+                      description=_(u"Activate the JQueryUI theme 'Sunburst'"),
                       default=False)
 
-    patch = schema.Bool(title=u"Sunburst CSS Integration",
-                        description=u"Activate the integration between \
+    patch = schema.Bool(title=_(u"Sunburst CSS Integration"),
+                        description=_(u"Activate the integration between \
                                 JQueryUI 'Sunburst' theme and the Plone \
-                                'Sunburst' theme",
+                                'Sunburst' theme"),
                        default=False)
 
 
@@ -248,7 +327,7 @@ class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
 
     index = ViewPageTemplateFile('controlpanel_layout.pt')
 
-    label = u"JQueryUI Sunburst CSS settings"
+    label = _(u"JQueryUI Sunburst CSS settings")
 
     def parent_panel_url(self):
         return '%s/@@jqueryui-controlpanel' % (self.context.absolute_url())
@@ -272,7 +351,7 @@ def cook_css_resources(record, event):
 
 
 class MainControlPanelView(BrowserView):
-    label = u"JQueryUI control panel"
+    label = _(u"JQueryUI control panel")
 
     def __init__(self, context, request):
         self.context = context

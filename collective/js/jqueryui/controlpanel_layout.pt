@@ -17,7 +17,9 @@
         Site Setup
     </a> &rsaquo;
 
-    <h1 class="documentFirstHeading" tal:content="view/label">View Title</h1>
+    <h1 class="documentFirstHeading" tal:content="view/label">
+      <tal:comment replace="nothing">View Title</tal:comment>
+    </h1>
 
     <div metal:use-macro="context/global_statusmessage/macros/portal_message">
       Portal status message

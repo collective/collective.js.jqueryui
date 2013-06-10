@@ -1,0 +1,40 @@
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.js.jqueryui\n"
+"POT-Creation-Date: 2013-06-10 18:05+0000\n"
+"PO-Revision-Date: 2013-06-10 00:03-0430\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: plone\n"
+"Language: es\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#. Default: "Uninstall jQuery UI"
+#: Uninstall profile title in configure.zcml
+msgid "Uninstall jQuery UI"
+msgstr "Desinstalación de jQuery UI"
+
+#. Default: "Uninstall profile jQuery UI for Plone"
+#: Uninstall profile description in configure.zcml
+msgid "Uninstall profile jQuery UI for Plone"
+msgstr "Perfil de desinstalación de jQuery UI para Plone"
+
+#. Default: "jQuery UI"
+#: Default profile title in configure.zcml
+msgid "jQuery UI"
+msgstr "Integración de jQuery UI en Plone"
+
+#. Default: "jQuery UI for Plone"
+#: Default profile description in configure.zcml
+msgid "jQuery UI for Plone"
+msgstr "Integración de Herramientas de jQuery UI para Plone"
+
