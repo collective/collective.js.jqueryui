@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<registry>
+    <!--
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins" remove="True">
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUICSS" remove="True" />
+    <record interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings" 
+    	    field="resourceBundlesForThemes" remove="True" />-->
+    <!-- BBB: needed for compatibility with plone.app.registry < 1.2
+           right now Plone 4.2.x uses plone.app.registry = 1.1 -->
+           <!--
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins" delete="True">
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUICSS" delete="True" />
+    <record interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings" 
+    	    field="resourceBundlesForThemes" delete="True" />
+            -->
+  </registry>

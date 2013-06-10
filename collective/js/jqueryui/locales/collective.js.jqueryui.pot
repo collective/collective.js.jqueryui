@@ -1,0 +1,1186 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-06-10 18:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.js.jqueryui\n"
+
+#: ../example/jqueryui.pt:393
+msgid ".ui-icon-alert"
+msgstr ""
+
+#: ../example/jqueryui.pt:197
+msgid ".ui-icon-arrow-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:193
+msgid ".ui-icon-arrow-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:195
+msgid ".ui-icon-arrow-1-ne"
+msgstr ""
+
+#: ../example/jqueryui.pt:207
+msgid ".ui-icon-arrow-1-nw"
+msgstr ""
+
+#: ../example/jqueryui.pt:201
+msgid ".ui-icon-arrow-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:199
+msgid ".ui-icon-arrow-1-se"
+msgstr ""
+
+#: ../example/jqueryui.pt:203
+msgid ".ui-icon-arrow-1-sw"
+msgstr ""
+
+#: ../example/jqueryui.pt:205
+msgid ".ui-icon-arrow-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:213
+msgid ".ui-icon-arrow-2-e-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:209
+msgid ".ui-icon-arrow-2-n-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:211
+msgid ".ui-icon-arrow-2-ne-sw"
+msgstr ""
+
+#: ../example/jqueryui.pt:215
+msgid ".ui-icon-arrow-2-se-nw"
+msgstr ""
+
+#: ../example/jqueryui.pt:281
+msgid ".ui-icon-arrow-4"
+msgstr ""
+
+#: ../example/jqueryui.pt:283
+msgid ".ui-icon-arrow-4-diag"
+msgstr ""
+
+#: ../example/jqueryui.pt:277
+msgid ".ui-icon-arrowrefresh-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:275
+msgid ".ui-icon-arrowrefresh-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:279
+msgid ".ui-icon-arrowrefresh-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:273
+msgid ".ui-icon-arrowrefresh-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:269
+msgid ".ui-icon-arrowreturn-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:267
+msgid ".ui-icon-arrowreturn-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:271
+msgid ".ui-icon-arrowreturn-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:265
+msgid ".ui-icon-arrowreturn-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:261
+msgid ".ui-icon-arrowreturnthick-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:259
+msgid ".ui-icon-arrowreturnthick-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:263
+msgid ".ui-icon-arrowreturnthick-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:257
+msgid ".ui-icon-arrowreturnthick-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:219
+msgid ".ui-icon-arrowstop-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:217
+msgid ".ui-icon-arrowstop-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:221
+msgid ".ui-icon-arrowstop-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:223
+msgid ".ui-icon-arrowstop-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:229
+msgid ".ui-icon-arrowthick-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:225
+msgid ".ui-icon-arrowthick-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:227
+msgid ".ui-icon-arrowthick-1-ne"
+msgstr ""
+
+#: ../example/jqueryui.pt:239
+msgid ".ui-icon-arrowthick-1-nw"
+msgstr ""
+
+#: ../example/jqueryui.pt:233
+msgid ".ui-icon-arrowthick-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:231
+msgid ".ui-icon-arrowthick-1-se"
+msgstr ""
+
+#: ../example/jqueryui.pt:235
+msgid ".ui-icon-arrowthick-1-sw"
+msgstr ""
+
+#: ../example/jqueryui.pt:237
+msgid ".ui-icon-arrowthick-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:245
+msgid ".ui-icon-arrowthick-2-e-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:241
+msgid ".ui-icon-arrowthick-2-n-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:243
+msgid ".ui-icon-arrowthick-2-ne-sw"
+msgstr ""
+
+#: ../example/jqueryui.pt:247
+msgid ".ui-icon-arrowthick-2-se-nw"
+msgstr ""
+
+#: ../example/jqueryui.pt:251
+msgid ".ui-icon-arrowthickstop-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:249
+msgid ".ui-icon-arrowthickstop-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:253
+msgid ".ui-icon-arrowthickstop-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:255
+msgid ".ui-icon-arrowthickstop-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:439
+msgid ".ui-icon-battery-0"
+msgstr ""
+
+#: ../example/jqueryui.pt:441
+msgid ".ui-icon-battery-1"
+msgstr ""
+
+#: ../example/jqueryui.pt:443
+msgid ".ui-icon-battery-2"
+msgstr ""
+
+#: ../example/jqueryui.pt:445
+msgid ".ui-icon-battery-3"
+msgstr ""
+
+#: ../example/jqueryui.pt:325
+msgid ".ui-icon-bookmark"
+msgstr ""
+
+#: ../example/jqueryui.pt:403
+msgid ".ui-icon-bullet"
+msgstr ""
+
+#: ../example/jqueryui.pt:333
+msgid ".ui-icon-calculator"
+msgstr ""
+
+#: ../example/jqueryui.pt:343
+msgid ".ui-icon-calendar"
+msgstr ""
+
+#: ../example/jqueryui.pt:361
+msgid ".ui-icon-cancel"
+msgstr ""
+
+#: ../example/jqueryui.pt:157
+msgid ".ui-icon-carat-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:153
+msgid ".ui-icon-carat-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:155
+msgid ".ui-icon-carat-1-ne"
+msgstr ""
+
+#: ../example/jqueryui.pt:167
+msgid ".ui-icon-carat-1-nw"
+msgstr ""
+
+#: ../example/jqueryui.pt:161
+msgid ".ui-icon-carat-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:159
+msgid ".ui-icon-carat-1-se"
+msgstr ""
+
+#: ../example/jqueryui.pt:163
+msgid ".ui-icon-carat-1-sw"
+msgstr ""
+
+#: ../example/jqueryui.pt:165
+msgid ".ui-icon-carat-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:171
+msgid ".ui-icon-carat-2-e-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:169
+msgid ".ui-icon-carat-2-n-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:335
+msgid ".ui-icon-cart"
+msgstr ""
+
+#: ../example/jqueryui.pt:401
+msgid ".ui-icon-check"
+msgstr ""
+
+#: ../example/jqueryui.pt:461
+msgid ".ui-icon-circle-arrow-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:467
+msgid ".ui-icon-circle-arrow-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:463
+msgid ".ui-icon-circle-arrow-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:465
+msgid ".ui-icon-circle-arrow-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:473
+msgid ".ui-icon-circle-check"
+msgstr ""
+
+#: ../example/jqueryui.pt:451
+msgid ".ui-icon-circle-close"
+msgstr ""
+
+#: ../example/jqueryui.pt:449
+msgid ".ui-icon-circle-minus"
+msgstr ""
+
+#: ../example/jqueryui.pt:447
+msgid ".ui-icon-circle-plus"
+msgstr ""
+
+#: ../example/jqueryui.pt:453
+msgid ".ui-icon-circle-triangle-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:459
+msgid ".ui-icon-circle-triangle-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:455
+msgid ".ui-icon-circle-triangle-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:457
+msgid ".ui-icon-circle-triangle-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:469
+msgid ".ui-icon-circle-zoomin"
+msgstr ""
+
+#: ../example/jqueryui.pt:471
+msgid ".ui-icon-circle-zoomout"
+msgstr ""
+
+#: ../example/jqueryui.pt:479
+msgid ".ui-icon-circlesmall-close"
+msgstr ""
+
+#: ../example/jqueryui.pt:477
+msgid ".ui-icon-circlesmall-minus"
+msgstr ""
+
+#: ../example/jqueryui.pt:475
+msgid ".ui-icon-circlesmall-plus"
+msgstr ""
+
+#: ../example/jqueryui.pt:381
+msgid ".ui-icon-clipboard"
+msgstr ""
+
+#: ../example/jqueryui.pt:339
+msgid ".ui-icon-clock"
+msgstr ""
+
+#: ../example/jqueryui.pt:371
+msgid ".ui-icon-close"
+msgstr ""
+
+#: ../example/jqueryui.pt:373
+msgid ".ui-icon-closethick"
+msgstr ""
+
+#: ../example/jqueryui.pt:313
+msgid ".ui-icon-comment"
+msgstr ""
+
+#: ../example/jqueryui.pt:385
+msgid ".ui-icon-contact"
+msgstr ""
+
+#: ../example/jqueryui.pt:383
+msgid ".ui-icon-copy"
+msgstr ""
+
+#: ../example/jqueryui.pt:341
+msgid ".ui-icon-disk"
+msgstr ""
+
+#: ../example/jqueryui.pt:301
+msgid ".ui-icon-document"
+msgstr ""
+
+#: ../example/jqueryui.pt:303
+msgid ".ui-icon-document-b"
+msgstr ""
+
+#: ../example/jqueryui.pt:427
+msgid ".ui-icon-eject"
+msgstr ""
+
+#: ../example/jqueryui.pt:285
+msgid ".ui-icon-extlink"
+msgstr ""
+
+#: ../example/jqueryui.pt:331
+msgid ".ui-icon-flag"
+msgstr ""
+
+#: ../example/jqueryui.pt:297
+msgid ".ui-icon-folder-collapsed"
+msgstr ""
+
+#: ../example/jqueryui.pt:299
+msgid ".ui-icon-folder-open"
+msgstr ""
+
+#: ../example/jqueryui.pt:353
+msgid ".ui-icon-gear"
+msgstr ""
+
+#: ../example/jqueryui.pt:497
+msgid ".ui-icon-grip-diagonal-se"
+msgstr ""
+
+#: ../example/jqueryui.pt:489
+msgid ".ui-icon-grip-dotted-horizontal"
+msgstr ""
+
+#: ../example/jqueryui.pt:487
+msgid ".ui-icon-grip-dotted-vertical"
+msgstr ""
+
+#: ../example/jqueryui.pt:493
+msgid ".ui-icon-grip-solid-horizontal"
+msgstr ""
+
+#: ../example/jqueryui.pt:491
+msgid ".ui-icon-grip-solid-vertical"
+msgstr ""
+
+#: ../example/jqueryui.pt:495
+msgid ".ui-icon-gripsmall-diagonal-se"
+msgstr ""
+
+#: ../example/jqueryui.pt:355
+msgid ".ui-icon-heart"
+msgstr ""
+
+#: ../example/jqueryui.pt:399
+msgid ".ui-icon-help"
+msgstr ""
+
+#: ../example/jqueryui.pt:329
+msgid ".ui-icon-home"
+msgstr ""
+
+#: ../example/jqueryui.pt:387
+msgid ".ui-icon-image"
+msgstr ""
+
+#: ../example/jqueryui.pt:395
+msgid ".ui-icon-info"
+msgstr ""
+
+#: ../example/jqueryui.pt:375
+msgid ".ui-icon-key"
+msgstr ""
+
+#: ../example/jqueryui.pt:377
+msgid ".ui-icon-lightbulb"
+msgstr ""
+
+#: ../example/jqueryui.pt:359
+msgid ".ui-icon-link"
+msgstr ""
+
+#: ../example/jqueryui.pt:321
+msgid ".ui-icon-locked"
+msgstr ""
+
+#: ../example/jqueryui.pt:307
+msgid ".ui-icon-mail-closed"
+msgstr ""
+
+#: ../example/jqueryui.pt:309
+msgid ".ui-icon-mail-open"
+msgstr ""
+
+#: ../example/jqueryui.pt:367
+msgid ".ui-icon-minus"
+msgstr ""
+
+#: ../example/jqueryui.pt:369
+msgid ".ui-icon-minusthick"
+msgstr ""
+
+#: ../example/jqueryui.pt:287
+msgid ".ui-icon-newwin"
+msgstr ""
+
+#: ../example/jqueryui.pt:305
+msgid ".ui-icon-note"
+msgstr ""
+
+#: ../example/jqueryui.pt:397
+msgid ".ui-icon-notice"
+msgstr ""
+
+#: ../example/jqueryui.pt:415
+msgid ".ui-icon-pause"
+msgstr ""
+
+#: ../example/jqueryui.pt:337
+msgid ".ui-icon-pencil"
+msgstr ""
+
+#: ../example/jqueryui.pt:315
+msgid ".ui-icon-person"
+msgstr ""
+
+#: ../example/jqueryui.pt:411
+msgid ".ui-icon-pin-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:409
+msgid ".ui-icon-pin-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:413
+msgid ".ui-icon-play"
+msgstr ""
+
+#: ../example/jqueryui.pt:363
+msgid ".ui-icon-plus"
+msgstr ""
+
+#: ../example/jqueryui.pt:365
+msgid ".ui-icon-plusthick"
+msgstr ""
+
+#: ../example/jqueryui.pt:433
+msgid ".ui-icon-power"
+msgstr ""
+
+#: ../example/jqueryui.pt:317
+msgid ".ui-icon-print"
+msgstr ""
+
+#: ../example/jqueryui.pt:405
+msgid ".ui-icon-radio-off"
+msgstr ""
+
+#: ../example/jqueryui.pt:407
+msgid ".ui-icon-radio-on"
+msgstr ""
+
+#: ../example/jqueryui.pt:289
+msgid ".ui-icon-refresh"
+msgstr ""
+
+#: ../example/jqueryui.pt:379
+msgid ".ui-icon-scissors"
+msgstr ""
+
+#: ../example/jqueryui.pt:391
+msgid ".ui-icon-script"
+msgstr ""
+
+#: ../example/jqueryui.pt:349
+msgid ".ui-icon-search"
+msgstr ""
+
+#: ../example/jqueryui.pt:421
+msgid ".ui-icon-seek-end"
+msgstr ""
+
+#: ../example/jqueryui.pt:423
+msgid ".ui-icon-seek-first"
+msgstr ""
+
+#: ../example/jqueryui.pt:417
+msgid ".ui-icon-seek-next"
+msgstr ""
+
+#: ../example/jqueryui.pt:419
+msgid ".ui-icon-seek-prev"
+msgstr ""
+
+#: ../example/jqueryui.pt:291
+msgid ".ui-icon-shuffle"
+msgstr ""
+
+#: ../example/jqueryui.pt:437
+msgid ".ui-icon-signal"
+msgstr ""
+
+#: ../example/jqueryui.pt:435
+msgid ".ui-icon-signal-diag"
+msgstr ""
+
+#: ../example/jqueryui.pt:485
+msgid ".ui-icon-squaresmall-close"
+msgstr ""
+
+#: ../example/jqueryui.pt:483
+msgid ".ui-icon-squaresmall-minus"
+msgstr ""
+
+#: ../example/jqueryui.pt:481
+msgid ".ui-icon-squaresmall-plus"
+msgstr ""
+
+#: ../example/jqueryui.pt:357
+msgid ".ui-icon-star"
+msgstr ""
+
+#: ../example/jqueryui.pt:425
+msgid ".ui-icon-stop"
+msgstr ""
+
+#: ../example/jqueryui.pt:311
+msgid ".ui-icon-suitcase"
+msgstr ""
+
+#: ../example/jqueryui.pt:327
+msgid ".ui-icon-tag"
+msgstr ""
+
+#: ../example/jqueryui.pt:293
+msgid ".ui-icon-transfer-e-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:295
+msgid ".ui-icon-transferthick-e-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:319
+msgid ".ui-icon-trash"
+msgstr ""
+
+#: ../example/jqueryui.pt:177
+msgid ".ui-icon-triangle-1-e"
+msgstr ""
+
+#: ../example/jqueryui.pt:173
+msgid ".ui-icon-triangle-1-n"
+msgstr ""
+
+#: ../example/jqueryui.pt:175
+msgid ".ui-icon-triangle-1-ne"
+msgstr ""
+
+#: ../example/jqueryui.pt:187
+msgid ".ui-icon-triangle-1-nw"
+msgstr ""
+
+#: ../example/jqueryui.pt:181
+msgid ".ui-icon-triangle-1-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:179
+msgid ".ui-icon-triangle-1-se"
+msgstr ""
+
+#: ../example/jqueryui.pt:183
+msgid ".ui-icon-triangle-1-sw"
+msgstr ""
+
+#: ../example/jqueryui.pt:185
+msgid ".ui-icon-triangle-1-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:191
+msgid ".ui-icon-triangle-2-e-w"
+msgstr ""
+
+#: ../example/jqueryui.pt:189
+msgid ".ui-icon-triangle-2-n-s"
+msgstr ""
+
+#: ../example/jqueryui.pt:323
+msgid ".ui-icon-unlocked"
+msgstr ""
+
+#: ../example/jqueryui.pt:389
+msgid ".ui-icon-video"
+msgstr ""
+
+#: ../example/jqueryui.pt:429
+msgid ".ui-icon-volume-off"
+msgstr ""
+
+#: ../example/jqueryui.pt:431
+msgid ".ui-icon-volume-on"
+msgstr ""
+
+#: ../example/jqueryui.pt:351
+msgid ".ui-icon-wrench"
+msgstr ""
+
+#: ../example/jqueryui.pt:345
+msgid ".ui-icon-zoomin"
+msgstr ""
+
+#: ../example/jqueryui.pt:347
+msgid ".ui-icon-zoomout"
+msgstr ""
+
+#: ../example/jqueryui.pt:115
+msgid "A button element"
+msgstr ""
+
+#: ../controlpanel.py:68
+msgid "A single content area with multiple panels, each associated with   a header in a list."
+msgstr ""
+
+#: ../controlpanel.py:139
+#: ../example/jqueryui.pt:93
+msgid "Accordion"
+msgstr ""
+
+#: ../controlpanel.py:310
+msgid "Activate the JQueryUI theme 'Sunburst'"
+msgstr ""
+
+#: ../controlpanel.py:314
+msgid "Activate the integration between                                 JQueryUI 'Sunburst' theme and the Plone                                 'Sunburst' theme"
+msgstr ""
+
+#: ../example/jqueryui.pt:531
+msgid "Alert:"
+msgstr ""
+
+#: ../controlpanel.py:38
+msgid "Allow elements to be moved using the mouse."
+msgstr ""
+
+#: ../controlpanel.py:73
+msgid "Apply an animation effect to an element."
+msgstr ""
+
+#: ../controlpanel.py:142
+#: ../example/jqueryui.pt:106
+msgid "Autocomplete"
+msgstr ""
+
+#: ../controlpanel.py:50
+msgid "Autocomplete enables users to quickly find and select from    a pre-populated list of values as they type, leveraging searching and filtering."
+msgstr ""
+
+#: ../example/jqueryui.pt:71
+msgid "Blind"
+msgstr ""
+
+#: ../example/jqueryui.pt:72
+msgid "Bounce"
+msgstr ""
+
+#: ../controlpanel.py:145
+#: ../example/jqueryui.pt:114
+msgid "Button"
+msgstr ""
+
+#: ../controlpanel.py:42
+msgid "Change the size of an element using the mouse."
+msgstr ""
+
+#: ../example/jqueryui.pt:118
+msgid "Choice 1"
+msgstr ""
+
+#: ../example/jqueryui.pt:119
+msgid "Choice 2"
+msgstr ""
+
+#: ../example/jqueryui.pt:120
+msgid "Choice 3"
+msgstr ""
+
+#: ../example/jqueryui.pt:73
+msgid "Clip"
+msgstr ""
+
+#: ../controlpanel.py:48
+msgid "Convert a pair of headers and content panels into an accordion."
+msgstr ""
+
+#: ../controlpanel.py:111
+msgid "Core"
+msgstr ""
+
+#: ../controlpanel.py:40
+msgid "Create targets for draggable elements."
+msgstr ""
+
+#: ../controlpanel.py:71
+msgid "Customizable, themeable tooltips, replacing native tooltips."
+msgstr ""
+
+#: ../controlpanel.py:148
+msgid "Date picker"
+msgstr ""
+
+#: ../example/jqueryui.pt:509
+msgid "Datepicker"
+msgstr ""
+
+#: ../controlpanel.py:151
+#: ../example/jqueryui.pt:127
+msgid "Dialog"
+msgstr ""
+
+#: ../example/jqueryui.pt:145
+msgid "Dialog Title"
+msgstr ""
+
+#: ../controlpanel.py:61
+msgid "Display status of a determinate or indeterminate process."
+msgstr ""
+
+#: ../controlpanel.py:63
+msgid "Drag a handle to select a numeric value."
+msgstr ""
+
+#: ../controlpanel.py:124
+msgid "Draggable"
+msgstr ""
+
+#: ../example/jqueryui.pt:74
+msgid "Drop"
+msgstr ""
+
+#: ../controlpanel.py:127
+msgid "Droppable"
+msgstr ""
+
+#: ../example/jqueryui.pt:63
+msgid "Effect"
+msgstr ""
+
+#: ../controlpanel.py:175
+msgid "Effects 'blind'"
+msgstr ""
+
+#: ../controlpanel.py:178
+msgid "Effects 'bounce'"
+msgstr ""
+
+#: ../controlpanel.py:181
+msgid "Effects 'clip'"
+msgstr ""
+
+#: ../controlpanel.py:172
+msgid "Effects 'core'"
+msgstr ""
+
+#: ../controlpanel.py:184
+msgid "Effects 'drop'"
+msgstr ""
+
+#: ../controlpanel.py:187
+msgid "Effects 'explode'"
+msgstr ""
+
+#: ../controlpanel.py:190
+msgid "Effects 'fade'"
+msgstr ""
+
+#: ../controlpanel.py:193
+msgid "Effects 'fold'"
+msgstr ""
+
+#: ../controlpanel.py:196
+msgid "Effects 'highlight'"
+msgstr ""
+
+#: ../controlpanel.py:199
+msgid "Effects 'pulsate'"
+msgstr ""
+
+#: ../controlpanel.py:202
+msgid "Effects 'scale'"
+msgstr ""
+
+#: ../controlpanel.py:205
+msgid "Effects 'shake'"
+msgstr ""
+
+#: ../controlpanel.py:208
+msgid "Effects 'slide'"
+msgstr ""
+
+#: ../controlpanel.py:211
+msgid "Effects 'transfer'"
+msgstr ""
+
+#: ../controlpanel.py:65
+msgid "Enhance a text input for entering numeric values, with up/down   buttons and arrow key handling."
+msgstr ""
+
+#: ../example/jqueryui.pt:75
+msgid "Explode"
+msgstr ""
+
+#: ../example/jqueryui.pt:76
+msgid "Fade"
+msgstr ""
+
+#: ../example/jqueryui.pt:95
+msgid "First"
+msgstr ""
+
+#: ../example/jqueryui.pt:77
+msgid "Fold"
+msgstr ""
+
+#: ../example/jqueryui.pt:151
+msgid "Framework Icons (content color preview)"
+msgstr ""
+
+#: ../controlpanel.pt:38
+msgid "Here you have access to all controlpanels related to jqueryui integration in Plone. Make your choice."
+msgstr ""
+
+#: ../example/jqueryui.pt:524
+msgid "Hey!"
+msgstr ""
+
+#: ../example/jqueryui.pt:78
+msgid "Highlight"
+msgstr ""
+
+#: ../example/jqueryui.pt:520
+msgid "Highlight / Error"
+msgstr ""
+
+#: ../profiles/default/controlpanel.xml
+#: ../profiles/uninstall/controlpanel.xml
+msgid "JQueryUI"
+msgstr ""
+
+#: ../controlpanel.py:330
+msgid "JQueryUI Sunburst CSS settings"
+msgstr ""
+
+#: ../controlpanel.py:354
+msgid "JQueryUI control panel"
+msgstr ""
+
+#: ../controlpanel.py:225
+msgid "JQueryUI plugins settings"
+msgstr ""
+
+#: ../controlpanel.py:154
+msgid "Menu"
+msgstr ""
+
+#: ../controlpanel.py:118
+msgid "Mouse"
+msgstr ""
+
+#: ../example/jqueryui.pt:128
+msgid "Open Dialog"
+msgstr ""
+
+#: ../controlpanel.py:57
+msgid "Open content in an interactive overlay."
+msgstr ""
+
+#: ../example/jqueryui.pt:130
+msgid "Overlay and Shadow Classes <em>(not currently used in UI widgets)</em>"
+msgstr ""
+
+#: ../profiles/default/actions.xml
+msgid "Plugins"
+msgstr ""
+
+#: ../controlpanel.py:121
+msgid "Position"
+msgstr ""
+
+#: ../controlpanel.py:36
+msgid "Position an element relative to another."
+msgstr ""
+
+#: ../controlpanel.py:157
+msgid "Progress bar"
+msgstr ""
+
+#: ../example/jqueryui.pt:515
+msgid "Progressbar"
+msgstr ""
+
+#: ../example/jqueryui.pt:79
+msgid "Puff"
+msgstr ""
+
+#: ../example/jqueryui.pt:80
+msgid "Pulsate"
+msgstr ""
+
+#: ../controlpanel.py:46
+msgid "Reorder elements in a list or grid using the mouse."
+msgstr ""
+
+#: ../controlpanel.py:130
+msgid "Resizable"
+msgstr ""
+
+#: ../example/jqueryui.pt:88
+msgid "Run Effect"
+msgstr ""
+
+#: ../example/jqueryui.pt:531
+msgid "Sample ui-state-error style."
+msgstr ""
+
+#: ../example/jqueryui.pt:524
+msgid "Sample ui-state-highlight style."
+msgstr ""
+
+#: ../example/jqueryui.pt:81
+msgid "Scale"
+msgstr ""
+
+#: ../example/jqueryui.pt:97
+msgid "Second"
+msgstr ""
+
+#: ../controlpanel.py:55
+msgid "Select a date from a popup or inline calendar"
+msgstr ""
+
+#: ../controlpanel.py:133
+msgid "Selectable"
+msgstr ""
+
+#: ../example/jqueryui.pt:82
+msgid "Shake"
+msgstr ""
+
+#: ../controlpanel.py:102
+msgid "Shakes the element multiple times, vertically or horizontally."
+msgstr ""
+
+#: ../controlpanel.py:100
+msgid "Shrink or grow an element by a percentage factor."
+msgstr ""
+
+#: ../example/jqueryui.pt:83
+msgid "Size"
+msgstr ""
+
+#: ../example/jqueryui.pt:84
+msgid "Slide"
+msgstr ""
+
+#: ../controlpanel.py:160
+#: ../example/jqueryui.pt:503
+msgid "Slider"
+msgstr ""
+
+#: ../controlpanel.py:104
+msgid "Slides the element out of the viewport."
+msgstr ""
+
+#: ../controlpanel.py:136
+msgid "Sortable"
+msgstr ""
+
+#: ../controlpanel.py:163
+msgid "Spinner"
+msgstr ""
+
+#: ../controlpanel.py:313
+msgid "Sunburst CSS Integration"
+msgstr ""
+
+#: ../controlpanel.py:309
+msgid "Sunburst CSS for jqueryui"
+msgstr ""
+
+#: ../profiles/default/actions.xml
+msgid "Sunburst Theme"
+msgstr ""
+
+#: ../controlpanel.py:166
+msgid "Tabs"
+msgstr ""
+
+#: ../controlpanel.py:75
+msgid "The blind effect hides or shows an element by wrapping   the element in a container, and 'pulling the blinds'"
+msgstr ""
+
+#: ../controlpanel.py:78
+msgid "The bounce effect bounces an element. When used with    hide or show, the last or first bounce will also fade in/out."
+msgstr ""
+
+#: ../controlpanel.py:81
+msgid "The clip effect will hide or show an element by clipping   the element vertically or horizontally."
+msgstr ""
+
+#: ../controlpanel.py:27
+msgid "The core of jQuery UI, required for all interactions   and widgets."
+msgstr ""
+
+#: ../controlpanel.py:84
+msgid "The drop effect hides or shows an element fading in/out   and sliding in a direction."
+msgstr ""
+
+#: ../controlpanel.py:87
+msgid "The explode effect hides or shows an element by   splitting it into pieces."
+msgstr ""
+
+#: ../controlpanel.py:90
+msgid "The fade effect hides or shows an element by fading it."
+msgstr ""
+
+#: ../controlpanel.py:92
+msgid "The fold effect hides or shows an element by folding it."
+msgstr ""
+
+#: ../controlpanel.py:94
+msgid "The highlight effect hides or shows an element by   animating its background color first."
+msgstr ""
+
+#: ../controlpanel.pt:45
+msgid "The list below is a set of controlpanels add by addons related to jqueryui. Use the plugins controlpanel to control which plugin you want to use."
+msgstr ""
+
+#: ../controlpanel.py:33
+msgid "The mouse interaction is not intended to be used directly.   It is purely a base layer for other widgets to inherit from."
+msgstr ""
+
+#: ../controlpanel.py:97
+msgid "The pulsate effect hides or shows an element by   pulsing it in or out."
+msgstr ""
+
+#: ../controlpanel.py:53
+msgid "Themeable buttons and button sets."
+msgstr ""
+
+#: ../controlpanel.py:59
+msgid "Themeable menu with mouse and keyboard interactions for navigation."
+msgstr ""
+
+#: ../example/jqueryui.pt:99
+msgid "Third"
+msgstr ""
+
+#: ../controlpanel.py:169
+msgid "Tooltip"
+msgstr ""
+
+#: ../example/jqueryui.pt:85
+msgid "Transfer"
+msgstr ""
+
+#: ../controlpanel.py:106
+msgid "Transfers the outline of an element to another element."
+msgstr ""
+
+#: ../controlpanel.py:44
+msgid "Use the mouse to select elements, individually or in a group."
+msgstr ""
+
+#: ../controlpanel.py:115
+msgid "Widget"
+msgstr ""
+
+#: ../controlpanel.py:30
+msgid "Widgets are feature-rich, stateful plugins that have   a full life-cycle, along with methods and events."
+msgstr ""
+
+#. Default: "Up to JQueryUI Settings"
+#: ../controlpanel_layout.pt:28
+msgid "label_up_to_jqueryuisettings"
+msgstr ""
+
+#: ../example/jqueryui.pt:108
+msgid "type 'a'"
+msgstr ""
+

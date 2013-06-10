@@ -35,19 +35,22 @@
             Up to Site Setup
     </a>
 
-         <div class="documentDescription" i18n:translate="">
+         <div class="documentDescription" i18n:domain="collective.js.jqueryui" i18n:translate="">
              Here you have access to all controlpanels related to jqueryui integration in Plone.
              Make your choice.
          </div>
 
         <div id="content-core">
         
-            <p>The list below is a set of controlpanels add by addons related to jqueryui.
+            <p i18n:domain="collective.js.jqueryui" i18n:translate="">The list below is a set of controlpanels add by addons related to jqueryui.
             Use the plugins controlpanel to control which plugin you want to use.</p>
 
             <ul>
               <tal:block tal:repeat="action view/actions">
-                <li><a tal:attributes="href action/url; title action/description" tal:content="action/title"></a></li>
+                <li>
+                  <a tal:attributes="href action/url; title action/description" 
+                     tal:content="action/title"></a>
+                </li>
               </tal:block>
             </ul>
 

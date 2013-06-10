@@ -6,6 +6,15 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 1.10.4 (unreleased)
 -------------------
 
+- Added Uninstall generic setup profile
+  [macagua]
+
+- Added Spanish translation
+  [macagua]
+
+- Added i18n support
+  [macagua]
+
 - Fix https://dev.plone.org/ticket/13606: safe compression on big javascript
   files. Just remove the compression on all resources, we already use
   minified version

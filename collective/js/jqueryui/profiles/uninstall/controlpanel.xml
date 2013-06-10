@@ -6,6 +6,7 @@
 
     <configlet
         title="JQueryUI"
+        remove="True"
         action_id="collective.js.jqueryui"
         appId="collective.js.jqueryui"
         category="Products"
