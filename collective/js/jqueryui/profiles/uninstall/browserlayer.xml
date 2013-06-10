@@ -1,0 +1,5 @@
+<layers>
+    <layer name="collective.js.jqueryui" 
+           interface="collective.js.jqueryui.interfaces.IJqueryUILayer"
+           remove="True" />
+</layers>
