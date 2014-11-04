@@ -2,6 +2,7 @@
 <metadata>
   <version>3203</version>
   <dependencies>
+    <dependency>profile-plone.app.jquery:default</dependency>
     <dependency>profile-collective.js.jqueryui:common</dependency>
   </dependencies>
 </metadata>

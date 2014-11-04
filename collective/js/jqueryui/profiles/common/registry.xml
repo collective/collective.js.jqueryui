@@ -1,0 +1,42 @@
+<registry>
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins">
+      <value key="ui_core">True</value>
+      <value key="ui_widget">True</value>
+      <value key="ui_mouse">True</value>
+      <value key="ui_position">True</value>
+      <value key="ui_draggable">True</value>
+      <value key="ui_droppable">True</value>
+      <value key="ui_resizable">True</value>
+      <value key="ui_selectable">True</value>
+      <value key="ui_sortable">True</value>
+      <value key="ui_accordion">True</value>
+      <value key="ui_autocomplete">True</value>
+      <value key="ui_button">True</value>
+      <value key="ui_datepicker">True</value>
+      <value key="ui_dialog">True</value>
+      <value key="ui_menu">False</value>
+      <value key="ui_progressbar">True</value>
+      <value key="ui_slider">True</value>
+      <value key="ui_spinner">False</value>
+      <value key="ui_tabs">False</value>
+      <value key="ui_tooltip">False</value>
+      <value key="ui_effect">True</value>
+      <value key="ui_effect_blind">True</value>
+      <value key="ui_effect_bounce">True</value>
+      <value key="ui_effect_clip">True</value>
+      <value key="ui_effect_drop">True</value>
+      <value key="ui_effect_explode">True</value>
+      <value key="ui_effect_fade">True</value>
+      <value key="ui_effect_fold">True</value>
+      <value key="ui_effect_highlight">True</value>
+      <value key="ui_effect_pulsate">True</value>
+      <value key="ui_effect_scale">True</value>
+      <value key="ui_effect_shake">True</value>
+      <value key="ui_effect_slide">True</value>
+      <value key="ui_effect_transfer">True</value>
+    </records>
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUICSS">
+      <value key="css">True</value>
+      <value key="patch">True</value>
+    </records>
+</registry>

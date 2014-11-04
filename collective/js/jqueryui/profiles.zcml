@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:five="http://namespaces.zope.org/five"
     i18n_domain="collective.js.jqueryui">
@@ -7,10 +8,29 @@
   <five:registerPackage package="." />
 
   <genericsetup:registerProfile
+      name="common"
+      title="jQuery UI Common Settings"
+      description="jQuery UI for Plone settings that aren't version dependent."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <genericsetup:registerProfile
+      zcml:condition="have plone-5"
       name="default"
       title="jQuery UI"
       directory="profiles/default"
       description="jQuery UI for Plone"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <genericsetup:registerProfile
+      zcml:condition="not-have plone-5"
+      name="default"
+      directory="profiles/bbb"
+      title="jQuery UI"
+      description="Install jQuery UI."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
