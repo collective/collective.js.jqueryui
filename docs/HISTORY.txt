@@ -3,8 +3,8 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-1.10.5 (unreleased)
--------------------
+2.0.0 (2015-09-25)
+------------------
 
 - Update bootstrap.py.
   [bsuttor]
