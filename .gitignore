@@ -24,3 +24,7 @@ src
 .project
 .pydevproject
 testrelease
+.eggs/
+include/
+lib/
+

@@ -6,6 +6,13 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 1.10.5 (unreleased)
 -------------------
 
+- Update bootstrap.py.
+  [bsuttor]
+
+- Upgrade to jqueryui 1.10.4.
+  [mathias.leimgruber]
+
+
 - Add Plone 5 support and move Plone 4 support into a BBB profile
   [rpatterson]
 
