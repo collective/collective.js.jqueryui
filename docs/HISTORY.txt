@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.0.1 (unreleased)
+2.0.1 (2015-09-28)
 ------------------
 
 - Fix bad release : https://github.com/collective/collective.js.jqueryui/issues/31
