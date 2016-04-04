@@ -1,58 +1,55 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:zcml="http://namespaces.zope.org/zcml"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:five="http://namespaces.zope.org/five"
-    i18n_domain="collective.js.jqueryui">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:five="http://namespaces.zope.org/five"
+  i18n_domain="collective.js.jqueryui">
 
   <five:registerPackage package="." />
 
   <genericsetup:registerProfile
-      name="common"
-      title="jQuery UI Common Settings"
-      description="jQuery UI for Plone settings that aren't version dependent."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      />
+    name="install-base"
+    directory="profiles/base"
+    title="jQuery UI Common Settings"
+    description="jQuery UI for Plone settings that aren't version dependent."
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
 
   <genericsetup:registerProfile
-      zcml:condition="have plone-5"
-      name="default"
-      title="jQuery UI"
-      directory="profiles/default"
-      description="jQuery UI for Plone"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      />
+    zcml:condition="have plone-5"
+    name="default"
+    directory="profiles/default"
+    title="jQuery UI"
+    description="jQuery UI for Plone"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
 
   <genericsetup:registerProfile
-      zcml:condition="not-have plone-5"
-      name="default"
-      directory="profiles/bbb"
-      title="jQuery UI"
-      description="Install jQuery UI."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      />
+    zcml:condition="not-have plone-5"
+    name="default"
+    directory="profiles/bbb"
+    title="jQuery UI"
+    description="Install jQuery UI."
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <!-- Hide profiles/products from Quick Installer -->
+  <utility factory=".setuphandlers.HiddenProfiles" name="collective.js.jqueryui" />
+  <utility factory=".setuphandlers.HiddenProducts" name="collective.js.jqueryui" />
 
   <genericsetup:importStep
-      name="collective.js.jqueryui"
-      title="collective.js.jqueryui regain priority to registry"
-      description="plone.app.registry step is executed before jsregistry so fix it"
-      handler=".setuphandlers.applySettings">
-      <depends name="cssregistry"/>
-      <depends name="jsregistry"/>
-      <depends name="plone.app.registry"/>
-    </genericsetup:importStep>
+    name="collective.js.jqueryui"
+    title="collective.js.jqueryui regain priority to registry"
+    description="plone.app.registry step is executed before jsregistry so fix it"
+    handler=".setuphandlers.applySettings">
+    <depends name="cssregistry"/>
+    <depends name="jsregistry"/>
+    <depends name="plone.app.registry"/>
+  </genericsetup:importStep>
 
   <genericsetup:upgradeStep
-      source="*"
-      destination="3204"
-      title="Common upgrade"
-      description=""
-      profile="collective.js.jqueryui:default"
-      handler=".upgrades.common"
-      />
-
+    source="*"
+    destination="3204"
+    title="Common upgrade"
+    description=""
+    profile="collective.js.jqueryui:default"
+    handler=".upgrades.common" />
 
 </configure>
