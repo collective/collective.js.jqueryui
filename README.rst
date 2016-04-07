@@ -24,14 +24,15 @@ Use version < 1.9
 
 Integration for Zope and Plone
 ==============================
+
 This package can be used as a Plone add-on - for this it adds GenericSetup
 profiles and Plone ControlPanel configlets - or it can be used as a simple Zope
 jQuery UI resources registrar. See bellow how your zc.buildout config file
 should look like if you use collective.js.jqueryui with or without Plone.
 
-
 Plone
 -----
+
 for Plone > 4.0:
 
 buildout.cfg::
@@ -52,6 +53,7 @@ buildout.cfg::
 
 Zope
 ----
+
 buildout.cfg::
 
     [instance]
@@ -59,9 +61,6 @@ buildout.cfg::
         collective.js.jqueryui
     zcml =
         collective.js.jqueryui
-
-
-
 
 Include plugins and optimizations
 =================================
@@ -75,9 +74,7 @@ the configuration of your site or your addon which depends on this one.
 So you can activate/unactivate plugins using registry profile or the jQueryUI
 controlpanel.
 
-Using registry.xml, you can activate only what you want:
-
-::
+Using registry.xml, you can activate only what you want::
 
     <registry>
         <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins">
@@ -86,9 +83,7 @@ Using registry.xml, you can activate only what you want:
         </records>
     </registry>
 
-In the case of a policy you can do a full configuration:
-
-::
+In the case of a policy you can do a full configuration::
 
     <registry>
         <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins">
@@ -133,9 +128,7 @@ In the case of a policy you can do a full configuration:
 Using the control panel, you can select plugins you want. If you unselect a
 plugin it will be unactivated (but not its dependencies)
 
-Using python, you just have to use plone.registry api:
-
-::
+Using python, you just have to use plone.registry api::
 
     from zope.component import getUtility
     from plone.registry.interfaces import IRegistry
@@ -146,7 +139,6 @@ Using python, you just have to use plone.registry api:
     proxy = registry.forInterface(IJQueryUIPlugins)
     setattr(proxy, 'ui_draggable', True)
     setattr(proxy, 'ui_droppable', True)
-
 
 Credits and contributions
 =========================

@@ -6,7 +6,12 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Simplify resource registration for Plone 5 the way done in
+  https://github.com/collective/example.p4p5#cssjs-declaration-in-plone-5
+  [rnix]
+
+- Cleanup GS profiles to install properly in Plone 5
+  [rnix]
 
 
 2.0.1 (2015-09-28)
@@ -24,7 +29,6 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 
 - Upgrade to jqueryui 1.10.4.
   [mathias.leimgruber]
-
 
 - Add Plone 5 support and move Plone 4 support into a BBB profile
   [rpatterson]
