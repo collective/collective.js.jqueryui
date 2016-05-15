@@ -6,6 +6,8 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.0.2 (unreleased)
 ------------------
 
+Bug fixes:
+
 - Simplify resource registration for Plone 5 the way done in
   https://github.com/collective/example.p4p5#cssjs-declaration-in-plone-5
   [rnix]
