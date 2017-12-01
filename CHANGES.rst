@@ -8,6 +8,9 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 
 Bug fixes:
 
+- Plone 5: Register jqueryui resources not as bundle (does not work for generated browser page based resources) but add it to the plone-legacy bundle.
+  [thet]
+
 - Simplify resource registration for Plone 5 the way done in
   https://github.com/collective/example.p4p5#cssjs-declaration-in-plone-5
   [rnix]
