@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool">
+ <object remove="True" name="jqueryui_panels" meta_type="CMF Action Category"/>
+</object>

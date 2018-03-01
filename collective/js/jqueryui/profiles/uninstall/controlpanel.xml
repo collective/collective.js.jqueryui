@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel">
+    <configlet
+        remove="True"
+        action_id="collective.js.jqueryui"
+        appId="collective.js.jqueryui"
+        category="Products"
+        title="JQueryUI"
+        />
+</object>

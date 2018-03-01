@@ -14,6 +14,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="jQuery UI (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstall jQuery UI for Plone"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
 
   <genericsetup:importStep
       name="collective.js.jqueryui"
