@@ -1,0 +1,11 @@
+<registry>
+    <records remove="True" interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins"/>
+    <records remove="True" interface="collective.js.jqueryui.controlpanel.IJQueryUICSS"/>
+    <record interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings" field="resourceBundlesForThemes">
+      <value purge="False">
+        <element key="(default)" purge="False">
+          <element remove="True">jqueryui</element>
+        </element>
+      </value>
+    </record>
+</registry>
