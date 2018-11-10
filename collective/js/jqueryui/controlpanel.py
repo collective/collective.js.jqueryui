@@ -198,7 +198,7 @@ def verify_jsregistry(record):
     site = getSite()
     jsregistry = site.portal_javascripts
 
-    keys = JQUERYUI_DEPENDENCIES.keys()
+    keys = list(JQUERYUI_DEPENDENCIES.keys())
     for key in keys:
         rkey = key.replace('.', '_')
         resource_id = RESOURCE_ID % key
