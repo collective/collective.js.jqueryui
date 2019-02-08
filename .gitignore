@@ -28,3 +28,4 @@ testrelease
 include/
 lib/
 
+.DS_Store

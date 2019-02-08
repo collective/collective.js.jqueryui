@@ -8,6 +8,9 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 
 Bug fixes:
 
+- Added uninstall profile
+  [agitator]
+
 - Simplify resource registration for Plone 5 the way done in
   https://github.com/collective/example.p4p5#cssjs-declaration-in-plone-5
   [rnix]

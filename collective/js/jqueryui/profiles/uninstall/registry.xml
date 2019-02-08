@@ -1,0 +1,4 @@
+<registry>
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins" remove="true" />
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUICSS" remove="true" />
+</registry>
