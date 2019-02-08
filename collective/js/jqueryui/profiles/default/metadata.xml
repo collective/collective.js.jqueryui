@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>3203</version>
+  <version>3204</version>
   <dependencies>
     <dependency>profile-collective.js.jqueryui:install-base</dependency>
   </dependencies>
