@@ -30,6 +30,15 @@
     description="Install jQuery UI."
     provides="Products.GenericSetup.interfaces.EXTENSION" />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="jQuery UI (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the jQuery UI add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
   <!-- Hide profiles/products from Quick Installer -->
   <utility factory=".setuphandlers.HiddenProfiles" name="collective.js.jqueryui" />
   <utility factory=".setuphandlers.HiddenProducts" name="collective.js.jqueryui" />
