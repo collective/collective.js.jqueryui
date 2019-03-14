@@ -6,7 +6,8 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Workaround: ResourceRegistry was removed in 5.2.
+  [jensens]
 
 
 2.1.1 (2019-03-14)
