@@ -1,0 +1,7 @@
+<registry>
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUIPlugins" remove="true" />
+    <records interface="collective.js.jqueryui.controlpanel.IJQueryUICSS" remove="true" />
+    <records prefix="plone.bundles/jqueryui"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry' remove="true" />
+
+</registry>

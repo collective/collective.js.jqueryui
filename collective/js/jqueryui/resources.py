@@ -1,22 +1,16 @@
 import logging
 from copy import copy
 from zope import component
-from StringIO import StringIO
-try:
-    from zope.component.hooks import getSite
-except ImportError:
-    #BBB
-    from zope.site.hooks import getSite
+from six import StringIO
 from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
 from Products.ResourceRegistries.tools.packer import CSSPacker
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from Products.ResourceRegistries.utils import applyPrefix
-
 from collective.js.jqueryui import interfaces, config
 
-from Acquisition import aq_parent
 logger = logging.getLogger('collective.js.jqueryui')
 
 
@@ -85,7 +79,7 @@ class Resources(BrowserView):
             try:
                 resource = self.context.restrictedTraverse(
                     resourceid)
-            except KeyError, e:
+            except KeyError as e:
                 logger.error(e)
                 continue
             if not resource:
@@ -102,13 +96,9 @@ class Resources(BrowserView):
             fic = open(resource.context.path, 'r')
             content = fic.read()
             fic.close()
-            try:
-                content = unicode(content)
+            content = safe_unicode(content)
 
-            except Exception, e:
-                content = unicode(content.decode('utf-8'))
-
-            #css applyPrefix
+            # css applyPrefix
             if self._css:
                 upath = upath.rstrip('/')
                 prefix = '/'.join([upath, resourceid])
@@ -118,7 +108,7 @@ class Resources(BrowserView):
                     prefix.split('/')[:-1])
                 content = applyPrefix(content, prefix)
 
-            #content is already minified
+            # content is already minified
             data.write(content)
             data.write(u"\n")
 
@@ -141,7 +131,7 @@ class JQueryUICustomJS(Resources):
         portal_registry"""
         settings = self.settings()
         deps = config.JQUERYUI_DEPENDENCIES
-        alljs = deps.keys()
+        alljs = list(deps.keys())
         resources = []
         wanted = []  # not ordered list of wanted plugins
         tpl = "++resource++jquery-ui/jquery.%s.min.js"
