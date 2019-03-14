@@ -39,7 +39,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.app.jquery > 1.6',
-        'Products.CMFPlone'
+        'Products.CMFPlone',
         'setuptools',
     ],
     setup_requires=["setuptools_git"],
