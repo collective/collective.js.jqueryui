@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.1.1 (unreleased)
+2.1.1 (2019-03-14)
 ------------------
 
 - 2.1.0 was a brown bag release with broken setup.
