@@ -1,9 +1,8 @@
 Introduction
 ============
 
-Integration of jQueryUI in Plone 4.3.
+Integration of jQueryUI in Plone
 
-Version: 1.10.4
 
 WARNINGS
 ========

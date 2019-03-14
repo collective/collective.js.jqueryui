@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '2.0.2.dev0'
+version = '2.1.0.dev0'
 
 setup(
     name='collective.js.jqueryui',
@@ -15,12 +15,15 @@ setup(
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Operating System :: OS Independent",
         "Framework :: Zope2",
+        "Framework :: Zope :: 2",
+        "Framework :: Zope :: 4",
         "Framework :: Plone",
+        "Framework :: Plone :: Addon",
         "Framework :: Plone :: 4.3",
         "Framework :: Plone :: 5.0",
         "Framework :: Plone :: 5.1",
+        "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
@@ -35,8 +38,9 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'plone.app.jquery > 1.6',
+        'Products.CMFPlone'
         'setuptools',
-        'plone.app.jquery > 1.6'
     ],
     setup_requires=["setuptools_git"],
     extras_require={},
@@ -45,4 +49,4 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     """,
-    )
+)

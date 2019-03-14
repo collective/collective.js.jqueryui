@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.0.2 (unreleased)
+2.1.0 (unreleased)
 ------------------
 
 Bug fixes:
