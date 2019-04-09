@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.1.5 (unreleased)
+2.1.5 (2019-04-09)
 ------------------
 
 - Typo corrected 
