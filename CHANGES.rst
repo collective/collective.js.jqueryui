@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.1.4 (unreleased)
+2.1.4 (2019-04-09)
 ------------------
 
 - Fix: Do not try to cook css resources in Plone 5.2.
