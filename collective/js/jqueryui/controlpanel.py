@@ -264,7 +264,7 @@ class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
 @component.adapter(IJQueryUICSS, IRecordModifiedEvent)
 def cook_css_resources(record, event):
     site = getSite()
-    if "portal_css" in not site:
+    if "portal_css" not in site:
         return
 
     cssregistry = site.portal_css
