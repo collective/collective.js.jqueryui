@@ -3,6 +3,12 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
+2.1.5 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 2.1.4 (2019-04-09)
 ------------------
 
