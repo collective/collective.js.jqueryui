@@ -6,7 +6,8 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- More occurences of portal_css/portal_javascript eleminated.
+  [jensens]
 
 
 2.1.5 (2019-04-09)

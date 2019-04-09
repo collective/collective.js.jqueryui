@@ -180,6 +180,9 @@ class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
 
 def update_registry(to_enable=[], to_disable=[]):
     site = getSite()
+    if "portal_javascripts" not in site:
+        return
+    
     jsregistry = site.portal_javascripts
 
     for js in to_disable:
@@ -199,6 +202,9 @@ def verify_jsregistry(record):
     """This function check the jsregistry configuration against the jsregistry
     """
     site = getSite()
+    if "portal_javascripts" not in site:
+        return
+
     jsregistry = site.portal_javascripts
 
     keys = list(JQUERYUI_DEPENDENCIES.keys())

@@ -22,7 +22,9 @@ def common(context):
         if record_id in registry.records:
             del registry.records[record_id]
 
-    css = getToolByName(context, 'portal_css')
-    css.cookResources()
-    js = getToolByName(context, 'portal_javascripts')
-    js.cookResources()
+    css = getToolByName(context, 'portal_css', None)
+    if css:
+        css.cookResources()
+    js = getToolByName(context, 'portal_javascripts', None)
+    if js:
+        js.cookResources()
