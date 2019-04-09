@@ -294,5 +294,6 @@ class MainControlPanelView(BrowserView):
 @component.adapter(IJQueryUIPlugins, IRecordModifiedEvent)
 def cook_js_resources(record, event):
     site = getSite()
-    jsregistry = site.portal_javascripts
-    jsregistry.cookResources()
+    if "portal_javascripts" in site:
+        jsregistry = site.portal_javascripts
+        jsregistry.cookResources()

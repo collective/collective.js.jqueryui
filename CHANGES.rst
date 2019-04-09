@@ -6,7 +6,8 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix: Do not try to cook js resources in Plone 5.2.
+  [jensens]
 
 
 2.1.2 (2019-03-14)
