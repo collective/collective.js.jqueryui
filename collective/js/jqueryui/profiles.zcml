@@ -44,12 +44,22 @@
   <utility factory=".setuphandlers.HiddenProducts" name="collective.js.jqueryui" />
 
   <genericsetup:importStep
+    zcml:condition="not-have plone-5"
     name="collective.js.jqueryui"
     title="collective.js.jqueryui regain priority to registry"
     description="plone.app.registry step is executed before jsregistry so fix it"
     handler=".setuphandlers.applySettings">
     <depends name="cssregistry"/>
     <depends name="jsregistry"/>
+    <depends name="plone.app.registry"/>
+  </genericsetup:importStep>
+
+  <genericsetup:importStep
+    zcml:condition="have plone-5"
+    name="collective.js.jqueryui"
+    title="collective.js.jqueryui regain priority to registry"
+    description="plone.app.registry step is executed before jsregistry so fix it"
+    handler=".setuphandlers.applySettings">
     <depends name="plone.app.registry"/>
   </genericsetup:importStep>
 
