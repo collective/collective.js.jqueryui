@@ -42,7 +42,7 @@ setup(
         'Products.CMFPlone',
         'setuptools',
     ],
-    setup_requires=["setuptools_git"],
+    setup_requires=["setuptools"],
     extras_require={},
     entry_points="""
     # -*- Entry points: -*-
