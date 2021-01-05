@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.1.7 (unreleased)
+2.1.7 (2021-01-05)
 ------------------
 
 - Do not depend on cssregistry/jsregistry import steps in Plone 5.
