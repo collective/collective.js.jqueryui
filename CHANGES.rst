@@ -6,7 +6,9 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not depend on cssregistry/jsregistry import steps in Plone 5.
+  This avoids noisy warnings when applying any profile.
+  [ewohnlich]
 
 
 2.1.6 (2019-04-09)
@@ -19,7 +21,7 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.5 (2019-04-09)
 ------------------
 
-- Typo corrected 
+- Typo corrected
   [jensens]
 
 
