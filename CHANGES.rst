@@ -6,7 +6,10 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Removed ``setuptools_git`` from ``setup_requires``.
+  Not needed anymore, and may give problems.
+  See `PR 44 <https://github.com/collective/collective.js.jqueryui/pull/44>`_.
+  [marclava, maurits]
 
 
 2.1.7 (2021-01-05)
