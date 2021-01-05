@@ -11,6 +11,7 @@ setup(
          open(os.path.join("docs", "UPGRADE.txt")).read() + "\n" +
          open("CHANGES.rst").read(),
     classifiers=[
+        "Development Status :: 6 - Mature",
         "Environment :: Web Environment",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Operating System :: OS Independent",
