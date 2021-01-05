@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: http://jqueryui.com/changelog/
 
-2.1.8 (unreleased)
+2.1.8 (2021-01-05)
 ------------------
 
 - Removed ``setuptools_git`` from ``setup_requires``.
