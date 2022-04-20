@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 __docformat__ = 'restructuredtext'
 
 from zope.i18n import translate
+
 import time
 
 

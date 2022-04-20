@@ -1,15 +1,18 @@
-import logging
+# -*- coding: utf-8 -*-
+from collective.js.jqueryui import config
+from collective.js.jqueryui import interfaces
 from copy import copy
-from zope import component
-from six import StringIO
 from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
-from collective.js.jqueryui import interfaces, config
+from six import StringIO
+from zope import component
 
+import logging
 import os
 import re
+
 
 logger = logging.getLogger('collective.js.jqueryui')
 
@@ -27,7 +30,7 @@ def makeAbsolute(path, prefix):
     if path.startswith('/') or '://' in path:
         return path
 
-    absolute = "%s/%s" % (prefix, path)
+    absolute = "{0}/{1}".format(prefix, path)
     if '://' in absolute:
         return absolute
 
@@ -185,7 +188,7 @@ class JQueryUICustomJS(Resources):
             if plugin not in wanted:
                 ordered_plugins.remove(plugin)
         for plugin in ordered_plugins:
-            resources.append(tpl % plugin)
+            resources.append(tpl.format(plugin))
             if plugin == 'ui.datepicker':
                 resources.append('++resource++jquery-ui-i18n.js')
         return resources

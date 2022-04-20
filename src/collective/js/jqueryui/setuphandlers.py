@@ -1,8 +1,9 @@
-from Products.CMFPlone import interfaces as Plone
-from Products.CMFQuickInstallerTool import interfaces as QuickInstaller
+# -*- coding: utf-8 -*-
 from collective.js.jqueryui.controlpanel import verify_jsregistry
 from collective.js.jqueryui.interfaces import IJQueryUIPlugins
 from plone.registry.interfaces import IRegistry
+from Products.CMFPlone import interfaces as Plone
+from Products.CMFQuickInstallerTool import interfaces as QuickInstaller
 from zope.component._api import getUtility
 from zope.interface import implementer
 
