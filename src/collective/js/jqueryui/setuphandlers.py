@@ -10,7 +10,7 @@ from zope.interface import implementer
 
 def applySettings(gscontext):
     # don't run as a step for other profiles
-    if gscontext.readDataFile('jqueryui.txt') is None:
+    if gscontext.readDataFile("jqueryui.txt") is None:
         return
     record = getUtility(IRegistry).forInterface(IJQueryUIPlugins)
     verify_jsregistry(record)
@@ -18,17 +18,13 @@ def applySettings(gscontext):
 
 @implementer(Plone.INonInstallable)
 class HiddenProfiles(object):
-
     def getNonInstallableProfiles(self):
-        """Do not show on Plone's list of installable profiles.
-        """
-        return ['collective.js.jqueryui:install-base']
+        """Do not show on Plone's list of installable profiles."""
+        return ["collective.js.jqueryui:install-base"]
 
 
 @implementer(QuickInstaller.INonInstallable)
 class HiddenProducts(object):
-
     def getNonInstallableProducts(self):
-        """Do not show on QuickInstaller's list of installable products.
-        """
-        return ['collective.js.jqueryui:install-base']
+        """Do not show on QuickInstaller's list of installable products."""
+        return ["collective.js.jqueryui:install-base"]

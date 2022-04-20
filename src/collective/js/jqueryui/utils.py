@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__docformat__ = 'restructuredtext'
+__docformat__ = "restructuredtext"
 
 from zope.i18n import translate
 
@@ -12,11 +12,11 @@ def get_datepicker_date_format(request):
     date_format_short_datepicker msgid in the plonelocales i18n domain.
     Return 'mm/dd/yy' if no translation has been found.
     """
-    date_format = translate(u"date_format_short_datepicker",
-                            domain="plonelocales",
-                            context=request)
+    date_format = translate(
+        u"date_format_short_datepicker", domain="plonelocales", context=request
+    )
     if date_format == u"date_format_short_datepicker":
-        return 'mm/dd/yy'
+        return "mm/dd/yy"
     return date_format
 
 
@@ -39,10 +39,7 @@ def transform_to_percent(date_format):
     >>> transform_to_percent("yy.mm.dd.")
     '%Y.%m.%d.'
     """
-    return date_format.replace(
-        "mm", "%m").replace(
-        "dd", "%d").replace(
-        "yy", "%Y")
+    return date_format.replace("mm", "%m").replace("dd", "%d").replace("yy", "%Y")
 
 
 def get_python_date_format(request):

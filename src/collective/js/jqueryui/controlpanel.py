@@ -200,8 +200,7 @@ def update_registry(to_enable=[], to_disable=[]):
 
 
 def verify_jsregistry(record):
-    """This function check the jsregistry configuration against the jsregistry
-    """
+    """This function check the jsregistry configuration against the jsregistry"""
     site = getSite()
     if "portal_javascripts" not in site:
         return
