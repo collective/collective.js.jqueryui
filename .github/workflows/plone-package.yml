@@ -62,3 +62,9 @@ jobs:
               env:
                 PLONE-VERSION: ${{ matrix.plone-version }}
                 PYTHON-VERSION: ${{ matrix.python-version }}
+            - name: "Coverage report"
+              run: tox -r -e coverage-report
+            - name: "Upload coverage to Codecov"
+              uses: "codecov/codecov-action@v2"
+              with:
+                fail_ci_if_error: true
