@@ -63,7 +63,8 @@ setup(
     ],
     extras_require={
         "test": [
-            "zope.i18n",
+            "plone.api",
+            "plone.app.testing",
         ],
     },
     entry_points="""

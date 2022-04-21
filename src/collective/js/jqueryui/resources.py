@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from collective.js.jqueryui import config
-from collective.js.jqueryui import interfaces
+from collective.js.jqueryui.controlpanel import IJQueryUICSS
+from collective.js.jqueryui.controlpanel import IJQueryUIPlugins
 from copy import copy
 from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
@@ -152,7 +153,7 @@ class JQueryUICustomJS(Resources):
 
     _js = True
     _css = False
-    _key = interfaces.IJQueryUIPlugins
+    _key = IJQueryUIPlugins
     _mimetype = "application/javascript"
     _toolid = "portal_javascripts"
     # _packer = JavascriptPacker
@@ -189,7 +190,7 @@ class JQueryUICustomJS(Resources):
 class JQueryUICustomCSS(Resources):
     """."""
 
-    _key = interfaces.IJQueryUICSS
+    _key = IJQueryUICSS
     _mimetype = "text/css"
     _toolid = "portal_css"
     # _packer = CSSPacker

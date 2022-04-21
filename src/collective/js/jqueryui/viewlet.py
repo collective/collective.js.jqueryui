@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from collective.js.jqueryui.interfaces import IJQueryUIPlugins
+from collective.js.jqueryui.controlpanel import IJQueryUIPlugins
 from collective.js.jqueryui.utils import get_datepicker_date_format
 from plone.app.layout.viewlets.common import ViewletBase
 from plone.registry.interfaces import IRegistry
