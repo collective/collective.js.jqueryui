@@ -57,7 +57,6 @@ setup(
     zip_safe=False,
     python_requires=">=2.7",
     install_requires=[
-        "plone.app.jquery > 1.6",
         "Products.CMFPlone",
         "setuptools",
     ],

@@ -5,7 +5,6 @@
   xmlns:zcml="http://namespaces.zope.org/zcml"
   i18n_domain="collective.js.jqueryui">
 
-  <include package="plone.app.jquery" />
   <include package="Products.CMFCore" file="permissions.zcml"
     zcml:condition="have plone-41" />
   <include file="profiles.zcml" />

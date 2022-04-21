@@ -6,6 +6,9 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.9 (unreleased)
 ------------------
 
+- Remove dependency on ``plone.app.jquery`` (fixes `#45 <https://github.com/collective/collective.js.jqueryui/issues/45>`_).
+  [wesleybl]
+
 - Separate profile ``uninstall`` from Plone 5 and Plone 4.
   [wesleybl]
 
