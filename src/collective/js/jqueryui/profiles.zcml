@@ -31,6 +31,22 @@
     provides="Products.GenericSetup.interfaces.EXTENSION" />
 
   <genericsetup:registerProfile
+    name="uninstall-base"
+    directory="profiles/uninstall-base"
+    title="jQuery UI Common Uninstall"
+    description="jQuery UI for uninstall that aren't version dependent."
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <genericsetup:registerProfile
+    zcml:condition="not-have plone-5"
+    name="uninstall"
+    directory="profiles/uninstall-bbb"
+    title="jQuery UI (uninstall)"
+    description="Uninstalls the jQuery UI add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <genericsetup:registerProfile
+      zcml:condition="have plone-5"
       name="uninstall"
       title="jQuery UI (uninstall)"
       directory="profiles/uninstall"

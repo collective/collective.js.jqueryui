@@ -6,7 +6,8 @@ JQueryUI Changelog: http://jqueryui.com/changelog/
 2.1.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Separate profile ``uninstall`` from Plone 5 and Plone 4.
+  [wesleybl]
 
 
 2.1.8 (2021-01-05)
