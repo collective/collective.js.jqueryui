@@ -147,17 +147,5 @@ Credits and contributions
 * `Makina Corpus <http://www.makina-corpus.com>`_
 * `Ecreall <http://www.ecreall.com>`_
 
-Contributors
-============
-
-* Vincent Fretin [vincentfretin]
-* Hanno Schlichting [hanno]
-* Nathan Vangheem [vangheem]
-* Marcos F. Romero [marcosfromero]
-* Kees Hink [khink]
-* Robert Niederreiter [rnix]
-* JeanMichel FRANCOIS [toutpt]
-* Alin Voinea [avoinea]
-
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
