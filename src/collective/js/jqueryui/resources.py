@@ -1,39 +1,41 @@
-import logging
+# -*- coding: utf-8 -*-
+from collective.js.jqueryui import config
+from collective.js.jqueryui import interfaces
 from copy import copy
-from zope import component
-from six import StringIO
 from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
-from collective.js.jqueryui import interfaces, config
+from six import StringIO
+from zope import component
 
+import logging
 import os
 import re
 
-logger = logging.getLogger('collective.js.jqueryui')
+
+logger = logging.getLogger("collective.js.jqueryui")
 
 URL_MATCH = re.compile(
-    r'''(url\s*\(\s*['"]?)(?!data:)([^'")]+)(['"]?\s*\))''',
+    r"""(url\s*\(\s*['"]?)(?!data:)([^'")]+)(['"]?\s*\))""",
     re.I | re.S,
 )
 
 
 def makeAbsolute(path, prefix):
-    """Make a url into an absolute URL by applying the given prefix
-    """
+    """Make a url into an absolute URL by applying the given prefix"""
 
     # Absolute path or full url
-    if path.startswith('/') or '://' in path:
+    if path.startswith("/") or "://" in path:
         return path
 
-    absolute = "%s/%s" % (prefix, path)
-    if '://' in absolute:
+    absolute = "{0}/{1}".format(prefix, path)
+    if "://" in absolute:
         return absolute
 
     normalized = os.path.normpath(absolute)
-    if os.path.sep != '/':
-        normalized = normalized.replace(os.path.sep, '/')
+    if os.path.sep != "/":
+        normalized = normalized.replace(os.path.sep, "/")
     return normalized
 
 
@@ -42,7 +44,7 @@ def applyPrefix(cssSource, prefix):
     contains an absolute path turned into an absolute path, by applying the
     given prefix.
     """
-    if prefix.endswith('/'):
+    if prefix.endswith("/"):
         prefix = prefix[:-1]
 
     return URL_MATCH.sub(
@@ -65,8 +67,7 @@ class Resources(BrowserView):
     def tool(self):
         if self._tool is None:
             if self._toolid:
-                self._tool = getToolByName(self.context,
-                                           self._toolid)
+                self._tool = getToolByName(self.context, self._toolid)
             else:
                 self._tool = False
         return self._tool
@@ -93,15 +94,14 @@ class Resources(BrowserView):
             return
         resources = self.get_resources()
         if self._mimetype:
-            self.request.response.setHeader('Content-Type',
-                                            self._mimetype)
+            self.request.response.setHeader("Content-Type", self._mimetype)
         if resources is None:
             resources = ""
         return self.get_resources_content(resources)
 
     def pack(self, content):
         if self._packer and not self.debug:
-            return self._packer('safe').pack(content)
+            return self._packer("safe").pack(content)
         return content
 
     def get_resources_content(self, resources):
@@ -114,35 +114,29 @@ class Resources(BrowserView):
         upath = self.context.absolute_url_path()
         for resourceid in resources:
             try:
-                resource = self.context.restrictedTraverse(
-                    resourceid)
+                resource = self.context.restrictedTraverse(resourceid)
             except KeyError as e:
                 logger.error(e)
                 continue
             if not resource:
                 continue
             if self._header_template:
-                data.write(
-                    self._header_template % (
-                        resource.context.__name__
-                    )
-                )
+                data.write(self._header_template % (resource.context.__name__))
                 data.write(u"\n")
 
             # read the content of the resource
-            fic = open(resource.context.path, 'r')
+            fic = open(resource.context.path, "r")
             content = fic.read()
             fic.close()
             content = safe_unicode(content)
 
             # css applyPrefix
             if self._css:
-                upath = upath.rstrip('/')
-                prefix = '/'.join([upath, resourceid])
-                if prefix.endswith('/'):
+                upath = upath.rstrip("/")
+                prefix = "/".join([upath, resourceid])
+                if prefix.endswith("/"):
                     prefix = prefix[:-1]
-                prefix = '/'.join(
-                    prefix.split('/')[:-1])
+                prefix = "/".join(prefix.split("/")[:-1])
                 content = applyPrefix(content, prefix)
 
             # content is already minified
@@ -155,11 +149,12 @@ class Resources(BrowserView):
 class JQueryUICustomJS(Resources):
     """This view aggregate javascripts according to the configuration. It has
     been created to not polute the portal_javascripts will all plugins"""
+
     _js = True
     _css = False
     _key = interfaces.IJQueryUIPlugins
-    _mimetype = 'application/javascript'
-    _toolid = 'portal_javascripts'
+    _mimetype = "application/javascript"
+    _toolid = "portal_javascripts"
     # _packer = JavascriptPacker
 
     def get_resources(self):
@@ -174,7 +169,7 @@ class JQueryUICustomJS(Resources):
         tpl = "++resource++jquery-ui/jquery.%s.min.js"
         ordered_plugins = copy(config.ORDERED_PLUGINS)
         for plugin in alljs:
-            attr_name = plugin.replace('.', '_').replace('-', '_')
+            attr_name = plugin.replace(".", "_").replace("-", "_")
             is_wanted = getattr(settings, attr_name, False)
             if is_wanted:
                 wanted.append(plugin)
@@ -185,17 +180,18 @@ class JQueryUICustomJS(Resources):
             if plugin not in wanted:
                 ordered_plugins.remove(plugin)
         for plugin in ordered_plugins:
-            resources.append(tpl % plugin)
-            if plugin == 'ui.datepicker':
-                resources.append('++resource++jquery-ui-i18n.js')
+            resources.append(tpl.format(plugin))
+            if plugin == "ui.datepicker":
+                resources.append("++resource++jquery-ui-i18n.js")
         return resources
 
 
 class JQueryUICustomCSS(Resources):
-    """ . """
+    """."""
+
     _key = interfaces.IJQueryUICSS
-    _mimetype = 'text/css'
-    _toolid = 'portal_css'
+    _mimetype = "text/css"
+    _toolid = "portal_css"
     # _packer = CSSPacker
     _js = False
     _css = True
@@ -207,7 +203,8 @@ class JQueryUICustomCSS(Resources):
         settings = self.settings()
         resources_items = [
             ("css", config.CSS_RESOURCE_ID),
-            ("patch", config.PATCH_RESOURCE_ID)]
+            ("patch", config.PATCH_RESOURCE_ID),
+        ]
         resources = []
         for skey, cssid in resources_items:
             if getattr(settings, skey, None):

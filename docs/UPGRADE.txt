@@ -9,7 +9,7 @@ How to upgrade this package
 
 Commands to execute::
 
-    PKG="/home/toutpt/workspace/collective.js.jqueryui/collective/js/jqueryui"
+    PKG="/home/toutpt/workspace/collective.js.jqueryui/src/collective/js/jqueryui"
     VERSION="1.8.13"
     PREV="1.8.12"
     unzip ~/jquery-ui-$VERSION.custom.zip

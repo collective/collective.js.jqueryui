@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from collective.js.jqueryui.config import CSS_RESOURCE_ID
 from collective.js.jqueryui.config import JQUERYUI_DEPENDENCIES
 from collective.js.jqueryui.config import PATCH_RESOURCE_ID
@@ -175,14 +176,14 @@ class PluginsControlPanelView(basepanel.ControlPanelFormWrapper):
     label = u"JQueryUI plugins settings"
 
     def parent_panel_url(self):
-        return "%s/@@jqueryui-controlpanel" % (self.context.absolute_url())
+        return "{0}/@@jqueryui-controlpanel".format(self.context.absolute_url())
 
 
 def update_registry(to_enable=[], to_disable=[]):
     site = getSite()
     if "portal_javascripts" not in site:
         return
-    
+
     jsregistry = site.portal_javascripts
 
     for js in to_disable:
@@ -199,8 +200,7 @@ def update_registry(to_enable=[], to_disable=[]):
 
 
 def verify_jsregistry(record):
-    """This function check the jsregistry configuration against the jsregistry
-    """
+    """This function check the jsregistry configuration against the jsregistry"""
     site = getSite()
     if "portal_javascripts" not in site:
         return
@@ -210,7 +210,7 @@ def verify_jsregistry(record):
     keys = list(JQUERYUI_DEPENDENCIES.keys())
     for key in keys:
         rkey = key.replace(".", "_")
-        resource_id = RESOURCE_ID % key
+        resource_id = RESOURCE_ID.format(key)
         setting = getattr(record, rkey, None)
         if setting is None:
             continue
@@ -225,7 +225,7 @@ def verify_jsregistry(record):
             # we don't want it explicitly but it can be a dependency
             continue
         # we have a not syncrhonized configuration
-        msg = "%s issue. auto enable it" % resource_id
+        msg = "{0} issue. auto enable it".format(resource_id)
         logger.info(msg)
         js.setEnabled(True)
         if key == "ui.datepicker":
@@ -264,7 +264,7 @@ class SunburstControlPanelView(basepanel.ControlPanelFormWrapper):
     label = u"JQueryUI Sunburst CSS settings"
 
     def parent_panel_url(self):
-        return "%s/@@jqueryui-controlpanel" % (self.context.absolute_url())
+        return "{0}/@@jqueryui-controlpanel".format(self.context.absolute_url())
 
 
 @component.adapter(IJQueryUICSS, IRecordModifiedEvent)

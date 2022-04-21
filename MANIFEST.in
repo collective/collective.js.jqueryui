@@ -1,4 +1,4 @@
-include docs/*.txt
-graft collective
-include *rst
-global-exclude *.pyc *.pyo
+graft src/collective
+graft docs
+include *.rst
+global-exclude *.pyc
