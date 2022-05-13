@@ -1,7 +1,7 @@
 Changelog
 =========
 
-JQueryUI Changelog: http://jqueryui.com/changelog/
+JQueryUI Changelog: https://jqueryui.com/changelog/
 
 2.1.9 (unreleased)
 ------------------
