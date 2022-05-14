@@ -144,8 +144,8 @@ Credits and contributions
 
 |makinacom|_
 
-* `Makina Corpus <http://www.makina-corpus.com>`_
-* `Ecreall <http://www.ecreall.com>`_
+* `Makina Corpus <https://www.makina-corpus.com>`_
+* `Ecreall <https://www.ecreall.com>`_
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
-.. _makinacom:  http://www.makina-corpus.com
+.. _makinacom:  https://www.makina-corpus.com
