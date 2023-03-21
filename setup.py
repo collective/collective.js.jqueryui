@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.js.jqueryui",
-    version="2.2.0",
+    version="2.2.1.dev0",
     description="JQueryUI ready for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
