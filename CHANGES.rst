@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: https://jqueryui.com/changelog/
 
-2.2.0 (unreleased)
+2.2.0 (2023-03-21)
 ------------------
 
 - Remove dependency on ``plone.app.jquery`` (fixes `#45 <https://github.com/collective/collective.js.jqueryui/issues/45>`_).
