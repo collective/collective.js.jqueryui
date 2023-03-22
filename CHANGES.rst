@@ -6,7 +6,8 @@ JQueryUI Changelog: https://jqueryui.com/changelog/
 2.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Drop suport to Python 3.6.
+  [wesleybl]
 
 
 2.2.0 (2023-03-21)
