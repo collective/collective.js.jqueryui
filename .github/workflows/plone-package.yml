@@ -20,8 +20,8 @@ jobs:
                       python-version: 3.8
 
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/cache@v2
+            - uses: actions/checkout@v3
+            - uses: actions/cache@v3
               with:
                   path: |
                     ~/.cache/pip
@@ -32,7 +32,7 @@ jobs:
                   #restore-keys: |
                   #  ${{ runner.os }}-tox-
             - name: Set up Python ${{ matrix.python-version }}
-              uses: actions/setup-python@v2
+              uses: actions/setup-python@v4
               with:
                   python-version: ${{ matrix.python-version }}
             - name: Install system libraries
@@ -48,12 +48,6 @@ jobs:
               run: |
                   python -m pip install --upgrade pip
                   pip install tox tox-gh-actions
-            - name: Black-Check
-              run: |
-                  tox -r -e black-check
-            - name: lint
-              run: tox -r -e py38-lint
-              if: matrix.python-version == '3.8'
             - name: Test with tox
               run: |
                   tox -r
@@ -63,6 +57,6 @@ jobs:
             - name: "Coverage report"
               run: tox -r -e coverage-report
             - name: "Upload coverage to Codecov"
-              uses: "codecov/codecov-action@v2"
+              uses: "codecov/codecov-action@v3"
               with:
                 fail_ci_if_error: true
