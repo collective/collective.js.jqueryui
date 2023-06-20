@@ -141,11 +141,9 @@ class JQueryUICustomJS(Resources):
 
     def get_resources(self):
         """Return a list of resources (at least their ids)."""
-        alljs = config.JQUERYUI_RESOURCES
-
-        resources = []
-        for plugin in alljs:
-            resources.append(plugin)
+        resources = list(config.JQUERYUI_RESOURCES)
+        # add i18n for datepicker, maybe it still works
+        # resources.append('++resource++jquery-ui-i18n.js')
         return resources
 
 
@@ -159,16 +157,8 @@ class JQueryUICustomCSS(Resources):
     _css = True
 
     def get_resources(self):
-        """Return a list of resources (at least their ids) computed from
-        the configuration provided by IJQueryUIPlugins's records in plone
-        portal_registry"""
-        settings = self.settings()
-        resources_items = [
-            ("css", config.CSS_RESOURCE_ID),
-            ("patch", config.PATCH_RESOURCE_ID),
-        ]
-        resources = []
-        for skey, cssid in resources_items:
-            if getattr(settings, skey, None):
-                resources.append(cssid)
+        """Return a list of resources."""
+        resources = list(config.CSS_RESOURCES)
+        # and the CSS patch file
+        resources.append("++resource++jquery-ui-themes/sunburst-patch.css")
         return resources
