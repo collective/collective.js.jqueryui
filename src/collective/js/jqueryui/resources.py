@@ -1,18 +1,14 @@
 # -*- coding: utf-8 -*-
-from collective.js.jqueryui import config
-from collective.js.jqueryui.controlpanel import IJQueryUICSS
-from collective.js.jqueryui.controlpanel import IJQueryUIPlugins
-from copy import copy
-from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
 from six import StringIO
-from zope import component
 
 import logging
 import os
 import re
+
+from collective.js.jqueryui import config
 
 
 logger = logging.getLogger("collective.js.jqueryui")
@@ -55,7 +51,6 @@ def applyPrefix(cssSource, prefix):
 
 
 class Resources(BrowserView):
-    _key = None
     _header_template = u"\n/* collective.js.jqueryui: %s */\n"
     _mimetype = None
     _tool = None
@@ -80,19 +75,7 @@ class Resources(BrowserView):
             ret = self.tool.getDebugMode()
         return ret
 
-    def settings(self):
-        """Return records from portal_registry corresponding to
-        IJQueryUIPlugins
-        """
-        registry = component.queryUtility(IRegistry)
-        if registry is None or self._key is None:
-            return
-        return registry.forInterface(self._key, None)
-
     def __call__(self):
-        settings = self.settings
-        if settings is None:
-            return
         resources = self.get_resources()
         if self._mimetype:
             self.request.response.setHeader("Content-Type", self._mimetype)
@@ -153,44 +136,23 @@ class JQueryUICustomJS(Resources):
 
     _js = True
     _css = False
-    _key = IJQueryUIPlugins
     _mimetype = "application/javascript"
     _toolid = "portal_javascripts"
     # _packer = JavascriptPacker
 
     def get_resources(self):
-        """Return a list of resources (at least their ids) computed from
-        the configuration provided by IJQueryUIPlugins's records in plone
-        portal_registry"""
-        settings = self.settings()
-        deps = config.JQUERYUI_DEPENDENCIES
-        alljs = list(deps.keys())
+        """Return a list of resources (at least their ids)."""
+        alljs = config.JQUERYUI_RESOURCES
+
         resources = []
-        wanted = []  # not ordered list of wanted plugins
-        tpl = "++resource++jquery-ui/jquery.%s.min.js"
-        ordered_plugins = copy(config.ORDERED_PLUGINS)
         for plugin in alljs:
-            attr_name = plugin.replace(".", "_").replace("-", "_")
-            is_wanted = getattr(settings, attr_name, False)
-            if is_wanted:
-                wanted.append(plugin)
-                deps = config.JQUERYUI_DEPENDENCIES[plugin]
-                for dep in deps:
-                    wanted.append(dep)
-        for plugin in alljs:
-            if plugin not in wanted:
-                ordered_plugins.remove(plugin)
-        for plugin in ordered_plugins:
-            resources.append(tpl.format(plugin))
-            if plugin == "ui.datepicker":
-                resources.append("++resource++jquery-ui-i18n.js")
+            resources.append(plugin)
         return resources
 
 
 class JQueryUICustomCSS(Resources):
     """."""
 
-    _key = IJQueryUICSS
     _mimetype = "text/css"
     _toolid = "portal_css"
     # _packer = CSSPacker

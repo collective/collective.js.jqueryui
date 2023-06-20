@@ -8,14 +8,6 @@
   <five:registerPackage package="." />
 
   <genericsetup:registerProfile
-    name="install-base"
-    directory="profiles/base"
-    title="jQuery UI Common Settings"
-    description="jQuery UI for Plone settings that aren't version dependent."
-    provides="Products.GenericSetup.interfaces.EXTENSION" />
-
-  <genericsetup:registerProfile
-    zcml:condition="have plone-5"
     name="default"
     directory="profiles/default"
     title="jQuery UI"
@@ -23,30 +15,6 @@
     provides="Products.GenericSetup.interfaces.EXTENSION" />
 
   <genericsetup:registerProfile
-    zcml:condition="not-have plone-5"
-    name="default"
-    directory="profiles/bbb"
-    title="jQuery UI"
-    description="Install jQuery UI."
-    provides="Products.GenericSetup.interfaces.EXTENSION" />
-
-  <genericsetup:registerProfile
-    name="uninstall-base"
-    directory="profiles/uninstall-base"
-    title="jQuery UI Common Uninstall"
-    description="jQuery UI for uninstall that aren't version dependent."
-    provides="Products.GenericSetup.interfaces.EXTENSION" />
-
-  <genericsetup:registerProfile
-    zcml:condition="not-have plone-5"
-    name="uninstall"
-    directory="profiles/uninstall-bbb"
-    title="jQuery UI (uninstall)"
-    description="Uninstalls the jQuery UI add-on."
-    provides="Products.GenericSetup.interfaces.EXTENSION" />
-
-  <genericsetup:registerProfile
-      zcml:condition="have plone-5"
       name="uninstall"
       title="jQuery UI (uninstall)"
       directory="profiles/uninstall"
@@ -58,33 +26,5 @@
   <!-- Hide profiles/products from Quick Installer -->
   <utility factory=".setuphandlers.HiddenProfiles" name="collective.js.jqueryui" />
   <utility factory=".setuphandlers.HiddenProducts" name="collective.js.jqueryui" />
-
-  <genericsetup:importStep
-    zcml:condition="not-have plone-5"
-    name="collective.js.jqueryui"
-    title="collective.js.jqueryui regain priority to registry"
-    description="plone.app.registry step is executed before jsregistry so fix it"
-    handler=".setuphandlers.applySettings">
-    <depends name="cssregistry"/>
-    <depends name="jsregistry"/>
-    <depends name="plone.app.registry"/>
-  </genericsetup:importStep>
-
-  <genericsetup:importStep
-    zcml:condition="have plone-5"
-    name="collective.js.jqueryui"
-    title="collective.js.jqueryui regain priority to registry"
-    description="plone.app.registry step is executed before jsregistry so fix it"
-    handler=".setuphandlers.applySettings">
-    <depends name="plone.app.registry"/>
-  </genericsetup:importStep>
-
-  <genericsetup:upgradeStep
-    source="*"
-    destination="3204"
-    title="Common upgrade"
-    description=""
-    profile="collective.js.jqueryui:default"
-    handler=".upgrades.common" />
 
 </configure>

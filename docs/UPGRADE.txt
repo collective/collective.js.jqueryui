@@ -1,6 +1,8 @@
 How to upgrade this package
 ===========================
 
+!IMPORTANT: Does not work like this any more! See https://github.com/collective/collective.js.jqueryui/issues/46
+
 - Go to https://jqueryui.com/download
 - Go to the URL specified in the collective/js/jqueryui/css/sunburst/jqueryui.css file to pre-load current theme settings.
 - Click on "Download theme" in the left-side "Theme rollover".

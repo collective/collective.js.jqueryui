@@ -4,6 +4,7 @@
   <records prefix="plone.bundles/jqueryui"
            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="enabled">True</value>
+    <!-- points to the resources provided by resource.py view classes -->
     <value key="jscompilation">collective.js.jqueryui.custom.min.js</value>
     <value key="csscompilation">collective.js.jqueryui.custom.min.css</value>
     <value key="compile">False</value>
