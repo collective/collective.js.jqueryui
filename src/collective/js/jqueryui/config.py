@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 VERSION = "1.13.2"
 
 # minimized JS files in the `jquery-ui-<VERSION>.custom` folder

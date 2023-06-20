@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 __docformat__ = "restructuredtext"
 
 from zope.i18n import translate
@@ -13,9 +12,9 @@ def get_datepicker_date_format(request):
     Return 'mm/dd/yy' if no translation has been found.
     """
     date_format = translate(
-        u"date_format_short_datepicker", domain="plonelocales", context=request
+        "date_format_short_datepicker", domain="plonelocales", context=request
     )
-    if date_format == u"date_format_short_datepicker":
+    if date_format == "date_format_short_datepicker":
         return "mm/dd/yy"
     return date_format
 

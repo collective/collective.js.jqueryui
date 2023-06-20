@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five import BrowserView
@@ -51,7 +50,7 @@ def applyPrefix(cssSource, prefix):
 
 
 class Resources(BrowserView):
-    _header_template = u"\n/* collective.js.jqueryui: %s */\n"
+    _header_template = "\n/* collective.js.jqueryui: %s */\n"
     _mimetype = None
     _tool = None
     _toolid = None
@@ -106,7 +105,7 @@ class Resources(BrowserView):
                 continue
             if self._header_template:
                 data.write(self._header_template % (resource.context.__name__))
-                data.write(u"\n")
+                data.write("\n")
 
             # read the content of the resource
             fic = open(resource.context.path, "r")
@@ -125,7 +124,7 @@ class Resources(BrowserView):
 
             # content is already minified
             data.write(content)
-            data.write(u"\n")
+            data.write("\n")
 
         return data.getvalue()
 

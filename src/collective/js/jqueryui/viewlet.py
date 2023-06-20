@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from collective.js.jqueryui.utils import get_datepicker_date_format
 from plone.app.layout.viewlets.common import ViewletBase
 
@@ -86,7 +85,7 @@ class L10nDatepicker(ViewletBase):
         #       just short circuit for now, like datepicker is not activated
         return ""
 
-        # return u"""<script type="text/javascript">
+        # return """<script type="text/javascript">
         # jQuery(function($){{
         #     if (typeof($.datepicker) != "undefined"){{
         #       $.datepicker.setDefaults(

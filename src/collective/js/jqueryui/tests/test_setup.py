@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Setup tests for this package."""
 from collective.js.jqueryui.testing import COLLECTIVE_JS_JQUERYUI_INTEGRATION_TESTING
 from plone import api
