@@ -81,18 +81,5 @@ class L10nDatepicker(ViewletBase):
         self.jq_date_format = get_datepicker_date_format(self.request)
 
     def render(self):
-        # TODO: check if it is actually used
-        #       just short circuit for now, like datepicker is not activated
+        # just short circuit for now, like datepicker is not activated
         return ""
-
-        # return """<script type="text/javascript">
-        # jQuery(function($){{
-        #     if (typeof($.datepicker) != "undefined"){{
-        #       $.datepicker.setDefaults(
-        #         jQuery.extend($.datepicker.regional['{0}'],
-        #         {{dateFormat: '{1}'}}));
-        #     }}
-        # }});
-        # </script>""".format(
-        #     self.jq_language(), self.jq_date_format
-        # )
