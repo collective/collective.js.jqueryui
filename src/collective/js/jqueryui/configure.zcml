@@ -37,4 +37,9 @@
     directory="jquery-ui-1.13.2.custom"
     />
 
+  <browser:resourceDirectory
+    name="jquery-ui-themes"
+    directory="css"
+    />
+
 </configure>
