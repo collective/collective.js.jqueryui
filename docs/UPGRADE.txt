@@ -1,43 +1,62 @@
 How to upgrade this package
 ===========================
 
-- Go to https://jqueryui.com/download
-- Go to the URL specified in the collective/js/jqueryui/css/sunburst/jqueryui.css file to pre-load current theme settings.
+
+- Go to the URL specified in the src/collective/js/jqueryui/jquery-ui-$VERSION.custom/jquery-ui.theme.css file to pre-load current theme settings.
 - Click on "Download theme" in the left-side "Theme rollover".
-- At the bottom "Theme" update by "sunburst" in "Theme Folder Name" field.
 - Download jquery-ui-X.custom.zip
 
 Commands to execute::
 
-    PKG="/home/toutpt/workspace/collective.js.jqueryui/src/collective/js/jqueryui"
-    VERSION="1.8.13"
-    PREV="1.8.12"
-    unzip ~/jquery-ui-$VERSION.custom.zip
-    cd ~/jquery-ui-$VERSION.custom
-    rm $PKG/jquery-ui-$PREV.custom.min.js
-    rm $PKG/jquery-ui-$PREV.custom.js
-    rm $PKG/js/*
-    cp ui/jquery-ui.js $PKG/jquery-ui-$VERSION.custom.js
-    cp ui/minified/jquery-ui.min.js $PKG/jquery-ui-$VERSION.custom.min.js
-    cp ui/minified/i18n/jquery-ui-i18n.min.js $PKG/jquery-ui-i18n.js
-    cp ui/minified/*.min.js $PKG/js/
+    unzip jquery-ui-$VERSION.custom.zip
+    rm -R jquery-ui-$PREV.custom
 
-    rm $PKG/css/sunburst/images/*
-    rm $PKG/css/sunburst/jqueryui.css
-    cp css/sunburst/jquery-ui-$VERSION.custom.css $PKG/css/sunburst/jqueryui.css
-    cp css/sunburst/images/* $PKG/css/sunburst/images/
-
-- update version in README.txt and common.zcml and config.py
+- update version in `config.py` and `configure.zcml` for resources
 
 - increment the profile version in metadata.xml
 
-- update the ugprade step::
+- provide ugprade step::
 
     <genericsetup:upgradeStep
-        source="*"
-        destination="3001"
+        source="4000"
+        destination="4001"
         title=""
         description=""
         profile="collective.js.jqueryui:default"
-        handler=".upgrades.common"
     />
+
+
+Caveats/Issues:
+===============
+
+!IMPORTANT: The old style configurable solution does not work any more!
+https://github.com/collective/collective.js.jqueryui/issues/46
+This is a simplified 4.0.0 version, with different upgrade steps.
+
+make it work
+------------
+
+The result of the unpacked jQuery UI zip with Plone 5.2.4 (5212) patterns require.js raises an error:
+
+```
+Uncaught Error: Mismatched anonymous define() module: function(V){"use strict";V.ui=V.ui||{};V.ui.version="1.13.2"; ...   require.js:168
+    at makeError (require.js:168:17)
+    at intakeDefines (require.js:1254:36)
+    at Object.localRequire [as require] (require.js:1446:21)
+    at requirejs (require.js:1797:24)
+    at patterns-compiled.js:15444:1
+```
+
+Solution was to manually remove from `jquery-ui-1.13.2.custom/jquery-ui.min.js` the ADM part (`"function"==typeof define&&define.amd?define(["jquery"],t):`) right at the start of the javascript code:
+
+`!function(t){"use strict";"function"==typeof define&&define.amd?define(["jquery"],t):t(jQuery)}(function(V){ ...`
+
+so we end up with:
+
+`!function(t){"use strict";t(jQuery)}(function(V){ ...`
+
+
+no more i18n datepicker
+-----------------------
+
+It does not work anymore, the viewlet is simply short circuited in its render method. It is left in the product in case it is used by other addons.

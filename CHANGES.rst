@@ -3,6 +3,14 @@ Changelog
 
 JQueryUI Changelog: https://jqueryui.com/changelog/
 
+4.0.0 (unreleased)
+------------------
+
+- Provided resources directly from extracted jQueryUI ZIP file (with require patch)
+- Drop controlpanel using plone.app.registry to select plugins
+- Drop Python 2 and Plone 4 support
+  [szakitibi]
+
 2.2.1 (unreleased)
 ------------------
 

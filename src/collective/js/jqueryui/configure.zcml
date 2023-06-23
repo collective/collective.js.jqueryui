@@ -1,14 +1,45 @@
 <configure
   xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   xmlns:zcml="http://namespaces.zope.org/zcml"
   i18n_domain="collective.js.jqueryui">
 
-  <configure zcml:condition="installed Products.CMFPlone">
-    <include file="plone.zcml" />
-  </configure>
 
-  <configure zcml:condition="not-installed Products.CMFPlone">
-    <include file="zope.zcml" />
-  </configure>
+  <include file="profiles.zcml" />
+
+  <browser:viewlet
+    name="l10n.datepicker"
+    for="*"
+    manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+    class=".viewlet.L10nDatepicker"
+    layer=".interfaces.IJqueryUILayer"
+    permission="zope2.View"
+    />
+
+  <!-- Backport works done on plone.app.jqueryui -->
+  <browser:page
+    for="*"
+    name="collective.js.jqueryui.custom.min.js"
+    class=".resources.JQueryUICustomJS"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    for="*"
+    name="collective.js.jqueryui.custom.min.css"
+    class=".resources.JQueryUICustomCSS"
+    permission="zope2.View"
+    />
+
+  <browser:resourceDirectory
+    name="jquery-ui"
+    directory="js"
+    />
+
+  <browser:resourceDirectory
+    name="jquery-ui-themes"
+    directory="css"
+    />
 
 </configure>

@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.js.jqueryui",
-    version="2.2.1.dev0",
+    version="4.0.0 (unreleased)",
     description="JQueryUI ready for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
@@ -30,12 +30,10 @@ setup(
         "Framework :: Zope :: 4",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
-        "Framework :: Plone :: 4.3",
         "Framework :: Plone :: 5.0",
         "Framework :: Plone :: 5.1",
         "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
@@ -55,7 +53,7 @@ setup(
     package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
-    python_requires=">=2.7",
+    python_requires=">=3.7",
     install_requires=[
         "Products.CMFPlone",
         "setuptools",
