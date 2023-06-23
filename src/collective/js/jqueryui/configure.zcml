@@ -34,7 +34,7 @@
 
   <browser:resourceDirectory
     name="jquery-ui"
-    directory="jquery-ui-1.13.2.custom"
+    directory="js"
     />
 
   <browser:resourceDirectory
