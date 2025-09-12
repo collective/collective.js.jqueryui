@@ -6,6 +6,9 @@ JQueryUI Changelog: https://jqueryui.com/changelog/
 2.2.1 (unreleased)
 ------------------
 
+- Fix Plone 6 / Python 3 compatibility
+  [laulaz]
+
 - Drop suport to Python 3.6.
   [wesleybl]
 
