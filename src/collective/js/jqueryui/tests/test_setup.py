@@ -9,10 +9,11 @@ from Products.CMFPlone.browser.admin import AddPloneSite
 import unittest
 
 
+HAS_INSTALLER = True
 try:
     from Products.CMFPlone.utils import get_installer
 except ImportError:
-    get_installer = None
+    HAS_INSTALLER = False
 
 
 class TestSetup(unittest.TestCase):
@@ -23,14 +24,19 @@ class TestSetup(unittest.TestCase):
     def setUp(self):
         """Custom shared utility setup for tests."""
         self.portal = self.layer["portal"]
-        if get_installer:
+        if HAS_INSTALLER:
             self.installer = get_installer(self.portal, self.layer["request"])
         else:
             self.installer = api.portal.get_tool("portal_quickinstaller")
 
     def test_product_installed(self):
         """Test if collective.js.jqueryui is installed."""
-        self.assertTrue(self.installer.isProductInstalled("collective.js.jqueryui"))
+        if HAS_INSTALLER:
+            self.assertTrue(
+                self.installer.is_product_installed("collective.js.jqueryui")
+            )
+        else:
+            self.assertTrue(self.installer.isProductInstalled("collective.js.jqueryui"))
 
     def test_browserlayer(self):
         """Test that IJqueryUILayer is registered."""
@@ -40,6 +46,8 @@ class TestSetup(unittest.TestCase):
         self.assertIn(IJqueryUILayer, utils.registered_layers())
 
     def test_hide_extensions_profiles(self):
+        if HAS_INSTALLER:
+            return
         app = self.layer["app"]
         request = self.layer["request"]
         add_plone_site = AddPloneSite(app, request)
@@ -60,18 +68,26 @@ class TestUninstall(unittest.TestCase):
 
     def setUp(self):
         self.portal = self.layer["portal"]
-        if get_installer:
-            self.installer = get_installer(self.portal, self.layer["request"])
-        else:
-            self.installer = api.portal.get_tool("portal_quickinstaller")
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer.uninstallProducts(["collective.js.jqueryui"])
+        if HAS_INSTALLER:
+            self.installer = get_installer(self.portal, self.layer["request"])
+            self.installer.uninstall_product("collective.js.jqueryui")
+        else:
+            self.installer = api.portal.get_tool("portal_quickinstaller")
+            self.installer.uninstallProducts(["collective.js.jqueryui"])
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
         """Test if collective.js.jqueryui is cleanly uninstalled."""
-        self.assertFalse(self.installer.isProductInstalled("collective.js.jqueryui"))
+        if HAS_INSTALLER:
+            self.assertFalse(
+                self.installer.is_product_installed("collective.js.jqueryui")
+            )
+        else:
+            self.assertFalse(
+                self.installer.isProductInstalled("collective.js.jqueryui")
+            )
 
     def test_browserlayer_removed(self):
         """Test that IJqueryUILayer is removed."""

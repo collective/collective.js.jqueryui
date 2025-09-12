@@ -24,6 +24,7 @@ var/
 # files
 .installed.cfg
 .mr.developer.cfg
+.plone.versioncheck.tracked.json
 coverage.xml
 lib64
 local.cfg
