@@ -167,7 +167,7 @@ class JQueryUICustomJS(Resources):
         alljs = list(deps.keys())
         resources = []
         wanted = []  # not ordered list of wanted plugins
-        tpl = "++resource++jquery-ui/jquery.%s.min.js"
+        tpl = "++resource++jquery-ui/jquery.{0}.min.js"
         ordered_plugins = copy(config.ORDERED_PLUGINS)
         for plugin in alljs:
             attr_name = plugin.replace(".", "_").replace("-", "_")
