@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Installer for the collective.js.jqueryui package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -16,7 +15,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.js.jqueryui",
-    version="2.2.1.dev0",
+    version="3.0.0.dev0",
     description="JQueryUI ready for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
@@ -25,19 +24,15 @@ setup(
         "Environment :: Web Environment",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Operating System :: OS Independent",
-        "Framework :: Zope2",
-        "Framework :: Zope :: 2",
-        "Framework :: Zope :: 4",
+        "Framework :: Zope",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
-        "Framework :: Plone :: 4.3",
-        "Framework :: Plone :: 5.0",
-        "Framework :: Plone :: 5.1",
-        "Framework :: Plone :: 5.2",
+        "Framework :: Plone :: 6.2",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
     ],
     keywords="plone jqueryui",
     author="JeanMichel FRANCOIS aka toutpt",
@@ -50,15 +45,11 @@ setup(
         # 'Documentation': 'https://collective.js.jqueryui.readthedocs.io/en/latest/',
     },
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective", "collective.js"],
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
-    python_requires=">=2.7",
+    python_requires=">=3.10",
     install_requires=[
         "Products.CMFPlone",
-        "setuptools",
     ],
     extras_require={
         "test": [

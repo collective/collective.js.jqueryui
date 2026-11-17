@@ -3,8 +3,16 @@ Changelog
 
 JQueryUI Changelog: https://jqueryui.com/changelog/
 
-2.2.1 (unreleased)
+3.0.0 (unreleased)
 ------------------
+
+- Switch to native namespace packages (PEP 420).
+  Drop support for Python < 3.10 and Plone < 6.2.
+  Plone 6.2 is now the only supported version.
+  [laulaz]
+
+- Fix Plone 6 / Python 3 compatibility
+  [laulaz]
 
 - Drop suport to Python 3.6.
   [wesleybl]
