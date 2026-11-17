@@ -9,6 +9,9 @@ JQueryUI Changelog: https://jqueryui.com/changelog/
 - Drop suport to Python 3.6.
   [wesleybl]
 
+- Fixed the plugin resource ids of the aggregated JavaScript: jQuery UI was never loaded.
+  [chris-adam]
+
 
 2.2.0 (2023-03-21)
 ------------------
