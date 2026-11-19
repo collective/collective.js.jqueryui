@@ -3,6 +3,12 @@ Changelog
 
 JQueryUI Changelog: https://jqueryui.com/changelog/
 
+3.0.1 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 3.0.0 (2026-11-19)
 ------------------
 
