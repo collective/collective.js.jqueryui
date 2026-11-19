@@ -3,7 +3,7 @@ Changelog
 
 JQueryUI Changelog: https://jqueryui.com/changelog/
 
-3.0.0 (unreleased)
+3.0.0 (2026-11-19)
 ------------------
 
 - Switch to native namespace packages (PEP 420).
